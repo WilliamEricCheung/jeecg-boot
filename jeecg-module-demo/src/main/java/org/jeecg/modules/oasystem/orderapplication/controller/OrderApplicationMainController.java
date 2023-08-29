@@ -122,6 +122,47 @@ public class OrderApplicationMainController {
 		orderApplicationMainService.updateMain(orderApplicationMain, orderApplicationMainPage.getOrderApplicationListList());
 		return Result.OK("编辑成功!");
 	}
+
+	 /**
+	  *   通过id提交
+	  *
+	  * @param id
+	  * @return
+	  */
+	 @AutoLog(value = "电商采购月度申请表-通过id提交")
+	 @ApiOperation(value="电商采购月度申请表-通过id提交", notes="电商采购月度申请表-通过id提交")
+//    @RequiresPermissions("orderapplication:order_application_main:submit)
+	 @PostMapping(value = "/submit")
+	 public Result<String> submit(@RequestParam(name="id",required=true) String id) {
+		 OrderApplicationMain orderApplicationMain = orderApplicationMainService.getById(id);
+		 if(orderApplicationMain==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_SUBMITTED_WATING_FOR_MANAGER);
+		 orderApplicationMainService.updateApplicationStatus(orderApplicationMain);
+		 // TODO 消息提示 https://help.jeecg.com/java/java/msgpush.html
+		 return Result.OK("提交成功!");
+	 }
+
+	 /**
+	  *   通过id撤回
+	  *
+	  * @param id
+	  * @return
+	  */
+	 @AutoLog(value = "电商采购月度申请表-通过id撤回")
+	 @ApiOperation(value="电商采购月度申请表-通过id撤回", notes="电商采购月度申请表-通过id撤回")
+//    @RequiresPermissions("orderapplication:order_application_main:revoke)
+	 @PostMapping(value = "/revoke")
+	 public Result<String> revoke(@RequestParam(name="id",required=true) String id) {
+		 OrderApplicationMain orderApplicationMain = orderApplicationMainService.getById(id);
+		 if(orderApplicationMain==null) {
+			 return Result.error("未找到对应数据");
+		 }
+		 orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_REVOKED);
+		 orderApplicationMainService.updateApplicationStatus(orderApplicationMain);
+		 return Result.OK("撤回成功!");
+	 }
 	
 	/**
 	 *   通过id删除

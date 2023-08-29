@@ -59,6 +59,11 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 	}
 
 	@Override
+	public void updateApplicationStatus(OrderApplicationMain orderApplicationMain) {
+		orderApplicationMainMapper.updateById(orderApplicationMain);
+	}
+
+	@Override
 	@Transactional(rollbackFor = Exception.class)
 	public void delMain(String id) {
 		orderApplicationListMapper.deleteByMainId(id);

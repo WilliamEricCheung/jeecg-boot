@@ -30,6 +30,12 @@ public interface IOrderApplicationMainService extends IService<OrderApplicationM
    * @param orderApplicationListList
 	 */
 	public void updateMain(OrderApplicationMain orderApplicationMain,List<OrderApplicationList> orderApplicationListList);
+
+	/**
+	 * 修改申请状态
+	 * @param orderApplicationMain
+	 */
+	public void updateApplicationStatus(OrderApplicationMain orderApplicationMain);
 	
 	/**
 	 * 删除一对多
