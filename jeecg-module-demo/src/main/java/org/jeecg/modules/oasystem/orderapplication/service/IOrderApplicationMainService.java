@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @Description: 电商采购月度申请表
  * @Author: jeecg-boot
- * @Date:   2023-08-28
+ * @Date:   2023-08-29
  * @Version: V1.0
  */
 public interface IOrderApplicationMainService extends IService<OrderApplicationMain> {

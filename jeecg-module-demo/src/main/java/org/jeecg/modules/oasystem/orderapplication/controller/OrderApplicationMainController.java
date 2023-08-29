@@ -48,7 +48,7 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
  /**
  * @Description: 电商采购月度申请表
  * @Author: jeecg-boot
- * @Date:   2023-08-28
+ * @Date:   2023-08-29
  * @Version: V1.0
  */
 @Api(tags="电商采购月度申请表")
@@ -191,7 +191,7 @@ public class OrderApplicationMainController {
     * @param request
     * @param orderApplicationMain
     */
-    @RequiresPermissions("orderapplication:order_application_main:exportXls")
+//    @RequiresPermissions("orderapplication:order_application_main:exportXls")
     @RequestMapping(value = "/exportXls")
     public ModelAndView exportXls(HttpServletRequest request, OrderApplicationMain orderApplicationMain) {
       // Step.1 组装查询条件查询数据
@@ -233,7 +233,7 @@ public class OrderApplicationMainController {
     * @param response
     * @return
     */
-    @RequiresPermissions("orderapplication:order_application_main:importExcel")
+//    @RequiresPermissions("orderapplication:order_application_main:importExcel")
     @RequestMapping(value = "/importExcel", method = RequestMethod.POST)
     public Result<?> importExcel(HttpServletRequest request, HttpServletResponse response) {
       MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;

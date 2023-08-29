@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 /**
  * @Description: 电商采购月度申请表采购物资具体要求
  * @Author: jeecg-boot
- * @Date:   2023-08-28
+ * @Date:   2023-08-29
  * @Version: V1.0
  */
 public interface OrderApplicationListMapper extends BaseMapper<OrderApplicationList> {

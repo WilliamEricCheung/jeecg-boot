@@ -17,7 +17,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * @Description: 电商采购月度申请表
  * @Author: jeecg-boot
- * @Date:   2023-08-28
+ * @Date:   2023-08-29
  * @Version: V1.0
  */
 @Data
@@ -26,44 +26,44 @@ public class OrderApplicationMainPage {
 
 	/**编号*/
 	@ApiModelProperty(value = "编号")
-    private String id;
+    private java.lang.String id;
 	/**申请部门*/
 	@ApiModelProperty(value = "申请部门")
-    private String sysOrgCode;
+    private java.lang.String sysOrgCode;
 	/**申请时间*/
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	@ApiModelProperty(value = "申请时间")
-    private Date createTime;
+    private java.util.Date createTime;
 	/**经办人*/
 	@ApiModelProperty(value = "经办人")
-    private String createBy;
+    private java.lang.String createBy;
 	/**更新时间*/
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	@ApiModelProperty(value = "更新时间")
-    private Date updateTime;
+    private java.util.Date updateTime;
 	/**更新人*/
 	@ApiModelProperty(value = "更新人")
-    private String updateBy;
+    private java.lang.String updateBy;
 	/**部门主管*/
 	@Excel(name = "部门主管", width = 15, dictTable = "sys_user", dicText = "realname", dicCode = "username")
     @Dict(dictTable = "sys_user", dicText = "realname", dicCode = "username")
 	@ApiModelProperty(value = "部门主管")
-    private String managerName;
+    private java.lang.String managerUsername;
 	/**分管领导*/
 	@Excel(name = "分管领导", width = 15, dictTable = "sys_user", dicText = "realname", dicCode = "username")
     @Dict(dictTable = "sys_user", dicText = "realname", dicCode = "username")
 	@ApiModelProperty(value = "分管领导")
-    private String leaderName;
+    private java.lang.String leaderUsername;
 	/**申请理由*/
 	@Excel(name = "申请理由", width = 15)
 	@ApiModelProperty(value = "申请理由")
-    private String reason;
+    private java.lang.String reason;
 	/**申请状态*/
 	@Excel(name = "申请状态", width = 15)
 	@ApiModelProperty(value = "申请状态")
-    private String applicationStatus;
+    private java.lang.String applicationStatus;
 
 	@ExcelCollection(name="电商采购月度申请表采购物资具体要求")
 	@ApiModelProperty(value = "电商采购月度申请表采购物资具体要求")
