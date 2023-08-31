@@ -1,5 +1,6 @@
 package org.jeecg.modules.oasystem.orderapplication.service.impl;
 
+import org.jeecg.modules.oasystem.orderapplication.constant.OrderApplicationConstant;
 import org.jeecg.modules.oasystem.orderapplication.entity.OrderApplicationMain;
 import org.jeecg.modules.oasystem.orderapplication.entity.OrderApplicationList;
 import org.jeecg.modules.oasystem.orderapplication.mapper.OrderApplicationListMapper;
@@ -43,8 +44,6 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 	@Override
 	@Transactional(rollbackFor = Exception.class)
 	public void updateMain(OrderApplicationMain orderApplicationMain,List<OrderApplicationList> orderApplicationListList) {
-		orderApplicationMainMapper.updateById(orderApplicationMain);
-		
 		//1.先删除子表数据
 		orderApplicationListMapper.deleteByMainId(orderApplicationMain.getId());
 		
@@ -55,6 +54,61 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 				entity.setApplicationMainId(orderApplicationMain.getId());
 				orderApplicationListMapper.insert(entity);
 			}
+		}
+		orderApplicationMainMapper.updateById(orderApplicationMain);
+	}
+
+	@Override
+	@Transactional(rollbackFor = Exception.class)
+	public void auditMain(String auditorType, OrderApplicationMain orderApplicationMain, List<OrderApplicationList> orderApplicationListList) {
+		//1.先删除子表数据
+		orderApplicationListMapper.deleteByMainId(orderApplicationMain.getId());
+
+		//2.子表数据重新插入
+		if(orderApplicationListList!=null && orderApplicationListList.size()>0) {
+
+			int disagrees = 0;
+			int agrees = 0;
+			int total = orderApplicationListList.size();
+
+			for(OrderApplicationList entity:orderApplicationListList) {
+				//外键设置
+				entity.setApplicationMainId(orderApplicationMain.getId());
+				orderApplicationListMapper.insert(entity);
+				//判断同意情况
+				if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
+					if (entity.getManagerOpinion().equals(OrderApplicationConstant.DISAGREE)) {
+						disagrees++;
+					}else {
+						agrees++;
+					}
+				}else {
+					if (entity.getLeaderOpinion().equals(OrderApplicationConstant.DISAGREE)) {
+						disagrees++;
+					}else {
+						agrees++;
+					}
+				}
+			}
+
+			if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
+				if (disagrees == total) {
+					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_NONE);
+				} else if (agrees == total) {
+					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_ALL);
+				} else {
+					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_PART);
+				}
+			} else {
+				if (disagrees == total) {
+					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.LEADER_CONFIRMED_NONE);
+				} else if (agrees == total) {
+					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.LEADER_CONFIRMED_ALL);
+				} else {
+					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.LEADER_CONFIRMED_PART);
+				}
+			}
+			orderApplicationMainMapper.updateById(orderApplicationMain);
 		}
 	}
 

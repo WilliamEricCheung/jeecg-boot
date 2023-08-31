@@ -128,6 +128,31 @@ public class OrderApplicationMainController {
         return Result.OK("编辑成功!");
     }
 
+    @AutoLog(value = "电商采购月度申请表-审核")
+    @ApiOperation(value = "电商采购月度申请表-审核", notes = "电商采购月度申请表-审核")
+    @RequiresPermissions("orderapplication:order_application_main:audit")
+    @RequestMapping(value = "/audit", method = {RequestMethod.PUT, RequestMethod.POST})
+    public Result<String> audit(@RequestBody OrderApplicationMainPage orderApplicationMainPage) {
+        OrderApplicationMain orderApplicationMain = new OrderApplicationMain();
+        BeanUtils.copyProperties(orderApplicationMainPage, orderApplicationMain);
+        OrderApplicationMain orderApplicationMainEntity = orderApplicationMainService.getById(orderApplicationMain.getId());
+        if (orderApplicationMainEntity == null) {
+            return Result.error("未找到对应数据");
+        }
+        //获取当前用户
+        LoginUser sysUser = (LoginUser) SecurityUtils.getSubject().getPrincipal();
+        String auditorType = null;
+        if (sysUser.getUsername().equals(orderApplicationMainEntity.getManagerUsername())) {
+            auditorType = OrderApplicationConstant.AUDITOR_TYPE_MANAGER;
+        } else if (sysUser.getUsername().equals(orderApplicationMainEntity.getLeaderUsername())) {
+            auditorType = OrderApplicationConstant.AUDITOR_TYPE_LEADER;
+        } else {
+            return Result.error("{}无权审核该申请！", sysUser.getRealname());
+        }
+        orderApplicationMainService.auditMain(auditorType, orderApplicationMain, orderApplicationMainPage.getOrderApplicationListList());
+        return Result.OK("审核完毕！");
+    }
+
     /**
      * 通过id提交
      *
