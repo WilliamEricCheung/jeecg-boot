@@ -176,6 +176,29 @@ public class OrderApplicationMainController {
     }
 
     /**
+     * 批量撤回
+     *
+     * @param ids
+     * @return
+     */
+    @AutoLog(value = "电商采购月度申请表-批量撤回")
+    @ApiOperation(value = "电商采购月度申请表-批量撤回", notes = "电商采购月度申请表-批量撤回")
+//    @RequiresPermissions("orderapplication:order_application_main:revoke)
+    @PostMapping(value = "/revokeBatch")
+    public Result<String> revokeBatch(@RequestParam(name = "ids", required = true) String ids) {
+        String[] list = ids.split(",");
+        for (String id: list) {
+            OrderApplicationMain orderApplicationMain = orderApplicationMainService.getById(id);
+            if (orderApplicationMain == null) {
+                return Result.error("未找到对应数据");
+            }
+            orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_REVOKED);
+            orderApplicationMainService.updateApplicationStatus(orderApplicationMain);
+        }
+        return Result.OK("批量撤回成功!");
+    }
+
+    /**
      * 通过id删除
      *
      * @param id
