@@ -96,7 +96,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-添加")
     @ApiOperation(value = "电商采购月度申请表-添加", notes = "电商采购月度申请表-添加")
-//    @RequiresPermissions("orderapplication:order_application_main:add")
+    @RequiresPermissions("orderapplication:order_application_main:add")
     @PostMapping(value = "/add")
     public Result<String> add(@RequestBody OrderApplicationMainPage orderApplicationMainPage) {
         OrderApplicationMain orderApplicationMain = new OrderApplicationMain();
@@ -115,7 +115,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-编辑")
     @ApiOperation(value = "电商采购月度申请表-编辑", notes = "电商采购月度申请表-编辑")
-//    @RequiresPermissions("orderapplication:order_application_main:edit")
+    @RequiresPermissions("orderapplication:order_application_main:edit")
     @RequestMapping(value = "/edit", method = {RequestMethod.PUT, RequestMethod.POST})
     public Result<String> edit(@RequestBody OrderApplicationMainPage orderApplicationMainPage) {
         OrderApplicationMain orderApplicationMain = new OrderApplicationMain();
@@ -136,7 +136,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-通过id提交")
     @ApiOperation(value = "电商采购月度申请表-通过id提交", notes = "电商采购月度申请表-通过id提交")
-//    @RequiresPermissions("orderapplication:order_application_main:submit)
+    @RequiresPermissions("orderapplication:order_application_main:submit")
     @PostMapping(value = "/submit")
     public Result<?> submit(@RequestParam(name = "id", required = true) String id) {
         OrderApplicationMain orderApplicationMain = orderApplicationMainService.getById(id);
@@ -163,7 +163,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-通过id撤回")
     @ApiOperation(value = "电商采购月度申请表-通过id撤回", notes = "电商采购月度申请表-通过id撤回")
-//    @RequiresPermissions("orderapplication:order_application_main:revoke)
+    @RequiresPermissions("orderapplication:order_application_main:revoke")
     @PostMapping(value = "/revoke")
     public Result<String> revoke(@RequestParam(name = "id", required = true) String id) {
         OrderApplicationMain orderApplicationMain = orderApplicationMainService.getById(id);
@@ -183,7 +183,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-批量撤回")
     @ApiOperation(value = "电商采购月度申请表-批量撤回", notes = "电商采购月度申请表-批量撤回")
-//    @RequiresPermissions("orderapplication:order_application_main:revoke)
+    @RequiresPermissions("orderapplication:order_application_main:revokeBatch")
     @PostMapping(value = "/revokeBatch")
     public Result<String> revokeBatch(@RequestParam(name = "ids", required = true) String ids) {
         String[] list = ids.split(",");
@@ -206,7 +206,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-通过id删除")
     @ApiOperation(value = "电商采购月度申请表-通过id删除", notes = "电商采购月度申请表-通过id删除")
-//    @RequiresPermissions("orderapplication:order_application_main:delete")
+    @RequiresPermissions("orderapplication:order_application_main:delete")
     @DeleteMapping(value = "/delete")
     public Result<String> delete(@RequestParam(name = "id", required = true) String id) {
         orderApplicationMainService.delMain(id);
@@ -221,7 +221,7 @@ public class OrderApplicationMainController {
      */
     @AutoLog(value = "电商采购月度申请表-批量删除")
     @ApiOperation(value = "电商采购月度申请表-批量删除", notes = "电商采购月度申请表-批量删除")
-//    @RequiresPermissions("orderapplication:order_application_main:deleteBatch")
+    @RequiresPermissions("orderapplication:order_application_main:deleteBatch")
     @DeleteMapping(value = "/deleteBatch")
     public Result<String> deleteBatch(@RequestParam(name = "ids", required = true) String ids) {
         this.orderApplicationMainService.delBatchMain(Arrays.asList(ids.split(",")));
@@ -266,7 +266,7 @@ public class OrderApplicationMainController {
      * @param request
      * @param orderApplicationMain
      */
-//    @RequiresPermissions("orderapplication:order_application_main:exportXls")
+    @RequiresPermissions("orderapplication:order_application_main:exportXls")
     @RequestMapping(value = "/exportXls")
     public ModelAndView exportXls(HttpServletRequest request, OrderApplicationMain orderApplicationMain) {
         // Step.1 组装查询条件查询数据
@@ -308,7 +308,7 @@ public class OrderApplicationMainController {
      * @param response
      * @return
      */
-//    @RequiresPermissions("orderapplication:order_application_main:importExcel")
+    @RequiresPermissions("orderapplication:order_application_main:importExcel")
     @RequestMapping(value = "/importExcel", method = RequestMethod.POST)
     public Result<?> importExcel(HttpServletRequest request, HttpServletResponse response) {
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
