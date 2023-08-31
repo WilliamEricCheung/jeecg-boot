@@ -13,4 +13,7 @@ public interface OrderApplicationConstant {
     public static final String LEADER_CONFIRMED_NONE = "分管领导已确认，不同意所有物资申请";
     public static final String APPLICANT_REVOKED = "申请人撤销申请";
 
+    // 消息推送模板code，需要和数据库保持一致
+    public static final String MESSAGE_TEMPLATE_CODE = "order_application";
+
 }
