@@ -66,6 +66,10 @@ public class OrderApplicationList implements Serializable {
 	@Excel(name = "单位", width = 15)
     @ApiModelProperty(value = "单位")
     private java.lang.String unit;
+	/**库存*/
+	@Excel(name = "库存", width = 15)
+    @ApiModelProperty(value = "库存")
+    private java.lang.Integer storage;
 	/**数量*/
 	@Excel(name = "数量", width = 15)
     @ApiModelProperty(value = "数量")
