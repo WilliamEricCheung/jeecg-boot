@@ -12,7 +12,7 @@
  Target Server Version : 15004188
  File Encoding         : 65001
 
- Date: 07/06/2023 17:58:50
+ Date: 21/09/2023 13:47:01
 */
 
 
@@ -227,7 +227,7 @@ GO
 -- ----------------------------
 -- Records of ceshi_note
 -- ----------------------------
-INSERT INTO [dbo].[ceshi_note] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [sex], [age], [remark], [birthday], [xia_time], [salary], [log_txt], [pop_cc], [user_id], [dep_id], [kai_guan], [file2], [pic], [shengshiqu], [accc], [daa_type], [ccc], [aaa]) VALUES (N'1586278360710615042', N'admin', N'2022-10-29 16:46:47.0000000', NULL, NULL, N'A01', N'单表示例', N'1', N'333', N'sd', N'2022-10-16', N'2022-10-29 02:00:03.0000000', N'22', N'afad', NULL, N'jeecg', N'c6d7cb4deeac411cb3384b1b31278596', N'Y', N'temp/lowcode22_1667033194717.jpg', N'temp/lowcodemin2_1667033196391.jpg', N'130303', N'<p>asdfafd</p>', N'1185039122143719425', N'2', NULL)
+INSERT INTO [dbo].[ceshi_note] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [sex], [age], [remark], [birthday], [xia_time], [salary], [log_txt], [pop_cc], [user_id], [dep_id], [kai_guan], [file2], [pic], [shengshiqu], [accc], [daa_type], [ccc], [aaa]) VALUES (N'1586278360710615042', N'admin', N'2022-10-29 16:46:47.0000000', N'admin', N'2023-07-24 15:43:54.0000000', N'A01', N'单表示例', N'1', N'333', N'sd', N'2023-03-30', N'2023-04-19 05:04:04.0000000', N'22', N'afad', N'龙建林', N'zhangsan', N'c6d7cb4deeac411cb3384b1b31278596', N'Y', N'temp/lowcode22_1667033194717.jpg', N'temp/lowcodemin2_1667033196391.jpg', N'120105', N'<p>asdfafd</p>', N'1590548229606047745', N'2', N'')
 GO
 
 
@@ -510,7 +510,7 @@ GO
 INSERT INTO [dbo].[demo_field_def_val_main] ([id], [code], [name], [sex], [address], [address_param], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1256548579457114114', N'q', N'q', N'1', N'q', N'q', N'admin', N'2020-05-02 19:38:21.0000000', N'admin', N'2020-05-03 01:02:51.0000000', N'A01')
 GO
 
-INSERT INTO [dbo].[demo_field_def_val_main] ([id], [code], [name], [sex], [address], [address_param], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1580543461659652098', N'${order_num_rule_param}', N'admin', N'2', N'北京市 朝阳区', N'北京市 昌平区', N'admin', N'2022-10-13 20:58:21.0000000', N'admin', N'2022-11-28 16:43:06.0000000', N'A01')
+INSERT INTO [dbo].[demo_field_def_val_main] ([id], [code], [name], [sex], [address], [address_param], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1580543461659652098', N'${order_num_rule_param}', N'admin', N'2', N'北京市 朝阳区', N'北京市 昌平区', N'admin', N'2022-10-13 20:58:21.0000000', N'admin', N'2023-07-23 19:20:03.0000000', N'A01')
 GO
 
 
@@ -605,7 +605,7 @@ GO
 -- ----------------------------
 -- Records of demo_field_def_val_sub
 -- ----------------------------
-INSERT INTO [dbo].[demo_field_def_val_sub] ([id], [code], [name], [date], [main_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1580543461798064129', N'${order_num_rule_param}', N'管理员', N'2022-10-13', N'1580543461659652098', N'admin', N'2022-11-28 16:43:06.0000000', NULL, NULL, N'A01')
+INSERT INTO [dbo].[demo_field_def_val_sub] ([id], [code], [name], [date], [main_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1580543461798064129', N'${order_num_rule_param}', N'管理员', N'2022-10-13', N'1580543461659652098', N'admin', N'2023-07-23 19:20:03.0000000', NULL, NULL, N'A01')
 GO
 
 INSERT INTO [dbo].[demo_field_def_val_sub] ([id], [code], [name], [date], [main_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1580543461810647042', N'${order_num_rule_param}', N'管理员', N'2022-10-13', N'1580543461659652098', N'admin', N'2022-10-13 20:58:21.0000000', NULL, NULL, N'A01')
@@ -624,6 +624,9 @@ INSERT INTO [dbo].[demo_field_def_val_sub] ([id], [code], [name], [date], [main_
 GO
 
 INSERT INTO [dbo].[demo_field_def_val_sub] ([id], [code], [name], [date], [main_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1597149069167026177', N'${order_num_rule_param}', N'管理员', N'2022-11-28', N'1580543461659652098', N'admin', N'2022-11-28 16:43:06.0000000', NULL, NULL, N'A01')
+GO
+
+INSERT INTO [dbo].[demo_field_def_val_sub] ([id], [code], [name], [date], [main_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1683074492983365633', N'${order_num_rule_param}', N'管理员', N'2023-07-23', N'1580543461659652098', N'admin', N'2023-07-23 19:20:03.0000000', NULL, NULL, N'A01')
 GO
 
 
@@ -2444,7 +2447,7 @@ GO
 INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'94b04a1ed7c17f8e96baa6d89fb90758', N'3698522', N'员工请假单', N'', NULL, N'printinfo', N'{"area":false,"printElWidth":794,"excel_config_id":"94b04a1ed7c17f8e96baa6d89fb90758","printElHeight":1047,"rows":{"1":{"cells":{"0":{"text":"员工请假单","style":100,"merge":[0,7]},"1":{"style":100},"2":{"style":100},"3":{"style":100},"4":{"style":100},"5":{"style":100},"6":{"style":100},"7":{"style":100}},"height":65},"2":{"cells":{"0":{"text":"单位：北极星","style":101,"merge":[0,2]},"1":{"style":101},"2":{"style":101},"3":{"style":102},"4":{"style":102},"5":{"style":102},"6":{"style":102},"7":{"style":102}},"height":38},"3":{"cells":{"0":{"text":"姓名","style":119},"1":{"style":119,"text":" "},"2":{"text":"工作岗位","style":120},"3":{"style":119,"text":" "},"4":{"text":"工作时间","style":119},"5":{"style":119,"text":" "},"6":{"text":"出生日期","style":119},"7":{"style":119,"text":" "}}},"4":{"cells":{"0":{"text":"请选择假类型","style":121,"merge":[4,0]},"1":{"text":"年休假","style":120},"2":{"style":120,"text":"病、事假"},"3":{"style":120,"text":"探亲假"},"4":{"style":119,"merge":[0,1],"text":"婚、丧假"},"5":{"style":107,"text":" "},"6":{"style":119,"merge":[0,1],"text":"生育假"},"7":{"style":107,"text":" "}},"height":29},"5":{"cells":{"0":{"style":0},"1":{"text":"1、公岭满1~9年（5天）","style":122},"2":{"style":119,"text":"1、病假"},"3":{"style":119,"text":"1、未婚探父母（20天）"},"4":{"style":119,"merge":[0,1],"text":"1、婚假（3天）"},"5":{"style":107,"text":" "},"6":{"style":119,"merge":[0,1],"text":"1、流产"},"7":{"style":107,"text":" "}},"height":25},"6":{"cells":{"0":{"style":0},"1":{"style":123,"text":"2、公岭满10~19年（10天）"},"2":{"style":119,"text":"2、事假"},"3":{"style":119,"text":"2、已婚探父母（20天）"},"4":{"style":119,"merge":[0,1],"text":"2、晚婚假（13天）"},"5":{"style":107,"text":" "},"6":{"style":119,"merge":[0,1],"text":"2、产假"},"7":{"style":107,"text":" "}}},"7":{"cells":{"0":{"style":0},"1":{"style":123,"text":"3、公岭满20年（15天）"},"2":{"style":119,"text":" "},"3":{"style":119,"text":"3、探配偶（30天）"},"4":{"style":119,"merge":[0,1],"text":"3、丧假（3天）"},"5":{"style":107,"text":" "},"6":{"style":119,"merge":[0,1],"text":"3、哺乳假"},"7":{"style":107,"text":" "}}},"8":{"cells":{"0":{"style":0},"1":{"style":119,"text":" "},"2":{"style":119,"text":" "},"3":{"style":119,"text":"探亲地点：","merge":[0,2]},"4":{"style":107,"text":" "},"5":{"style":107,"text":" "},"6":{"style":119,"merge":[0,1],"text":"4、陪护假"},"7":{"style":107,"text":" "},"8":{"style":15},"9":{"style":15},"10":{"style":15},"11":{"style":15},"12":{"style":15},"13":{"style":15},"14":{"style":15},"15":{"style":15},"16":{"style":15},"17":{"style":15},"18":{"style":15},"19":{"style":15},"20":{"style":15},"21":{"style":15},"22":{"style":15},"23":{"style":5},"24":{"style":5},"25":{"style":5}}},"9":{"cells":{"0":{"style":124,"text":"请假时间"},"1":{"style":125,"merge":[0,6],"text":"2020年02-30 至2020年02-03-30"},"2":{"style":115,"text":" "},"3":{"style":115,"text":" "},"4":{"style":115,"text":" "},"5":{"style":115,"text":" "},"6":{"style":115,"text":" "},"7":{"style":115,"text":" "}},"height":46},"10":{"cells":{"0":{"style":126,"text":"审批人员及意见"},"1":{"merge":[0,6],"style":127,"text":"同意"},"2":{"style":118,"text":" "},"3":{"style":118,"text":" "},"4":{"style":118,"text":" "},"5":{"style":118,"text":" "},"6":{"style":118,"text":" "},"7":{"style":118,"text":" "}},"height":89},"11":{"cells":{"0":{"text":"备注","style":119},"1":{"style":119,"text":" "},"2":{"text":"请假人签名","style":119},"3":{"merge":[0,4],"style":119,"text":" "},"4":{"style":107,"text":" "},"5":{"style":107,"text":" "},"6":{"style":107,"text":" "},"7":{"style":107,"text":" "}},"height":90},"12":{"cells":{"0":{"merge":[0,7],"style":120,"text":"请假审批表一式两份，考勤员与人力资源部门各存一份"},"1":{"style":106,"text":" "},"2":{"style":106,"text":" "},"3":{"style":106,"text":" "},"4":{"style":106,"text":" "},"5":{"style":106,"text":" "},"6":{"style":106,"text":" "},"7":{"style":106,"text":" "}},"height":25},"len":101},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"freeze":"A1","dataRectWidth":789,"background":false,"name":"sheet1","autofilter":{},"styles":[{"textwrap":true},{"textwrap":false},{"textwrap":true,"valign":"middle"},{"textwrap":false,"valign":"middle"},{"align":"center"},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":false,"valign":"middle","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":false,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":false,"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"align":"left"},{},{"font":{"name":"Helvetica"}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Helvetica"}},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Helvetica"}},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Helvetica"}},{"align":"center","font":{"name":"Helvetica"}},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Helvetica"}},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Helvetica"}},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Helvetica"}},{"font":{"name":"Arial"}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Arial"}},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Arial"}},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Arial"}},{"align":"center","font":{"name":"Arial"}},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Arial"}},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Arial"}},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Arial"}},{"font":{"name":"Source Sans Pro"}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Source Sans Pro"}},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Source Sans Pro"}},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Source Sans Pro"}},{"align":"center","font":{"name":"Source Sans Pro"}},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Source Sans Pro"}},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Source Sans Pro"}},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Source Sans Pro"}},{"font":{"name":"Courier New"}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"align":"center","font":{"name":"Courier New"}},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"font":{"name":"Courier New"},"border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"font":{"name":"Courier New"},"border":{"left":["thin","#000"],"right":["thin","#000"]}},{"textwrap":true,"border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"}},{"textwrap":true,"border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"align":"center"},{"font":{"name":"Courier New"},"border":{"left":["thin","#000"],"right":["thin","#000"]},"align":"center"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"align":"center"},{"align":"center","font":{"name":"Courier New","size":14}},{"align":"center","font":{"size":14}},{"align":"center","font":{"name":"Courier New","size":14,"bold":true}},{"align":"center","font":{"size":14,"bold":true}},{"font":{"name":"Courier New"},"color":"#7f7f7f"},{"color":"#7f7f7f"},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"color":"#000100"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"color":"#000100"},{"textwrap":true,"border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"align":"center","color":"#000100"},{"align":"center","font":{"name":"Courier New"},"color":"#000100"},{"font":{"name":"Courier New"},"color":"#000100"},{"font":{"name":"Courier New"},"border":{"left":["thin","#000"],"right":["thin","#000"]},"align":"center","color":"#000100"},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"color":"#000100"},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"color":"#000100"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"align":"center","color":"#000100"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Courier New"},"color":"#000100"},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100"},{"align":"center","color":"#000100"},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100"},{"color":"#000100"},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100"},{"textwrap":true,"border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"align":"center","color":"#000100"},{"align":"center","font":{"name":"Lato"},"color":"#000100"},{"font":{"name":"Lato"},"color":"#000100"},{"font":{"name":"Lato"},"border":{"left":["thin","#000"],"right":["thin","#000"]},"align":"center","color":"#000100"},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100"},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"align":"center","color":"#000100"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100"},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"Lato"}},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"Lato"},"valign":"middle"},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"Lato"},"valign":"bottom"},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"Lato"},"valign":"top"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100","valign":"top"},{"align":"center","font":{"name":"Lato"},"color":"#000100","valign":"top"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100","valign":"middle"},{"align":"center","font":{"name":"Lato"},"color":"#000100","valign":"middle"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100","valign":"bottom"},{"align":"center","font":{"name":"Lato"},"color":"#000100","valign":"bottom"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100","textwrap":true},{"align":"center","font":{"name":"Lato"},"color":"#000100","textwrap":true},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"Lato"},"color":"#000100","textwrap":false},{"align":"center","font":{"name":"Lato"},"color":"#000100","textwrap":false},{"textwrap":false,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"Lato"}},{"align":"center","font":{"name":"宋体","size":14,"bold":true}},{"font":{"name":"宋体"},"color":"#7f7f7f"},{"font":{"name":"宋体"}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100"},{"textwrap":true,"border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"align":"center","color":"#000100"},{"align":"center","font":{"name":"宋体"},"color":"#000100"},{"font":{"name":"宋体"},"color":"#000100"},{"font":{"name":"宋体"},"border":{"left":["thin","#000"],"right":["thin","#000"]},"align":"center","color":"#000100"},{"textwrap":false,"valign":"middle","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100"},{"textwrap":false,"border":{"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"align":"center","color":"#000100"},{"border":{"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100"},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"宋体"},"valign":"top"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100","valign":"top"},{"align":"center","font":{"name":"宋体"},"color":"#000100","valign":"top"},{"textwrap":true,"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"color":"#000100","font":{"name":"宋体"},"valign":"bottom"},{"align":"center","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"font":{"name":"宋体"},"color":"#000100","textwrap":false},{"align":"center","font":{"name":"宋体"},"color":"#000100","textwrap":false},{"border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"color":"#000100"},{"align":"center","border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"color":"#000100"},{"textwrap":true,"border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"align":"center","color":"#000100"},{"textwrap":false,"valign":"middle","border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"color":"#000100"},{"textwrap":false,"border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"color":"#000100"},{"textwrap":true,"border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"color":"#000100","font":{"name":"宋体"},"valign":"top"},{"align":"center","border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"color":"#000100","valign":"top"},{"textwrap":true,"border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"color":"#000100","font":{"name":"宋体"},"valign":"bottom"},{"align":"center","border":{"bottom":["thin","#262626"],"top":["thin","#262626"],"left":["thin","#262626"],"right":["thin","#262626"]},"font":{"name":"宋体"},"color":"#000100","textwrap":false}],"validations":[],"cols":{"0":{"width":35},"1":{"width":195},"2":{"width":77},"3":{"width":168},"4":{"width":62},"6":{"width":70},"7":{"width":82},"len":26},"merges":["D9:F9","E5:F5","E6:F6","E7:F7","E8:F8","G5:H5","G6:H6","G7:H7","G8:H8","G9:H9","B10:H10","B11:H11","D12:H12","A13:H13","A3:C3","A2:H2","A5:A9"]}', N'', N'https://static.jeecg.com/designreport/images/QQ截图20201207135257_1607320433681.png', N'jeecg', N'2020-07-10 18:29:39.0000000', N'admin', N'2021-02-03 14:01:12.0000000', N'0', NULL, NULL, N'1', N'142', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'961455b47c0b86dc961e90b5893bff05', N'56780774', N'阜阳检票数查询副本0774', N'', NULL, N'printinfo', N'{"area":{"sri":8,"sci":6,"eri":8,"eci":6,"width":75,"height":25},"printElWidth":794,"excel_config_id":"53c82a76f837d5661dceec7d93afafec","printElHeight":1047,"rows":{"0":{"cells":{"0":{"style":58},"1":{"text":"","style":66},"2":{"style":66},"3":{"style":67,"merge":[0,3],"text":"阜阳火车站检票数"},"4":{"style":67},"5":{"style":67},"6":{"style":67},"7":{"style":66},"8":{"style":66},"9":{"style":58}},"height":63},"1":{"cells":{"0":{"style":58},"1":{"style":66},"2":{"style":66},"3":{"style":66},"4":{"style":66},"5":{"style":66},"6":{"style":66},"7":{"style":66},"8":{"style":66},"9":{"style":58}},"height":20},"2":{"cells":{"0":{"style":58},"1":{"text":"日期：","style":68},"2":{"text":"${gongsi.tdata}","style":69},"3":{"style":66},"4":{"style":66,"text":"制表人："},"5":{"text":"${gongsi.gname}","style":66},"6":{"style":66},"7":{"text":"","merge":[0,1],"style":70},"8":{"style":70},"9":{"style":58}},"isDrag":true},"3":{"cells":{"0":{"style":58},"1":{"text":"班次","merge":[1,0],"style":71},"2":{"text":"发车时间","merge":[1,0],"style":71},"3":{"text":"是否放空","merge":[1,0],"style":71},"4":{"text":"路线","merge":[0,1],"style":71},"5":{"style":72},"6":{"text":"核载座位数","merge":[1,0],"style":71},"7":{"merge":[1,0],"style":71,"text":"检票数"},"8":{"merge":[1,0],"style":71,"text":"实载率（%）"},"9":{"style":58}}},"4":{"cells":{"0":{"style":58},"1":{"style":72},"2":{"style":71},"3":{"style":72},"4":{"text":"从","style":71},"5":{"text":"到","style":71},"6":{"style":72},"7":{"style":71},"8":{"style":72},"9":{"style":58}},"height":25},"5":{"cells":{"0":{"style":58},"1":{"style":73,"text":"#{jianpiao.bnum}"},"2":{"style":73,"text":"#{jianpiao.ftime}"},"3":{"style":73,"text":"#{jianpiao.sfkong}"},"4":{"style":73,"text":"#{jianpiao.kaishi}"},"5":{"style":73,"text":"#{jianpiao.jieshu}"},"6":{"style":73,"text":"#{jianpiao.hezairen}"},"7":{"style":73,"text":"#{jianpiao.jpnum}"},"8":{"style":73,"text":"#{jianpiao.shihelv}"},"9":{"style":58}},"height":33},"6":{"cells":{"1":{"text":"","style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}},"isDrag":true},"7":{"cells":{"1":{"style":11},"2":{"style":11,"text":""},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"8":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"9":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"10":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"11":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"12":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"13":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"14":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"len":96,"-1":{"cells":{"-1":{"text":"${gongsi.id}"}},"isDrag":true}},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"freeze":"A1","dataRectWidth":737,"background":false,"name":"sheet1","autofilter":{},"styles":[{"align":"center"},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"],"left":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"],"left":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"],"right":["thin","#000"]}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{},{"border":{"bottom":["thin","#7f7f7f"],"top":["thin","#7f7f7f"],"left":["thin","#7f7f7f"],"right":["thin","#7f7f7f"]}},{"border":{"top":["thin","#000100"],"left":["thin","#000100"]}},{"border":{"top":["thin","#000100"]}},{"border":{"top":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"left":["thin","#000100"]}},{"border":{"right":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"],"left":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"top":["thin","#7f7f7f"]}},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"right":["thin","#7f7f7f"],"bottom":["thin","#7f7f7f"]}},{"border":{"bottom":["thin","#7f7f7f"]}},{"border":{"right":["thin","#7f7f7f"]}},{"align":"center","font":{"size":16}},{"align":"center","font":{"size":16,"bold":true}},{"font":{"bold":true}},{"font":{"bold":false}},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":true}},{"align":"center","font":{"bold":true}},{"align":"right"},{"align":"center","font":{"size":14,"bold":true}},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":true},"bgcolor":"#4371c6"},{"align":"center","font":{"bold":true},"bgcolor":"#4371c6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#4371c6"},{"align":"center","font":{"bold":false},"bgcolor":"#4371c6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#2e75b5"},{"align":"center","font":{"bold":false},"bgcolor":"#2e75b5"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#5b9cd6"},{"align":"center","font":{"bold":false},"bgcolor":"#5b9cd6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#0170c1"},{"align":"center","font":{"bold":false},"bgcolor":"#0170c1"},{"font":{"bold":false},"color":"#7f7f7f"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#9cc2e6"},{"align":"center","font":{"bold":false},"bgcolor":"#9cc2e6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#01b0f1"},{"align":"center","font":{"bold":false},"bgcolor":"#01b0f1"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false},"bgcolor":"#5b9cd6"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]}},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false},"bgcolor":"#9cc2e6"},{"align":"center","font":{"size":16,"bold":true},"valign":"bottom"},{"align":"center","font":{"size":22,"bold":true},"valign":"bottom"},{"align":"center","font":{"size":18,"bold":true},"valign":"bottom"},{"font":{"bold":false},"color":"#7f7f7f","align":"right"},{"color":"#7f7f7f"},{"font":{"name":"宋体"}},{"align":"center","font":{"size":18,"bold":true,"name":"宋体"},"valign":"bottom"},{"font":{"bold":false,"name":"宋体"},"color":"#7f7f7f","align":"right"},{"color":"#7f7f7f","font":{"name":"宋体"}},{"align":"right","font":{"name":"宋体"}},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false,"name":"宋体"},"bgcolor":"#9cc2e6"},{"align":"center","font":{"bold":false,"name":"宋体"},"bgcolor":"#9cc2e6"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"name":"宋体"}},{"font":{"name":"Microsoft YaHei"}},{"align":"center","font":{"size":18,"bold":true,"name":"Microsoft YaHei"},"valign":"bottom"},{"font":{"bold":false,"name":"Microsoft YaHei"},"color":"#7f7f7f","align":"right"},{"color":"#7f7f7f","font":{"name":"Microsoft YaHei"}},{"align":"right","font":{"name":"Microsoft YaHei"}},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false,"name":"Microsoft YaHei"},"bgcolor":"#9cc2e6"},{"align":"center","font":{"bold":false,"name":"Microsoft YaHei"},"bgcolor":"#9cc2e6"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"name":"Microsoft YaHei"}}],"validations":[],"cols":{"0":{"width":53},"1":{"width":118},"2":{"width":75},"3":{"width":54},"4":{"width":95},"5":{"width":109},"6":{"width":75},"7":{"width":75},"8":{"width":83},"9":{"width":30},"len":27},"merges":["E4:F4","B4:B5","C4:C5","D4:D5","G4:G5","H4:H5","I4:I5","D1:G1","H3:I3"]}', N'', N'https://static.jeecg.com/designreport/images/25_1597233573577.png', N'admin', N'2021-01-19 10:46:45.0000000', N'admin', N'2021-02-03 13:58:22.0000000', N'0', NULL, NULL, N'0', N'695', NULL, NULL, NULL)
+INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'961455b47c0b86dc961e90b5893bff05', N'56780774', N'阜阳检票数查询副本0774', N'', NULL, N'printinfo', N'{"area":{"sri":8,"sci":6,"eri":8,"eci":6,"width":75,"height":25},"printElWidth":794,"excel_config_id":"53c82a76f837d5661dceec7d93afafec","printElHeight":1047,"rows":{"0":{"cells":{"0":{"style":58},"1":{"text":"","style":66},"2":{"style":66},"3":{"style":67,"merge":[0,3],"text":"阜阳火车站检票数"},"4":{"style":67},"5":{"style":67},"6":{"style":67},"7":{"style":66},"8":{"style":66},"9":{"style":58}},"height":63},"1":{"cells":{"0":{"style":58},"1":{"style":66},"2":{"style":66},"3":{"style":66},"4":{"style":66},"5":{"style":66},"6":{"style":66},"7":{"style":66},"8":{"style":66},"9":{"style":58}},"height":20},"2":{"cells":{"0":{"style":58},"1":{"text":"日期：","style":68},"2":{"text":"${gongsi.tdata}","style":69},"3":{"style":66},"4":{"style":66,"text":"制表人："},"5":{"text":"${gongsi.gname}","style":66},"6":{"style":66},"7":{"text":"","merge":[0,1],"style":70},"8":{"style":70},"9":{"style":58}},"isDrag":true},"3":{"cells":{"0":{"style":58},"1":{"text":"班次","merge":[1,0],"style":71},"2":{"text":"发车时间","merge":[1,0],"style":71},"3":{"text":"是否放空","merge":[1,0],"style":71},"4":{"text":"路线","merge":[0,1],"style":71},"5":{"style":72},"6":{"text":"核载座位数","merge":[1,0],"style":71},"7":{"merge":[1,0],"style":71,"text":"检票数"},"8":{"merge":[1,0],"style":71,"text":"实载率（%）"},"9":{"style":58}}},"4":{"cells":{"0":{"style":58},"1":{"style":72},"2":{"style":71},"3":{"style":72},"4":{"text":"从","style":71},"5":{"text":"到","style":71},"6":{"style":72},"7":{"style":71},"8":{"style":72},"9":{"style":58}},"height":25},"5":{"cells":{"0":{"style":58},"1":{"style":73,"text":"#{jianpiao.bnum}"},"2":{"style":73,"text":"#{jianpiao.ftime}"},"3":{"style":73,"text":"#{jianpiao.sfkong}"},"4":{"style":73,"text":"#{jianpiao.kaishi}"},"5":{"style":73,"text":"#{jianpiao.jieshu}"},"6":{"style":73,"text":"#{jianpiao.hezairen}"},"7":{"style":73,"text":"#{jianpiao.jpnum}"},"8":{"style":73,"text":"#{jianpiao.shihelv}"},"9":{"style":58}},"height":33},"6":{"cells":{"1":{"text":"","style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}},"isDrag":true},"7":{"cells":{"1":{"style":11},"2":{"style":11,"text":""},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"8":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"9":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"10":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"11":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"12":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"13":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"14":{"cells":{"1":{"style":11},"2":{"style":11},"3":{"style":11},"4":{"style":11},"5":{"style":11},"6":{"style":11},"7":{"style":11},"8":{"style":11}}},"len":96,"-1":{"cells":{"-1":{"text":"${gongsi.id}"}},"isDrag":true}},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"freeze":"A1","dataRectWidth":737,"background":false,"name":"sheet1","autofilter":{},"styles":[{"align":"center"},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"],"left":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"bottom":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"],"left":["thin","#000"]}},{"align":"center","border":{"bottom":["thin","#000"],"right":["thin","#000"]}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{},{"border":{"bottom":["thin","#7f7f7f"],"top":["thin","#7f7f7f"],"left":["thin","#7f7f7f"],"right":["thin","#7f7f7f"]}},{"border":{"top":["thin","#000100"],"left":["thin","#000100"]}},{"border":{"top":["thin","#000100"]}},{"border":{"top":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"left":["thin","#000100"]}},{"border":{"right":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"],"left":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"top":["thin","#7f7f7f"]}},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]}},{"border":{"right":["thin","#7f7f7f"],"bottom":["thin","#7f7f7f"]}},{"border":{"bottom":["thin","#7f7f7f"]}},{"border":{"right":["thin","#7f7f7f"]}},{"align":"center","font":{"size":16}},{"align":"center","font":{"size":16,"bold":true}},{"font":{"bold":true}},{"font":{"bold":false}},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":true}},{"align":"center","font":{"bold":true}},{"align":"right"},{"align":"center","font":{"size":14,"bold":true}},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":true},"bgcolor":"#4371c6"},{"align":"center","font":{"bold":true},"bgcolor":"#4371c6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#4371c6"},{"align":"center","font":{"bold":false},"bgcolor":"#4371c6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#2e75b5"},{"align":"center","font":{"bold":false},"bgcolor":"#2e75b5"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#5b9cd6"},{"align":"center","font":{"bold":false},"bgcolor":"#5b9cd6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#0170c1"},{"align":"center","font":{"bold":false},"bgcolor":"#0170c1"},{"font":{"bold":false},"color":"#7f7f7f"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#9cc2e6"},{"align":"center","font":{"bold":false},"bgcolor":"#9cc2e6"},{"align":"center","border":{"bottom":["thin","#000100"],"top":["thin","#000100"],"left":["thin","#000100"],"right":["thin","#000100"]},"font":{"bold":false},"bgcolor":"#01b0f1"},{"align":"center","font":{"bold":false},"bgcolor":"#01b0f1"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false},"bgcolor":"#5b9cd6"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]}},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false},"bgcolor":"#9cc2e6"},{"align":"center","font":{"size":16,"bold":true},"valign":"bottom"},{"align":"center","font":{"size":22,"bold":true},"valign":"bottom"},{"align":"center","font":{"size":18,"bold":true},"valign":"bottom"},{"font":{"bold":false},"color":"#7f7f7f","align":"right"},{"color":"#7f7f7f"},{"font":{"name":"宋体"}},{"align":"center","font":{"size":18,"bold":true,"name":"宋体"},"valign":"bottom"},{"font":{"bold":false,"name":"宋体"},"color":"#7f7f7f","align":"right"},{"color":"#7f7f7f","font":{"name":"宋体"}},{"align":"right","font":{"name":"宋体"}},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false,"name":"宋体"},"bgcolor":"#9cc2e6"},{"align":"center","font":{"bold":false,"name":"宋体"},"bgcolor":"#9cc2e6"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"name":"宋体"}},{"font":{"name":"Microsoft YaHei"}},{"align":"center","font":{"size":18,"bold":true,"name":"Microsoft YaHei"},"valign":"bottom"},{"font":{"bold":false,"name":"Microsoft YaHei"},"color":"#7f7f7f","align":"right"},{"color":"#7f7f7f","font":{"name":"Microsoft YaHei"}},{"align":"right","font":{"name":"Microsoft YaHei"}},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"bold":false,"name":"Microsoft YaHei"},"bgcolor":"#9cc2e6"},{"align":"center","font":{"bold":false,"name":"Microsoft YaHei"},"bgcolor":"#9cc2e6"},{"align":"center","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"font":{"name":"Microsoft YaHei"}}],"validations":[],"cols":{"0":{"width":53},"1":{"width":118},"2":{"width":75},"3":{"width":54},"4":{"width":95},"5":{"width":109},"6":{"width":75},"7":{"width":75},"8":{"width":83},"9":{"width":30},"len":27},"merges":["E4:F4","B4:B5","C4:C5","D4:D5","G4:G5","H4:H5","I4:I5","D1:G1","H3:I3"]}', N'', N'https://static.jeecg.com/designreport/images/25_1597233573577.png', N'admin', N'2021-01-19 10:46:45.0000000', N'admin', N'2021-02-03 13:58:22.0000000', N'0', NULL, NULL, N'0', N'696', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'9dbadaee8720767efe3164a7d018c870', N'45566', N'发票打印', N'', NULL, N'printinfo', N'{"area":{"sri":8,"sci":4,"eri":8,"eci":4,"width":100,"height":25},"printElWidth":794,"excel_config_id":"9dbadaee8720767efe3164a7d018c870","printElHeight":500,"rows":{"0":{"cells":{"0":{"text":"","virtual":"RTA6TUIKs1pmgVOM"},"1":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"2":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"3":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"4":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"5":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"6":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"7":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"},"8":{"text":" ","virtual":"RTA6TUIKs1pmgVOM"}}},"2":{"cells":{},"height":11},"3":{"cells":{"2":{"text":""},"5":{"text":""}},"height":18},"4":{"cells":{"2":{"text":"182123434","style":0},"5":{"text":"12345678"}},"height":15},"5":{"cells":{"2":{"text":""}}},"7":{"cells":{}},"8":{"cells":{"1":{"text":"餐饮"},"2":{"text":"        A11"},"3":{"text":"    333      3"},"4":{"text":"  3                   4"},"5":{"text":"          1"},"6":{"text":"3333"}}},"9":{"cells":{"1":{"text":"测试"},"2":{"text":"      mmm"},"3":{"text":"    33          5"}}},"10":{"cells":{},"height":22},"11":{"cells":{"2":{"text":"                          "},"3":{"text":"343434"},"6":{"text":"3434"}},"height":45},"12":{"cells":{"4":{"text":"           刮开中奖"}},"height":12},"13":{"cells":{"2":{"text":""},"4":{"text":"      "},"5":{"text":"备注"}},"height":31},"14":{"cells":{"1":{"text":" 张三"},"3":{"text":"完成"},"4":{"text":"           李思"}},"height":41},"len":100},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"freeze":"A1","dataRectWidth":847,"background":false,"name":"sheet1","autofilter":{},"styles":[{"font":{"size":8}}],"validations":[],"cols":{"0":{"width":93},"1":{"width":74},"2":{"width":80},"len":26},"merges":[],"imgList":[{"row":0,"col":0,"width":"832","height":"480","src":"https://static.jeecg.com/designreport/images/套打_1609313052910.png","isBackend":true,"commonBackend":true,"layer_id":"RTA6TUIKs1pmgVOM","offsetX":0,"offsetY":0,"virtualCellRange":[[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8]]}]}', N'', N'https://static.jeecg.com/designreport/images/QQ截图20201207113651_1607312223499.png', N'jeecg', N'2020-07-20 18:55:59.0000000', N'admin', N'2021-02-03 13:38:49.0000000', N'0', NULL, NULL, N'0', N'1124', NULL, NULL, NULL)
@@ -2459,7 +2462,7 @@ GO
 INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'dd482bfd6ca470a0f49d9bb4e61ec694', N'202101081046034402', N'实习证明副本4402', NULL, NULL, N'printinfo', N'{"area":false,"printElWidth":570,"excel_config_id":"1347373863746539520","printElHeight":1047,"rows":{"6":{"cells":{"2":{"merge":[0,1],"text":"实习证明","style":2},"3":{"style":2}},"height":50},"8":{"cells":{"1":{"text":"#{tt.name}","style":3},"2":{"merge":[0,2],"text":"同学在我公司与 2020年4月1日 至 2020年5月1日 实习。"}}},"9":{"cells":{"1":{"text":""}},"isDrag":true},"12":{"cells":{"1":{"merge":[4,3],"text":"#{tt.pingjia}","style":6},"2":{"style":6},"3":{"style":6},"4":{"style":6}}},"13":{"cells":{"1":{"style":6},"2":{"style":6},"3":{"style":6},"4":{"style":6}}},"14":{"cells":{"1":{"style":6},"2":{"style":6},"3":{"style":6},"4":{"style":6}}},"15":{"cells":{"1":{"style":6},"2":{"style":6},"3":{"style":6},"4":{"style":6}}},"16":{"cells":{"1":{"style":6},"2":{"style":6},"3":{"style":6},"4":{"style":6}}},"17":{"cells":{"1":{"text":"特此证明！"}}},"20":{"cells":{"2":{"text":""},"3":{"text":"","style":3},"4":{"text":""}}},"21":{"cells":{"4":{"text":""}}},"22":{"cells":{"3":{"text":"证明人：","style":3},"4":{"text":"#{tt.lingdao}"}}},"23":{"cells":{"4":{"text":"#{tt.shijian}"}}},"len":100},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"freeze":"A1","dataRectWidth":487,"background":{"path":"https://static.jeecg.com/designreport/images/report_1595906079684_1610075686629.png","repeat":"no-repeat","width":"","height":""},"name":"sheet1","autofilter":{},"styles":[{"align":"center"},{"align":"center","font":{"size":14}},{"align":"center","font":{"size":16}},{"align":"right"},{"align":"left"},{"align":"left","valign":"top"},{"align":"left","valign":"top","textwrap":true}],"validations":[],"cols":{"0":{"width":82},"1":{"width":86},"4":{"width":119},"len":26},"merges":["C7:D7","C9:E9","B13:E17"]}', NULL, N'https://static.jeecg.com/designreport/images/未标题-1_1610074948259.png', N'admin', N'2021-01-18 13:21:18.0000000', N'admin', N'2021-02-02 19:01:05.0000000', N'1', NULL, NULL, N'0', N'94', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'f5f275b5e28b45256ef24587ec792f0c', N'202101081641215447', N'实例:来源收入统计副本5447', NULL, NULL, N'datainfo', N'{"loopBlockList":[],"chartList":[{"row":1,"col":1,"colspan":0,"rowspan":0,"width":"624","height":"281","config":"{\"legend\":{\"padding\":[25,20,25,10],\"data\":[\"中国石油全资（集团所属）\",\"中国石油全资（股份所属）\",\"中石油控股或有控股权\",\"中石油参股\",\"非中石油\"],\"top\":\"top\",\"orient\":\"vertical\",\"left\":\"right\",\"show\":true,\"textStyle\":{\"color\":\"#333\",\"fontSize\":12}},\"series\":[{\"isRose\":false,\"data\":[{\"name\":\"中国石油全资（集团所属）\",\"value\":38460270.57,\"itemStyle\":{\"color\":\"#E46C8A\"}},{\"name\":\"中国石油全资（股份所属）\",\"value\":227595.77,\"itemStyle\":{\"color\":\"#FCDE43\"}},{\"name\":\"中石油控股或有控股权\",\"value\":679926.75,\"itemStyle\":{\"color\":\"#01A8E1\"}},{\"name\":\"中石油参股\",\"value\":72062.75,\"itemStyle\":{\"color\":\"#99CC00\"}},{\"name\":\"非中石油\",\"value\":1698597.62,\"itemStyle\":{\"color\":\"#800080\"}}],\"isRadius\":false,\"roseType\":\"\",\"notCount\":false,\"center\":[320,180],\"name\":\"total\",\"minAngle\":0,\"label\":{\"show\":false,\"position\":\"outside\",\"textStyle\":{\"fontSize\":16,\"fontWeight\":\"bolder\"}},\"type\":\"pie\",\"radius\":\"55%\",\"autoSort\":false}],\"tooltip\":{\"formatter\":\"{b} : {c}\",\"show\":true,\"textStyle\":{\"color\":\"#fff\",\"fontSize\":18}},\"title\":{\"show\":true,\"top\":5,\"text\":\"来源收入统计\",\"textStyle\":{\"color\":\"#c23531\",\"fontWeight\":\"bolder\",\"fontSize\":18},\"left\":\"center\",\"padding\":[5,20,5,10]}}","url":"","extData":{"dataType":"sql","apiStatus":"","apiUrl":"","dataId":"4af57d343f1d6521b71b85097b580786","axisX":"biz_income","axisY":"total","series":"","yText":"total","xText":"biz_income","dbCode":"tmp_report_data_income","dataId1":"","source":"","target":"","isTiming":true,"intervalTime":"5","chartType":"pie.simple","id":""},"layer_id":"nVUy533exgQ70OPb","offsetX":0,"offsetY":0,"backgroud":{"enabled":false,"color":"#fff","image":""},"virtualCellRange":[[1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8]]}],"area":{"sri":20,"sci":6,"eri":20,"eci":6,"width":60,"height":25},"excel_config_id":"f5f275b5e28b45256ef24587ec792f0c","printConfig":{"paper":"A4","width":210,"height":297,"definition":1,"isBackend":false,"marginX":10,"marginY":10},"zonedEditionList":[],"rows":{"1":{"cells":{"1":{"text":" ","virtual":"nVUy533exgQ70OPb"},"2":{"text":" ","virtual":"nVUy533exgQ70OPb"},"3":{"text":" ","virtual":"nVUy533exgQ70OPb"},"4":{"text":" ","virtual":"nVUy533exgQ70OPb"},"5":{"text":" ","virtual":"nVUy533exgQ70OPb"},"6":{"text":" ","virtual":"nVUy533exgQ70OPb"},"7":{"text":" ","virtual":"nVUy533exgQ70OPb"},"8":{"text":" ","virtual":"nVUy533exgQ70OPb"}}},"13":{"cells":{"2":{}}},"16":{"cells":{"1":{"text":"业务来源","style":1},"2":{"text":"保险经纪佣金费","style":1},"3":{"text":"风险咨询费","style":1},"4":{"text":"承保公证评估费","style":1},"5":{"text":"保险公证费","style":1},"6":{"text":"投标咨询费","style":1},"7":{"text":"内控咨询费","style":1},"8":{"text":"总计","style":1}}},"17":{"cells":{"1":{"text":"#{tmp_report_data_income.biz_income}","style":0},"2":{"text":"#{tmp_report_data_income.bx_jj_yongjin}","style":0},"3":{"text":"#{tmp_report_data_income.bx_zx_money}","style":0},"4":{"text":"#{tmp_report_data_income.chengbao_gz_money}","style":0},"5":{"text":"#{tmp_report_data_income.bx_gg_moeny}","style":0},"6":{"text":"#{tmp_report_data_income.tb_zx_money}","style":0},"7":{"text":"#{tmp_report_data_income.neikong_zx_money}","style":0},"8":{"text":"#{tmp_report_data_income.total}","style":0}},"isDrag":true,"height":24},"len":58},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"rpbar":{"show":true,"pageSize":"","btnList":[]},"freeze":"A1","dataRectWidth":701,"displayConfig":{},"background":false,"name":"sheet1","autofilter":{},"styles":[{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"bgcolor":"#33CCCC"}],"validations":[],"cols":{"0":{"width":15},"1":{"width":105},"2":{"width":119},"3":{"width":87},"4":{"width":61},"5":{"width":63},"6":{"width":60},"7":{"width":91},"len":50},"merges":[]}', NULL, NULL, N'admin', N'2021-01-18 13:21:14.0000000', N'admin', N'2022-09-22 19:39:56.0000000', N'0', NULL, NULL, N'0', N'65', NULL, NULL, NULL)
+INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'f5f275b5e28b45256ef24587ec792f0c', N'202101081641215447', N'实例:来源收入统计副本5447', NULL, NULL, N'datainfo', N'{"loopBlockList":[],"chartList":[{"row":1,"col":1,"colspan":0,"rowspan":0,"width":"624","height":"281","config":"{\"legend\":{\"padding\":[25,20,25,10],\"data\":[\"中国石油全资（集团所属）\",\"中国石油全资（股份所属）\",\"中石油控股或有控股权\",\"中石油参股\",\"非中石油\"],\"top\":\"top\",\"orient\":\"vertical\",\"left\":\"right\",\"show\":true,\"textStyle\":{\"color\":\"#333\",\"fontSize\":12}},\"series\":[{\"isRose\":false,\"data\":[{\"name\":\"中国石油全资（集团所属）\",\"value\":38460270.57,\"itemStyle\":{\"color\":\"#E46C8A\"}},{\"name\":\"中国石油全资（股份所属）\",\"value\":227595.77,\"itemStyle\":{\"color\":\"#FCDE43\"}},{\"name\":\"中石油控股或有控股权\",\"value\":679926.75,\"itemStyle\":{\"color\":\"#01A8E1\"}},{\"name\":\"中石油参股\",\"value\":72062.75,\"itemStyle\":{\"color\":\"#99CC00\"}},{\"name\":\"非中石油\",\"value\":1698597.62,\"itemStyle\":{\"color\":\"#800080\"}}],\"isRadius\":false,\"roseType\":\"\",\"notCount\":false,\"center\":[320,180],\"name\":\"total\",\"minAngle\":0,\"label\":{\"show\":false,\"position\":\"outside\",\"textStyle\":{\"fontSize\":16,\"fontWeight\":\"bolder\"}},\"type\":\"pie\",\"radius\":\"55%\",\"autoSort\":false}],\"tooltip\":{\"formatter\":\"{b} : {c}\",\"show\":true,\"textStyle\":{\"color\":\"#fff\",\"fontSize\":18}},\"title\":{\"show\":true,\"top\":5,\"text\":\"来源收入统计\",\"textStyle\":{\"color\":\"#c23531\",\"fontWeight\":\"bolder\",\"fontSize\":18},\"left\":\"center\",\"padding\":[5,20,5,10]}}","url":"","extData":{"dataType":"sql","apiStatus":"","apiUrl":"","dataId":"4af57d343f1d6521b71b85097b580786","axisX":"biz_income","axisY":"total","series":"","yText":"total","xText":"biz_income","dbCode":"tmp_report_data_income","dataId1":"","source":"","target":"","isTiming":true,"intervalTime":"5","chartType":"pie.simple","id":""},"layer_id":"nVUy533exgQ70OPb","offsetX":0,"offsetY":0,"backgroud":{"enabled":false,"color":"#fff","image":""},"virtualCellRange":[[1,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8]]}],"area":false,"excel_config_id":"f5f275b5e28b45256ef24587ec792f0c","printConfig":{"paper":"A4","width":210,"height":297,"definition":1,"isBackend":false,"marginX":10,"marginY":10},"zonedEditionList":[],"rows":{"1":{"cells":{"1":{"text":" ","virtual":"nVUy533exgQ70OPb"},"2":{"text":" ","virtual":"nVUy533exgQ70OPb"},"3":{"text":" ","virtual":"nVUy533exgQ70OPb"},"4":{"text":" ","virtual":"nVUy533exgQ70OPb"},"5":{"text":" ","virtual":"nVUy533exgQ70OPb"},"6":{"text":" ","virtual":"nVUy533exgQ70OPb"},"7":{"text":" ","virtual":"nVUy533exgQ70OPb"},"8":{"text":" ","virtual":"nVUy533exgQ70OPb"}}},"13":{"cells":{"2":{}}},"16":{"cells":{"1":{"text":"业务来源","style":1},"2":{"text":"保险经纪佣金费","style":1},"3":{"text":"风险咨询费","style":1},"4":{"text":"承保公证评估费","style":1},"5":{"text":"保险公证费","style":1},"6":{"text":"投标咨询费","style":1},"7":{"text":"内控咨询费","style":1},"8":{"text":"总计","style":1}}},"17":{"cells":{"1":{"text":"#{tmp_report_data_income.biz_income}","style":0},"2":{"text":"#{tmp_report_data_income.bx_jj_yongjin}","style":0},"3":{"text":"#{tmp_report_data_income.bx_zx_money}","style":0},"4":{"text":"#{tmp_report_data_income.chengbao_gz_money}","style":0},"5":{"text":"#{tmp_report_data_income.bx_gg_moeny}","style":0},"6":{"text":"#{tmp_report_data_income.tb_zx_money}","style":0},"7":{"text":"#{tmp_report_data_income.neikong_zx_money}","style":0},"8":{"text":"#{tmp_report_data_income.total}","style":0}},"isDrag":true,"height":24},"len":58},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":794,"heightPx":1047},"dicts":[],"rpbar":{"show":true,"pageSize":"","btnList":[]},"fixedPrintHeadRows":[],"fixedPrintTailRows":[],"freeze":"A1","dataRectWidth":701,"displayConfig":{},"background":false,"name":"sheet1","autofilter":{},"styles":[{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]},"bgcolor":"#33CCCC"}],"validations":[],"cols":{"0":{"width":15},"1":{"width":105},"2":{"width":119},"3":{"width":87},"4":{"width":61},"5":{"width":63},"6":{"width":60},"7":{"width":91},"len":50},"merges":[]}', NULL, NULL, N'admin', N'2021-01-18 13:21:14.0000000', N'admin', N'2023-08-15 17:41:17.0000000', N'0', NULL, NULL, N'0', N'66', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[jimu_report] ([id], [code], [name], [note], [status], [type], [json_str], [api_url], [thumb], [create_by], [create_time], [update_by], [update_time], [del_flag], [api_method], [api_code], [template], [view_count], [css_str], [js_str], [tenant_id]) VALUES (N'f6ee801e8bdc28ba9d63f95dc65ccd79', N'4556633', N'采购单', N'', NULL, N'printinfo', N'{"loopBlockList":[],"area":false,"excel_config_id":"f6ee801e8bdc28ba9d63f95dc65ccd79","printConfig":{"paper":"A4","width":210,"height":297,"definition":1,"isBackend":false,"marginX":10,"marginY":10},"rows":{"0":{"cells":{"1":{"text":"采购单","style":21,"merge":[0,6]}},"height":89},"1":{"cells":{"1":{"text":"产品名称","style":23},"2":{"text":"产品数量","style":23},"3":{"text":"单价","style":23},"4":{"text":"库存量","style":23},"5":{"text":"库存总值","style":23},"6":{"text":"订购量","style":23},"7":{"text":"二次订购量","style":23}},"height":45},"2":{"cells":{"1":{"style":24,"text":"#{caigou.cname}"},"2":{"style":24,"text":"#{caigou.cnum}"},"3":{"style":24,"text":"#{caigou.cprice}"},"4":{"style":24,"text":"#{caigou.ctotal}"},"5":{"style":24,"text":"#{caigou.tp}"},"6":{"style":24,"text":"#{caigou.dtotal}"},"7":{"style":24,"text":"#{caigou.ztotal}"}},"height":26},"5":{"cells":{"1":{"text":""}},"isDrag":true},"6":{"cells":{"1":{"text":""}},"isDrag":true},"7":{"cells":{"1":{"text":""},"2":{"text":""}},"isDrag":true},"len":100},"dbexps":[],"toolPrintSizeObj":{"printType":"A4","widthPx":718,"heightPx":1047},"dicts":[],"freeze":"A1","dataRectWidth":682,"displayConfig":{},"background":false,"name":"sheet1","autofilter":{},"styles":[{"align":"center"},{"align":"center","color":"#000100"},{"align":"center","color":"#000100","border":{"bottom":["thin","#000"],"top":["thin","#000"],"left":["thin","#000"],"right":["thin","#000"]}},{"align":"center","color":"#000100","border":{"bottom":["thin","#01b0f1"],"top":["thin","#01b0f1"],"left":["thin","#01b0f1"],"right":["thin","#01b0f1"]}},{"border":{"bottom":["thin","#01b0f1"],"top":["thin","#01b0f1"],"left":["thin","#01b0f1"],"right":["thin","#01b0f1"]}},{"align":"center","color":"#000100","border":{"bottom":["thin","#01b0f1"],"top":["thin","#01b0f1"],"left":["thin","#01b0f1"],"right":["thin","#01b0f1"]},"bgcolor":"#01b0f1"},{"align":"center","color":"#000100","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"bgcolor":"#01b0f1"},{"border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]}},{"align":"center","font":{"size":18}},{"align":"center","font":{"size":18,"bold":true}},{"align":"center","font":{"size":16,"bold":true}},{"border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"align":"center"},{"align":"center","color":"#000100","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"bgcolor":"#9cc2e6"},{"font":{"name":"宋体"}},{"align":"center","font":{"size":16,"bold":true,"name":"宋体"}},{"align":"center","color":"#000100","border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"bgcolor":"#9cc2e6","font":{"name":"宋体"}},{"border":{"bottom":["thin","#5b9cd6"],"top":["thin","#5b9cd6"],"left":["thin","#5b9cd6"],"right":["thin","#5b9cd6"]},"align":"center","font":{"name":"宋体"}},{"align":"center","color":"#000100","border":{"bottom":["thin","#bfbfbf"],"top":["thin","#bfbfbf"],"left":["thin","#bfbfbf"],"right":["thin","#bfbfbf"]},"bgcolor":"#9cc2e6","font":{"name":"宋体"}},{"border":{"bottom":["thin","#bfbfbf"],"top":["thin","#bfbfbf"],"left":["thin","#bfbfbf"],"right":["thin","#bfbfbf"]},"align":"center","font":{"name":"宋体"}},{"align":"center","color":"#000100","border":{"bottom":["thin","#bfbfbf"],"top":["thin","#bfbfbf"],"left":["thin","#bfbfbf"],"right":["thin","#bfbfbf"]},"bgcolor":"#5b9cd6","font":{"name":"宋体"}},{"align":"center","color":"#ffffff","border":{"bottom":["thin","#bfbfbf"],"top":["thin","#bfbfbf"],"left":["thin","#bfbfbf"],"right":["thin","#bfbfbf"]},"bgcolor":"#5b9cd6","font":{"name":"宋体"}},{"align":"center","font":{"size":16,"bold":true,"name":"Microsoft YaHei"}},{"font":{"name":"Microsoft YaHei"}},{"align":"center","color":"#ffffff","border":{"bottom":["thin","#bfbfbf"],"top":["thin","#bfbfbf"],"left":["thin","#bfbfbf"],"right":["thin","#bfbfbf"]},"bgcolor":"#5b9cd6","font":{"name":"Microsoft YaHei"}},{"border":{"bottom":["thin","#bfbfbf"],"top":["thin","#bfbfbf"],"left":["thin","#bfbfbf"],"right":["thin","#bfbfbf"]},"align":"center","font":{"name":"Microsoft YaHei"}}],"validations":[],"cols":{"0":{"width":43},"1":{"width":114},"2":{"width":109},"3":{"width":78},"4":{"width":77},"5":{"width":84},"6":{"width":82},"7":{"width":95},"len":50},"merges":["B1:H1"]}', N'', N'https://static.jeecg.com/designreport/images/caigou_1607310279439.png', N'jeecg', N'2020-07-28 16:54:44.0000000', N'admin', N'2021-04-01 03:09:41.0000000', N'0', NULL, NULL, N'1', N'1249', NULL, NULL, NULL)
@@ -2622,7 +2625,7 @@ GO
 INSERT INTO [dbo].[jimu_report_data_source] ([id], [name], [report_id], [code], [remark], [db_type], [db_driver], [db_url], [db_username], [db_password], [create_by], [create_time], [update_by], [update_time], [connect_times], [tenant_id], [type]) VALUES (N'26d21fe4f27920d2f56abc8d90a8e527', N'oracle', N'1308645288868712448', N'', NULL, N'ORACLE', N'oracle.jdbc.OracleDriver', N'jdbc:oracle:thin:@192.168.1.199:1521:helowin', N'jeecgbootbpm', N'jeecg196283', N'admin', N'2021-01-05 19:26:24.0000000', NULL, N'2021-01-05 19:26:24.0000000', N'0', NULL, N'report')
 GO
 
-INSERT INTO [dbo].[jimu_report_data_source] ([id], [name], [report_id], [code], [remark], [db_type], [db_driver], [db_url], [db_username], [db_password], [create_by], [create_time], [update_by], [update_time], [connect_times], [tenant_id], [type]) VALUES (N'707437208002265088', N'MySQL5.7', NULL, NULL, NULL, N'MYSQL5.7', N'com.mysql.cj.jdbc.Driver', N'jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai', N'root', N'@JimuReportSMy3f94QGFM=', N'admin', N'2022-07-14 13:49:44.0000000', N'admin', N'2023-04-24 15:11:14.0000000', N'0', NULL, N'drag')
+INSERT INTO [dbo].[jimu_report_data_source] ([id], [name], [report_id], [code], [remark], [db_type], [db_driver], [db_url], [db_username], [db_password], [create_by], [create_time], [update_by], [update_time], [connect_times], [tenant_id], [type]) VALUES (N'707437208002265088', N'MySQL5.7', NULL, NULL, NULL, N'MYSQL5.7', N'com.mysql.cj.jdbc.Driver', N'jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai', N'root', N'@JimuReportSMy3f94QGFM=', N'admin', N'2022-07-14 13:49:44.0000000', N'admin', N'2023-06-06 21:13:22.0000000', N'0', NULL, N'drag')
 GO
 
 INSERT INTO [dbo].[jimu_report_data_source] ([id], [name], [report_id], [code], [remark], [db_type], [db_driver], [db_url], [db_username], [db_password], [create_by], [create_time], [update_by], [update_time], [connect_times], [tenant_id], [type]) VALUES (N'8f90daf47d15d35ca6cf420748b8b9ba', N'localhost', N'1316944968992034816', N'', NULL, N'MYSQL5.7', N'com.mysql.cj.jdbc.Driver', N'jdbc:mysql://127.0.0.1:3306/jeecg-boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8', N'root', N'root', N'admin', N'2021-01-13 14:34:00.0000000', NULL, N'2021-01-13 14:34:00.0000000', N'0', NULL, N'report')
@@ -6708,7 +6711,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'045eb432c418b2b103b1e1b8e8a8a75d', N'fb7125a344a649b990c12949945cb6c1', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', NULL, NULL, NULL, N'2019-03-26 19:24:11.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'04e4185a503e6aaaa31c243829ff4ac7', N'd35109c3632c4952a19ecc094943dd71', N'birthday', N'生日', NULL, N'0', N'1', N'1', N'Datetime', N'32', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'9', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'04e4185a503e6aaaa31c243829ff4ac7', N'd35109c3632c4952a19ecc094943dd71', N'birthday', N'生日', NULL, N'0', N'1', N'1', N'Datetime', N'32', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'9', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'04ff134cb4aae845059e10b3b85f1451', N'7ea60a25fa27470e9080d6a921aabbd1', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', NULL, NULL, N'2019-04-17 00:22:21.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -6810,7 +6813,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'0e5fb96c3f5a37c758eb7f5d1322694f', N'402880e5721355dd01721355dd390000', N'good_name', N'商品名字', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', NULL, NULL, N'7', NULL, NULL, N'2020-05-14 21:18:14.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'0f7241c8d5e1c8b1d913dc8a6099c59f', N'31cf57ac0ce04a34aff6aa15867d6d95', N'aaa', N'aa', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'24', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-11-07 19:09:56.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'0f7241c8d5e1c8b1d913dc8a6099c59f', N'31cf57ac0ce04a34aff6aa15867d6d95', N'aaa', N'aa', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'24', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-11-07 19:09:56.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'0fb6fa76c5c78a1e957dbb411e110738', N'402860816bff91c0016bff91d8830007', N'politically_status', N'政治面貌', N'politically_status', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'7', N'admin', N'2019-07-19 18:04:41.0000000', N'2019-07-17 18:54:37.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -6840,7 +6843,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'1130f1e252533529bb1167b896dffe32', N'deea5a8ec619460c9245ba85dbc59e80', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', N'admin', N'2020-05-03 01:01:18.0000000', N'2019-04-20 11:41:19.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'117fc4ba649d6690a3ac482ad5e4ad38', N'56870166aba54ebfacb20ba6c770bd73', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'117fc4ba649d6690a3ac482ad5e4ad38', N'56870166aba54ebfacb20ba6c770bd73', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'12aa08f8e948e2b60b40a7b6429c866b', N'56efb74326e74064b60933f6f8af30ea', N'order_code', N'订单编码', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'${shop_order_num}', N'0', N'1', N'1', N'1', N'single', N'', N'', N'7', N'admin', N'2020-07-10 16:53:27.0000000', N'2020-05-08 23:45:32.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -6894,7 +6897,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'18fefb2257901f05508f8ec13ada78a3', N'e5464aa8fa7b47c580e91593cf9b46dc', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2019-04-24 17:09:48.0000000', N'2019-04-24 11:05:10.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'191705159cea35e8cbacb326f172be94', N'd35109c3632c4952a19ecc094943dd71', N'search_sel', N'搜索下拉', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'role_code', N'sys_role', N'role_name', N'sel_search', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'17', N'admin', N'2022-10-30 11:16:46.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'191705159cea35e8cbacb326f172be94', N'd35109c3632c4952a19ecc094943dd71', N'search_sel', N'搜索下拉', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'role_code', N'sys_role', N'role_name', N'sel_search', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'17', N'admin', N'2023-09-16 21:25:25.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'193c3c062cc6ee210970dbe327412e67', N'553a4172fde446419cb602dc70f9ee67', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', NULL, NULL, NULL, NULL, N'text', NULL, N'120', N'', N'0', NULL, NULL, N'0', N'0', N'0', N'0', N'single', NULL, NULL, N'1', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, N'0', NULL, NULL, N'0')
@@ -6960,13 +6963,13 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'1f0c6d33b79713fe79fb30373c81f6f7', N'758334cb1e7445e2822b60e807aec4a3', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', NULL, NULL, N'2019-10-18 18:02:09.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'1fa5f07b3e70d4925b69b2bf51309421', N'56870166aba54ebfacb20ba6c770bd73', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'1fa5f07b3e70d4925b69b2bf51309421', N'56870166aba54ebfacb20ba6c770bd73', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'209ddb923d8dab9f454d56d82c0cc725', N'3d447fa919b64f6883a834036c14aa67', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', N'admin', N'2022-10-13 20:58:04.0000000', N'2020-02-20 16:19:00.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'20ff34fb0466089cb633d73d5a6f08d6', N'd35109c3632c4952a19ecc094943dd71', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'20ff34fb0466089cb633d73d5a6f08d6', N'd35109c3632c4952a19ecc094943dd71', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'2113a4ec7b88b4820dcbbdf96e46bbb7', N'fbc35f067da94a70adb622ddba259352', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', NULL, NULL, N'2019-07-03 19:44:23.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -6981,7 +6984,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'23f42061ed218bdbc1262913c071e1cd', N'e5464aa8fa7b47c580e91593cf9b46dc', N'iz_valid', N'启动状态', NULL, N'0', N'1', N'1', N'int', N'2', N'0', N'', N'air_china_valid', N'', N'', N'list', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'12', N'admin', N'2019-04-24 17:09:49.0000000', N'2019-04-24 14:09:06.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'242cc59b23965a92161eca69ffdbf018', N'd35109c3632c4952a19ecc094943dd71', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'32', N'0', N'', N'', N'', N'', N'text', N'http://www.baidu.com', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'242cc59b23965a92161eca69ffdbf018', N'd35109c3632c4952a19ecc094943dd71', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'32', N'0', N'', N'', N'', N'', N'text', N'http://www.baidu.com', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'246f515a94d43a64454645bb1058ca9c', N'402885e9812f585201812f5852920000', N'cc', N'备注', NULL, N'0', N'1', N'1', N'string', N'1000', N'0', N'', N'', N'', N'', N'textarea', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', NULL, NULL, N'10', NULL, NULL, N'2022-06-04 23:32:06.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -7074,7 +7077,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3087aa8f38c787e066a886d950a9edfa', N'05a3a30dada7411c9109306aa4117068', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2022-10-28 10:31:07.0000000', N'2020-05-06 11:34:31.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'310c86bfd1e67500774c208d601acdc3', N'56870166aba54ebfacb20ba6c770bd73', N'xiala', N'下拉多选', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'list_multi', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'8', N'admin', N'2022-10-30 11:16:57.0000000', N'2020-11-30 21:08:26.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'310c86bfd1e67500774c208d601acdc3', N'56870166aba54ebfacb20ba6c770bd73', N'xiala', N'下拉多选', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'list_multi', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'8', N'admin', N'2023-08-29 10:09:46.0000000', N'2020-11-30 21:08:26.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'31193dc8ceacf979e4042e784ea8278a', N'402880e570a5d7000170a5d700f50000', N'order_fk_id', N'订单外键ID', NULL, N'0', N'0', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', NULL, NULL, N'10', NULL, NULL, N'2020-03-04 21:58:16.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7143,10 +7146,10 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'37e2548874f09ef7d08642a30bc918fa', N'fbc35f067da94a70adb622ddba259352', N'group_name', N'小组名', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', NULL, NULL, N'2019-07-03 19:44:23.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3816bb487c6665a5f2ae7a4dbcbc9095', N'd35109c3632c4952a19ecc094943dd71', N'sel_table', N'下拉字典表', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'username', N'sys_user where username like ''a%''', N'realname', N'sel_search', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'18', N'admin', N'2022-10-30 11:16:46.0000000', N'2021-07-01 12:29:11.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3816bb487c6665a5f2ae7a4dbcbc9095', N'd35109c3632c4952a19ecc094943dd71', N'sel_table', N'下拉字典表', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'username', N'sys_user where username like ''a%''', N'realname', N'sel_search', N'', N'120', N'', N'0', N'{"labelLength":5}', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'18', N'admin', N'2023-09-16 21:25:25.0000000', N'2021-07-01 12:29:11.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'38a2ac11d1bd65b4bbf7b673f25e35e2', N'31cf57ac0ce04a34aff6aa15867d6d95', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'38a2ac11d1bd65b4bbf7b673f25e35e2', N'31cf57ac0ce04a34aff6aa15867d6d95', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'391e7cbd9f29743b11bb555c50547b1f', N'32f75e4043ef4070919dbd4337186a3d', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2019-04-11 10:15:32.0000000', N'2019-03-27 15:54:49.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7161,7 +7164,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3aa6c41ffd2cd6321f91f60e6c6b7191', N'402881fd812267500181226787d90001', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', NULL, NULL, N'2', N'admin', N'2022-06-02 11:13:48.0000000', N'2022-06-02 11:13:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3acd1b022fd8cb6b99534161fa3d6a24', N'd35109c3632c4952a19ecc094943dd71', N'ceck', N'checkbox', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'checkbox', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'15', N'admin', N'2022-10-30 11:16:46.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3acd1b022fd8cb6b99534161fa3d6a24', N'd35109c3632c4952a19ecc094943dd71', N'ceck', N'checkbox', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'checkbox', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'15', N'admin', N'2023-09-16 21:25:25.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3b439859f98e30e34d25e983eb22e408', N'402860816bff91c0016bff91c7010001', N'award_time', N'获奖时间', N'award_time', N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'3', N'admin', N'2019-07-19 18:07:47.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7173,13 +7176,13 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3bf44e68de518f3ddf72b87671d0ff90', N'8994f2817b5a45d9890aa04497a317c5', N'update_by', N'更新人登录名称', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'3', NULL, NULL, N'2019-03-23 11:39:16.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3c4d535332034bdeb744ac08be036fd0', N'31cf57ac0ce04a34aff6aa15867d6d95', N'sex', N'性别', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'list', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3c4d535332034bdeb744ac08be036fd0', N'31cf57ac0ce04a34aff6aa15867d6d95', N'sex', N'性别', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'list', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3c74df163f36d1ac61af6811d2569d6c', N'f9fb8bee1a64472889d077c757b9acc7', N'ds', N'ds', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'10', N'admin', N'2021-08-17 13:58:15.0000000', N'2021-08-17 13:57:48.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3cd2061ea15ce9eeb4b7cf2e544ccb6b', N'd35109c3632c4952a19ecc094943dd71', N'file_kk', N'附件', NULL, N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'file', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'12', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-06-10 20:06:57.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3cd2061ea15ce9eeb4b7cf2e544ccb6b', N'd35109c3632c4952a19ecc094943dd71', N'file_kk', N'附件', NULL, N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'file', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'12', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-06-10 20:06:57.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'3cfd4d60c7d8409ae716a579bcb0910d', N'402860816bff91c0016bff91c0cb0000', N'sys_org_code', N'组织机构编码', N'sys_org_code', N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'16', N'admin', N'2019-07-19 18:09:01.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7230,7 +7233,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'404b516d4f2229f292783db595b02ba1', N'402860816bff91c0016bff91d8830007', N'update_time', N'更新时间', N'update_time', N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'13', N'admin', N'2019-07-19 18:04:41.0000000', N'2019-07-17 18:54:37.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'405de5ea82e54138a0613dd41b006dfb', N'56870166aba54ebfacb20ba6c770bd73', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'405de5ea82e54138a0613dd41b006dfb', N'56870166aba54ebfacb20ba6c770bd73', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'40675bb9f053aabf8823ddf4b5389141', N'b81de38db24047b497d476516f8a0865', N'aa', N'aa', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', NULL, NULL, N'2020-02-24 14:56:08.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7245,7 +7248,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'41d4215c01b0d26871f2cb83d3e532ae', N'402860816bff91c0016bff91c0cb0000', N'bpm_status', N'流程状态', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'1', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'17', N'admin', N'2019-07-19 18:09:01.0000000', N'2019-07-19 15:35:23.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'422a44a15fa39fd57c3c23eb601f7c03', N'56870166aba54ebfacb20ba6c770bd73', N'descc', N'描述', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'422a44a15fa39fd57c3c23eb601f7c03', N'56870166aba54ebfacb20ba6c770bd73', N'descc', N'描述', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'42cccfa014c9e131a0a1b23f563d3688', N'402860816bff91c0016bffa220a9000b', N'sex', N'性别', N'sex', N'0', N'1', N'1', N'string', N'20', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'6', N'admin', N'2019-07-22 16:15:32.0000000', N'2019-07-17 19:12:24.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7284,7 +7287,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'46c13ceab79269d151c975bf11847a2e', N'553a4172fde446419cb602dc70f9ee67', N'ldzjs', N'联动组件三', NULL, N'0', N'1', N'1', N'string', N'255', N'0', NULL, N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'31', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'46f1a875f86a4f48d0540ad0d5e667d7', N'56870166aba54ebfacb20ba6c770bd73', N'order_date', N'下单时间', NULL, N'0', N'1', N'1', N'Datetime', N'32', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'46f1a875f86a4f48d0540ad0d5e667d7', N'56870166aba54ebfacb20ba6c770bd73', N'order_date', N'下单时间', NULL, N'0', N'1', N'1', N'Datetime', N'32', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'470a3a02210932c55950cd673c50705b', N'553a4172fde446419cb602dc70f9ee67', N'geshu', N'integer类型', NULL, N'0', N'1', N'1', N'int', N'9', N'0', NULL, N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'34', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7293,7 +7296,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'47c21a6b45e59a6b70bb9c0cc4510a68', N'1acb6f81a1d9439da6cc4e868617b565', N'integral_val', N'积分值', NULL, N'0', N'1', N'1', N'int', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'13', N'admin', N'2019-06-10 14:47:14.0000000', N'2019-04-23 22:58:19.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'47fa05530f3537a1be8f9e7a9e98be82', N'd35109c3632c4952a19ecc094943dd71', N'sex', N'性别', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'list', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'1')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'47fa05530f3537a1be8f9e7a9e98be82', N'd35109c3632c4952a19ecc094943dd71', N'sex', N'性别', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'list', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'1')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'4851697fdf63709d2bc7451b7415f4af', N'32f75e4043ef4070919dbd4337186a3d', N'sex', N'性别', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'1', N'sex', N'', N'', N'list', N'', N'120', NULL, N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2019-04-11 10:15:32.0000000', N'2019-03-27 15:54:49.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7338,7 +7341,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'4c570c5cf05590348e12621ca62773cf', N'402860816aa5921f016aa5921f480000', N'name', N'请假人', N'name', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'2', N'admin', N'2019-05-11 15:31:54.0000000', N'2019-05-11 14:26:19.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'4c8d4e40c7f939b403fd804add16e7f0', N'31cf57ac0ce04a34aff6aa15867d6d95', N'xia_time', N'下单时间', NULL, N'0', N'1', N'1', N'Datetime', N'32', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'11', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'4c8d4e40c7f939b403fd804add16e7f0', N'31cf57ac0ce04a34aff6aa15867d6d95', N'xia_time', N'下单时间', NULL, N'0', N'1', N'1', N'Datetime', N'32', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'11', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'4cacfa054e96791ab938b5c8f8e02cd1', N'27fc5f91274344afa7673a732b279939', N'bpm_status', N'流程状态', NULL, N'0', N'1', N'1', N'string', N'2', N'0', N'', N'bpm_status', N'', N'', N'list', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'9', NULL, NULL, N'2019-07-01 16:28:20.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7371,7 +7374,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'508eb28e1409a2a9501cdf6fd7eb24c7', N'dbf4675875e14676a3f9a8b2b8941140', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', NULL, NULL, N'2019-05-27 18:02:07.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'509a4f63f02e784bc04499a6a9be8528', N'd35109c3632c4952a19ecc094943dd71', N'update_by', N'更新人登录名称', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2022-10-30 11:16:45.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'509a4f63f02e784bc04499a6a9be8528', N'd35109c3632c4952a19ecc094943dd71', N'update_by', N'更新人登录名称', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'50a1fc04f08226f0e29a62e39d2f87fc', N'402881fd812267500181226787d90001', N'sys_org_code', N'所属部门', NULL, N'0', N'1', N'1', N'string', N'64', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', NULL, NULL, N'5', N'admin', N'2022-06-02 11:13:48.0000000', N'2022-06-02 11:13:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7389,7 +7392,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'524d75f1e4fed1167c80477658290ddf', N'402881fd812267500181226787d90001', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'10', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'group', NULL, NULL, N'7', N'admin', N'2022-06-02 11:13:48.0000000', N'2022-06-02 11:13:39.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'1')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'526ceb0666c46999bd457a1c18846fbf', N'31cf57ac0ce04a34aff6aa15867d6d95', N'pic', N'图片', NULL, N'0', N'1', N'1', N'string', N'300', N'0', N'', N'', N'', N'', N'image', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'19', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'526ceb0666c46999bd457a1c18846fbf', N'31cf57ac0ce04a34aff6aa15867d6d95', N'pic', N'图片', NULL, N'0', N'1', N'1', N'string', N'300', N'0', N'', N'', N'', N'', N'image', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'19', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'52975c3f03325de8233d3459b2230b09', N'f9fb8bee1a64472889d077c757b9acc7', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'1', N'single', N'', N'', N'1', N'admin', N'2021-08-17 13:58:15.0000000', N'2021-08-17 13:57:48.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7431,7 +7434,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'57552a4f0b7b5c096ab8985ced57cc7d', N'cb2d8534a2f544bc9c618dd49da66336', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', N'admin', N'2020-02-24 17:22:42.0000000', N'2020-02-24 15:15:14.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'57a277bbf4cac35fb8a606e3aa4abc6c', N'31cf57ac0ce04a34aff6aa15867d6d95', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'10', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'8', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'57a277bbf4cac35fb8a606e3aa4abc6c', N'31cf57ac0ce04a34aff6aa15867d6d95', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'10', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'8', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'581d8e8ce270b762458121b1dea0be9a', N'8d66ea41c7cc4ef9ab3aab9055657fc9', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', NULL, NULL, N'2020-05-07 22:46:32.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7476,10 +7479,10 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'5ab702dbc37d6fd8d3a1093fda7223bf', N'53a3e82b54b946c2b904f605875a275c', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2022-10-25 11:10:48.0000000', N'2020-05-07 22:49:47.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'5abea6889600033da866909852462af1', N'31cf57ac0ce04a34aff6aa15867d6d95', N'ccc', N'单选框', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'radio', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'23', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'5abea6889600033da866909852462af1', N'31cf57ac0ce04a34aff6aa15867d6d95', N'ccc', N'单选框', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'sex', N'', N'', N'radio', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'23', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'5b17ba693745c258f6b66380ac851e5f', N'd35109c3632c4952a19ecc094943dd71', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'0', N'admin', N'2022-10-30 11:16:45.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'5b17ba693745c258f6b66380ac851e5f', N'd35109c3632c4952a19ecc094943dd71', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'0', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'5c25a6636c8d2c93d2859c7db6cb8281', N'553a4172fde446419cb602dc70f9ee67', N'xldx', N'字典下拉多选框', NULL, N'0', N'1', N'1', N'string', N'250', N'0', NULL, N'urgent_level', N'', N'', N'list_multi', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'19', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7554,7 +7557,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'654362725195829005036b3db47ec826', N'402860816bff91c0016bffa220a9000b', N'post', N'职务', N'post', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'4', N'admin', N'2019-07-22 16:15:32.0000000', N'2019-07-17 19:12:24.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'6553f398286b38e669a1e0f5cb8588ea', N'31cf57ac0ce04a34aff6aa15867d6d95', N'birthday', N'生日', NULL, N'0', N'1', N'1', N'Date', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'10', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'6553f398286b38e669a1e0f5cb8588ea', N'31cf57ac0ce04a34aff6aa15867d6d95', N'birthday', N'生日', NULL, N'0', N'1', N'1', N'Date', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'10', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'656ec51bb57da5a47076f8a26053bbbb', N'553a4172fde446419cb602dc70f9ee67', N'zdmrz', N'自定义查询', NULL, N'0', N'1', N'1', N'string', N'50', N'0', NULL, N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'1', N'1', N'1', N'1', N'0', N'single', N'', N'', N'37', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'1', N'', N'sex', N'', N'list', N'1', NULL, NULL, N'0')
@@ -7587,7 +7590,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'6a0082c8ffbae092e99689520f1c83f7', N'4fb8e12a697f4d5bbe9b9fb1e9009486', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'9', N'admin', N'2020-11-26 17:28:14.0000000', N'2020-04-10 19:47:01.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'6a30c2e6f01ddd24349da55a37025cc0', N'd35109c3632c4952a19ecc094943dd71', N'top_pic', N'头像', NULL, N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'image', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'11', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-06-10 20:06:56.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'6a30c2e6f01ddd24349da55a37025cc0', N'd35109c3632c4952a19ecc094943dd71', N'top_pic', N'头像', NULL, N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'image', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'11', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-06-10 20:06:56.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'6ab2e3d9b944701b405fb1a5ed167012', N'86bf17839a904636b7ed96201b2fa6ea', N'zong_price', N'单品总价', NULL, N'0', N'1', N'1', N'double', N'10', N'3', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'10', N'admin', N'2020-05-14 21:18:49.0000000', N'2020-05-08 23:48:31.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -7743,7 +7746,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7c8c5f45cb994038a51febdb0112a995', N'553a4172fde446419cb602dc70f9ee67', N'jycs', N'唯一检验', NULL, N'0', N'1', N'1', N'string', N'50', N'0', NULL, N'', N'', N'', N'text', N'', N'120', N'only', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'35', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7c8d8bdb8c80340305162a1b8c71930a', N'31cf57ac0ce04a34aff6aa15867d6d95', N'salary', N'薪资', NULL, N'0', N'1', N'1', N'double', N'10', N'3', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'12', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7c8d8bdb8c80340305162a1b8c71930a', N'31cf57ac0ce04a34aff6aa15867d6d95', N'salary', N'薪资', NULL, N'0', N'1', N'1', N'double', N'10', N'3', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'12', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7ca2ae42e686e917f766edd2570c5141', N'553a4172fde446419cb602dc70f9ee67', N'shijian', N'时间', NULL, N'0', N'1', N'1', N'string', N'50', N'0', NULL, N'', N'', N'', N'time', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'group', N'', N'', N'15', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7764,7 +7767,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7d27d79157dff60f847d98cbc4e66e81', N'b493c5fd4fa64a3a84e74ee171763e37', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', NULL, NULL, N'2021-06-07 18:13:37.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7d4a30a4163a86c3ed37a8c71ceacb3e', N'31cf57ac0ce04a34aff6aa15867d6d95', N'sys_org_code', N'所属部门', NULL, N'0', N'1', N'1', N'string', N'64', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7d4a30a4163a86c3ed37a8c71ceacb3e', N'31cf57ac0ce04a34aff6aa15867d6d95', N'sys_org_code', N'所属部门', NULL, N'0', N'1', N'1', N'string', N'64', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'7e066f60680158d47b328ef519d80e49', N'beee191324fd40c1afec4fda18bd9d47', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2019-04-13 13:41:13.0000000', N'2019-04-13 13:40:56.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -7797,7 +7800,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'81ed9556c9fda1bbb46d94a53a6c90c7', N'402860816bff91c0016bff91c0cb0000', N'depart_name', N'部门名称', N'depart', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'7', N'admin', N'2019-07-19 18:09:01.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'81f06f6fc5eb58be87c98dee8e5d9c14', N'31cf57ac0ce04a34aff6aa15867d6d95', N'dep_id', N'部门', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'sel_depart', N'', N'120', N'', N'0', N'{"multiSelect":false,"store": "orgCode"}', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'16', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'81f06f6fc5eb58be87c98dee8e5d9c14', N'31cf57ac0ce04a34aff6aa15867d6d95', N'dep_id', N'部门', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'sel_depart', N'', N'120', N'', N'0', N'{"multiSelect":false,"store": "orgCode"}', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'16', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'825e5e14598ac43d024b1b3989aee33d', N'9ab817fd4c2e4e7ba6652c4fa46af389', N'birthday', N'生日', NULL, N'0', N'1', N'1', N'Date', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'10', N'admin', N'2022-11-04 10:58:03.0000000', N'2022-06-04 22:53:38.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -7866,7 +7869,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'86f29e9919766e0d1128263608c016a0', N'997ee931515a4620bc30a9c1246429a9', N'type_name', N'商品分类', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2020-05-03 00:57:44.0000000', N'2020-05-03 00:56:56.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'873e2bb041b17bff77d3aca72900ea1b', N'56870166aba54ebfacb20ba6c770bd73', N'order_code', N'订单编码', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'${shop_order_num}', N'1', N'1', N'1', N'0', N'single', N'', N'', N'5', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'873e2bb041b17bff77d3aca72900ea1b', N'56870166aba54ebfacb20ba6c770bd73', N'order_code', N'订单编码', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'${shop_order_num}', N'1', N'1', N'1', N'0', N'single', N'', N'', N'5', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'8756fbb5c23a0258e029e0cb3c0a045c', N'402880e5721355dd01721355dd390000', N'price', N'价格', NULL, N'0', N'1', N'1', N'double', N'10', N'3', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', NULL, NULL, N'8', NULL, NULL, N'2020-05-14 21:18:14.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -7890,7 +7893,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'88a12570e14c9f6f442e731ae5ad0eb1', N'beee191324fd40c1afec4fda18bd9d47', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2019-04-13 13:41:13.0000000', N'2019-04-13 13:40:56.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'88de72456c03410c364c80095aaa96eb', N'd35109c3632c4952a19ecc094943dd71', N'pop', N'弹窗', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'14', N'admin', N'2022-10-30 11:16:46.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'88de72456c03410c364c80095aaa96eb', N'd35109c3632c4952a19ecc094943dd71', N'pop', N'弹窗', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'14', N'admin', N'2023-09-16 21:25:25.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'89370ae67e241fa5d1e47d22adeaca7b', N'402880eb71d52dc30171d52dc3a10000', N'date', N'日期', NULL, N'0', N'1', N'1', N'string', N'200', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'#{date}', N'0', N'1', N'1', N'0', N'single', NULL, NULL, N'4', NULL, NULL, N'2020-05-02 19:37:58.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -7932,7 +7935,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'8c6518fec11fc4769ba4eb770c9e00f7', N'4028839a6de2ebd3016de2ebd3870000', N'integral_val', N'积分值', N'integral_val', N'0', N'1', N'1', N'int', N'10', N'0', NULL, NULL, NULL, NULL, N'text', NULL, N'120', NULL, N'0', NULL, NULL, N'0', N'1', N'1', N'0', N'group', NULL, NULL, N'11', NULL, NULL, N'2019-10-19 15:29:30.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'8ca56210938fbe649f840e505eb9fd41', N'56870166aba54ebfacb20ba6c770bd73', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'8ca56210938fbe649f840e505eb9fd41', N'56870166aba54ebfacb20ba6c770bd73', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'8e080f4ded1e3b2a1daa5b11eca4a0ff', N'4adec929a6594108bef5b35ee9966e9f', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'7', N'admin', N'2020-04-10 19:43:38.0000000', N'2020-04-10 19:35:58.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -7971,7 +7974,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'909b3de0c8a48a21ef8cf98eb4831689', N'56efb74326e74064b60933f6f8af30ea', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2020-07-10 16:53:27.0000000', N'2020-05-08 23:45:32.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'90a822b8a63bbbc1e9575c9f4e21e021', N'd35109c3632c4952a19ecc094943dd71', N'descc', N'描述', NULL, N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'textarea', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'8', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'90a822b8a63bbbc1e9575c9f4e21e021', N'd35109c3632c4952a19ecc094943dd71', N'descc', N'描述', NULL, N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'textarea', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'8', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'90f39a6e29dae2e1fbb59d7d605f7c09', N'1acb6f81a1d9439da6cc4e868617b565', N'iz_valid', N'启用状态', NULL, N'0', N'1', N'1', N'string', N'2', N'0', N'', N'air_china_valid', N'', N'', N'list', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'11', N'admin', N'2019-06-10 14:47:14.0000000', N'2019-04-23 22:58:19.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8001,7 +8004,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'941ef1bddbf91fcd3a437a7a7dd347e7', N'feea98637c2144caae7c5d56a815a245', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', NULL, NULL, N'2021-10-27 10:24:24.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'94314c4176aa2a81b20dce463578eb24', N'31cf57ac0ce04a34aff6aa15867d6d95', N'remark', N'备注', NULL, N'0', N'1', N'1', N'string', N'1000', N'0', N'', N'', N'', N'', N'textarea', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'9', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'94314c4176aa2a81b20dce463578eb24', N'31cf57ac0ce04a34aff6aa15867d6d95', N'remark', N'备注', NULL, N'0', N'1', N'1', N'string', N'1000', N'0', N'', N'', N'', N'', N'textarea', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'9', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'947174892512ea97fafde899d427ea7e', N'402860816bff91c0016bff91c0cb0000', N'real_name', N'姓名', N'real_name', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'4', N'admin', N'2019-07-19 18:09:01.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8022,7 +8025,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'960d2847922b61dadeb3518ef55fb0c1', N'1acb6f81a1d9439da6cc4e868617b565', N'wl_name', N'物料名称', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'7', N'admin', N'2019-06-10 14:47:14.0000000', N'2019-04-23 22:58:19.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'96299c1224b35ee352fdbaf24d69eee5', N'31cf57ac0ce04a34aff6aa15867d6d95', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'96299c1224b35ee352fdbaf24d69eee5', N'31cf57ac0ce04a34aff6aa15867d6d95', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'4', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'9665f02764774fdd77c19923d3ff3c3e', N'4028318169e81b970169e81b97650000', N'cost_time', N'耗时', N'cost_time', N'0', N'1', N'1', N'string', N'19', N'0', NULL, NULL, NULL, NULL, N'text', NULL, N'120', NULL, N'0', NULL, NULL, N'0', N'1', N'1', N'0', N'group', NULL, NULL, N'12', NULL, NULL, N'2019-04-04 19:28:36.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8040,7 +8043,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'9765efa2cafde6d0ede2215848c9e80b', N'32f75e4043ef4070919dbd4337186a3d', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'0', N'admin', N'2019-04-11 10:15:32.0000000', N'2019-03-27 15:54:49.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'978df3771e9d749cc42d4e6b43d86f93', N'31cf57ac0ce04a34aff6aa15867d6d95', N'name', N'用户名', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'978df3771e9d749cc42d4e6b43d86f93', N'31cf57ac0ce04a34aff6aa15867d6d95', N'name', N'用户名', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'9874c79ce2e8663867d20ba4a5058ebd', N'553a4172fde446419cb602dc70f9ee67', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', NULL, NULL, NULL, NULL, N'text', NULL, N'120', N'', N'1', NULL, NULL, N'0', N'0', N'0', N'1', N'single', NULL, NULL, N'0', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, N'0', NULL, NULL, NULL)
@@ -8115,7 +8118,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a1f5daba36f536e7acf6a939826183b0', N'fb19fb067cd841f9ae93d4eb3b883dc0', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'0', NULL, NULL, N'2019-03-23 11:39:48.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a2271c3d2b0b68d35a697958957f1f0e', N'31cf57ac0ce04a34aff6aa15867d6d95', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a2271c3d2b0b68d35a697958957f1f0e', N'31cf57ac0ce04a34aff6aa15867d6d95', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a232d608434d15fcecd8a3f31a9044b2', N'86bf17839a904636b7ed96201b2fa6ea', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2020-05-14 21:18:49.0000000', N'2020-05-08 23:48:31.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -8136,7 +8139,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a4e83c528933fc7d3a4230d4141a5a20', N'553a4172fde446419cb602dc70f9ee67', N'dhwb', N'多行文本框', NULL, N'0', N'1', N'1', N'string', N'250', N'0', NULL, N'', N'', N'', N'textarea', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'18', N'admin', N'2022-10-14 09:31:05.0000000', N'2022-10-13 20:59:58.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a503e97dd837d1aac8496f90ab26a22e', N'31cf57ac0ce04a34aff6aa15867d6d95', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a503e97dd837d1aac8496f90ab26a22e', N'31cf57ac0ce04a34aff6aa15867d6d95', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a580da2ed71670c4763a048a3cbd8b53', N'402885e9812f585201812f5852920000', N'update_by', N'更新人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', NULL, NULL, N'3', NULL, NULL, N'2022-06-04 23:32:06.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
@@ -8175,7 +8178,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a911f8fb8c3004c4573344b9a318b2fa', N'402885e9812f585201812f5852920000', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', NULL, NULL, N'2', NULL, NULL, N'2022-06-04 23:32:06.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a934e6c0c30f680569caab99f3f1a12a', N'31cf57ac0ce04a34aff6aa15867d6d95', N'daa_type', N'物料分类', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'cat_tree', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'22', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a934e6c0c30f680569caab99f3f1a12a', N'31cf57ac0ce04a34aff6aa15867d6d95', N'daa_type', N'物料分类', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'cat_tree', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'22', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'a940adc4585fa3b5bd2114ea9abe8491', N'402860816bff91c0016bff91ca7e0002', N'cert_level', N'证书级别', N'cert_level', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'5', N'admin', N'2019-07-19 18:07:13.0000000', N'2019-07-17 18:54:33.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8232,7 +8235,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ae31da96f38fc2941cb93d1bb1ab9431', N'deea5a8ec619460c9245ba85dbc59e80', N'product_name', N'产品名字', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2020-05-03 01:01:18.0000000', N'2019-04-20 11:41:19.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ae5c695de592058b66d4ea7e7285e055', N'31cf57ac0ce04a34aff6aa15867d6d95', N'kai_guan', N'开关', NULL, N'0', N'1', N'1', N'string', N'1', N'0', N'', N'', N'', N'', N'switch', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'17', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ae5c695de592058b66d4ea7e7285e055', N'31cf57ac0ce04a34aff6aa15867d6d95', N'kai_guan', N'开关', NULL, N'0', N'1', N'1', N'string', N'1', N'0', N'', N'', N'', N'', N'switch', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'17', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ae77bb317366622698c8ab9bf2325833', N'deea5a8ec619460c9245ba85dbc59e80', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2020-05-03 01:01:18.0000000', N'2019-04-20 11:41:19.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -8307,7 +8310,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'b4e4fe6774e9d7b5f72d2056b47d18ac', N'5517e93b148a42a7b82d5f3f94542dcf', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', NULL, NULL, N'2022-07-19 19:36:53.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'b53203fc52d067bb4730dbcb7e496bd3', N'56870166aba54ebfacb20ba6c770bd73', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'0', N'admin', N'2022-10-30 11:16:57.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'b53203fc52d067bb4730dbcb7e496bd3', N'56870166aba54ebfacb20ba6c770bd73', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'0', N'admin', N'2023-08-29 10:09:46.0000000', N'2019-04-20 11:38:39.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'b5cfd3c9691a884430f3d9cd5ecb211f', N'e2faf977fdaf4b25a524f58c2441a51c', N'create_by', N'创建人', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2019-06-10 17:27:00.0000000', N'2019-04-24 17:12:11.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8346,7 +8349,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'b9fbace24688c9c9a8c9be72c1d014e7', N'402860816bff91c0016bffa220a9000b', N'phone', N'电话', N'phone', N'0', N'1', N'1', N'string', N'20', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'18', N'admin', N'2019-07-22 16:15:32.0000000', N'2019-07-17 19:12:24.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ba17414716b12b51c85f9d1f6f1e5787', N'd35109c3632c4952a19ecc094943dd71', N'chegnshi', N'城市', NULL, N'0', N'1', N'1', N'string', N'300', N'0', N'', N'', N'', N'', N'pca', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'13', N'admin', N'2022-10-30 11:16:46.0000000', N'2020-11-26 16:54:45.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ba17414716b12b51c85f9d1f6f1e5787', N'd35109c3632c4952a19ecc094943dd71', N'chegnshi', N'城市', NULL, N'0', N'1', N'1', N'string', N'300', N'0', N'', N'', N'', N'', N'pca', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'13', N'admin', N'2023-09-16 21:25:25.0000000', N'2020-11-26 16:54:45.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ba5f4b2affa94f36eda7f6f133db7ae3', N'402860816bff91c0016bff91d2810005', N'workplace', N'工作单位', N'workplace', N'0', N'1', N'1', N'string', N'255', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'6', N'admin', N'2019-07-19 18:05:55.0000000', N'2019-07-17 18:54:35.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8355,7 +8358,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ba6f3e762d6e3ea1068a085ec2f7e501', N'56efb74326e74064b60933f6f8af30ea', N'update_time', N'更新日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'5', N'admin', N'2020-07-10 16:53:27.0000000', N'2020-05-08 23:45:32.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'babdc0168d128f3656d00fdfb41a8073', N'31cf57ac0ce04a34aff6aa15867d6d95', N'file2', N'文件', N'file2', N'0', N'1', N'1', N'string', N'300', N'0', N'', N'', N'', N'', N'file', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'18', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'babdc0168d128f3656d00fdfb41a8073', N'31cf57ac0ce04a34aff6aa15867d6d95', N'file2', N'文件', N'file2', N'0', N'1', N'1', N'string', N'300', N'0', N'', N'', N'', N'', N'file', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'18', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'bad02e68ea37bf387337516af84a1ddb', N'73162c3b8161413e8ecdca7eb288d0c9', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2019-07-01 14:23:32.0000000', N'2019-06-10 15:18:34.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8397,7 +8400,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'be5eeda7d51dace73d3818bd8467b53b', N'402860816bff91c0016bff91c0cb0000', N'update_time', N'更新时间', N'update_time', N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'15', N'admin', N'2019-07-19 18:09:01.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'be868eed386da3cfcf49ea9afcdadf11', N'd35109c3632c4952a19ecc094943dd71', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2022-10-30 11:16:45.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'be868eed386da3cfcf49ea9afcdadf11', N'd35109c3632c4952a19ecc094943dd71', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'2', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'bec3082fc5f0f194be5cd72cc2866ff4', N'e5464aa8fa7b47c580e91593cf9b46dc', N'wl_name', N'物料名字', NULL, N'0', N'1', N'1', N'string', N'200', N'0', N'', N'wl_code', N'air_china_materiel', N'wl_name', N'list', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'6', N'admin', N'2019-04-24 17:09:49.0000000', N'2019-04-24 11:05:10.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8433,13 +8436,13 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c0d66c95773774e7ac1f2a88df307e7a', N'402860816aa5921f016aa5921f480000', N'reason', N'请假原因', N'reason', N'0', N'1', N'1', N'string', N'500', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'6', N'admin', N'2019-05-11 15:31:54.0000000', N'2019-05-11 14:26:19.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c13397048e7ba97e3686d1a6026116b6', N'31cf57ac0ce04a34aff6aa15867d6d95', N'shengshiqu', N'省市区', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'pca', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'20', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c13397048e7ba97e3686d1a6026116b6', N'31cf57ac0ce04a34aff6aa15867d6d95', N'shengshiqu', N'省市区', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'pca', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'20', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c29216d975fee50af175bca8c664a475', N'e67d26b610dd414c884c4dbb24e71ce3', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2019-04-24 11:03:32.0000000', N'2019-04-24 11:02:56.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c2ae3c798c9a74c53e7a6970075de85d', N'31cf57ac0ce04a34aff6aa15867d6d95', N'pop_cc', N'弹出报表', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'name', N'demo', N'pop_cc', N'popup', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'14', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c2ae3c798c9a74c53e7a6970075de85d', N'31cf57ac0ce04a34aff6aa15867d6d95', N'pop_cc', N'弹出报表', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'name', N'demo', N'pop_cc', N'popup', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'14', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c2b9eae184afe56d59ea7940d77cfced', N'4adec929a6594108bef5b35ee9966e9f', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'1', N'single', N'', N'', N'1', N'admin', N'2020-04-10 19:43:38.0000000', N'2020-04-10 19:35:57.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -8487,7 +8490,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c6730e00df5efd77fedf181df29102de', N'402860816bff91c0016bff91c7010001', N'update_by', N'更新人', N'update_by', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'9', N'admin', N'2019-07-19 18:07:47.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c71bd0a3ab8fd33632f23359bef14e97', N'31cf57ac0ce04a34aff6aa15867d6d95', N'user_id', N'用户', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'sel_user', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'15', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c71bd0a3ab8fd33632f23359bef14e97', N'31cf57ac0ce04a34aff6aa15867d6d95', N'user_id', N'用户', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'sel_user', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'15', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'c75a7cb0a21958aa7ca5442f66019669', N'e9faf717024b4aae95cff224ae9b6d97', N'depart', N'所属部门', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'9', N'admin', N'2019-07-03 18:23:49.0000000', N'2019-07-03 18:22:35.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8532,7 +8535,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cb50a5991ca29e617aa32e49e92c01e7', N'09fd28e4b7184c1a9668496a5c496450', N'age', N'年龄', NULL, N'0', N'1', N'1', N'int', N'10', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'10', N'admin', N'2022-05-07 19:05:56.0000000', N'2020-05-08 23:51:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cb7da49a981a1b0acc5f7e8a0130bdcd', N'd35109c3632c4952a19ecc094943dd71', N'user_code', N'用户编码', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'0', N'0', N'single', N'', N'', N'10', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-05-11 16:26:37.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cb7da49a981a1b0acc5f7e8a0130bdcd', N'd35109c3632c4952a19ecc094943dd71', N'user_code', N'用户编码', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'0', N'0', N'single', N'', N'', N'10', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-05-11 16:26:37.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cb871284e845e26e88242a96fac9c576', N'402860816bff91c0016bff91c7010001', N'order_no', N'序号', N'order_no', N'0', N'1', N'1', N'int', N'10', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'6', N'admin', N'2019-07-19 18:07:47.0000000', N'2019-07-17 18:54:32.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8559,7 +8562,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cf4c5a4c06ae6bac701edfeedfcd16aa', N'd3ae1c692b9640e0a091f8c46e17bb01', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', NULL, NULL, N'2019-07-24 14:47:30.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cfd0623c8f7a97e49ab1b176dbbe43da', N'31cf57ac0ce04a34aff6aa15867d6d95', N'accc', N'富文本', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'umeditor', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'21', N'admin', N'2023-03-04 16:42:36.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cfd0623c8f7a97e49ab1b176dbbe43da', N'31cf57ac0ce04a34aff6aa15867d6d95', N'accc', N'富文本', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'umeditor', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'21', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'cfeb6491427aec2b4db9694af867da23', N'e9faf717024b4aae95cff224ae9b6d97', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2019-07-03 18:23:49.0000000', N'2019-07-03 18:22:35.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8574,7 +8577,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd0d1be336726df9c41f2173f8886ba35', N'997ee931515a4620bc30a9c1246429a9', N'has_child', N'是否有子节点', NULL, N'0', N'1', N'1', N'string', N'3', N'0', N'', N'yn', N'', N'', N'list', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'10', N'admin', N'2020-05-03 00:57:44.0000000', N'2020-05-03 00:56:56.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd11ce01cafc04f9430859c6c7688436d', N'31cf57ac0ce04a34aff6aa15867d6d95', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'1', N'single', N'', N'', N'0', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd11ce01cafc04f9430859c6c7688436d', N'31cf57ac0ce04a34aff6aa15867d6d95', N'id', N'主键', NULL, N'1', N'0', N'1', N'string', N'36', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'1', N'single', N'', N'', N'0', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd14e47befe47925b1440d584f4ca56fc', N'09fd28e4b7184c1a9668496a5c496450', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2022-05-07 19:05:56.0000000', N'2020-05-08 23:51:49.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
@@ -8598,7 +8601,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd48bfd2a840f9b1d00bd3b5599dca0f0', N'402860816bff91c0016bff91cda80003', N'post', N'职务', N'post', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'7', N'admin', N'2019-07-19 18:06:36.0000000', N'2019-07-17 18:54:34.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd4d8cae3cd9ea93e378fc14303eee105', N'd35109c3632c4952a19ecc094943dd71', N'create_by', N'创建人登录名称', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2022-10-30 11:16:45.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd4d8cae3cd9ea93e378fc14303eee105', N'd35109c3632c4952a19ecc094943dd71', N'create_by', N'创建人登录名称', NULL, N'0', N'1', N'1', N'string', N'50', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'', N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'1', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'd4dea775487aef5a7aea41791d3a65db', N'e5464aa8fa7b47c580e91593cf9b46dc', N'cycle_time', N'发放周期(年)', NULL, N'0', N'1', N'1', N'string', N'32', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'11', N'admin', N'2019-04-24 17:09:49.0000000', N'2019-04-24 14:09:06.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8748,7 +8751,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'e4d7f95340e73a54e8ff3f66b0613513', N'56efb74326e74064b60933f6f8af30ea', N'create_time', N'创建日期', NULL, N'0', N'1', N'1', N'Datetime', N'20', N'0', N'', N'', N'', N'', N'datetime', N'', N'120', NULL, N'0', N'', N'', N'0', N'0', N'0', N'0', N'single', N'', N'', N'3', N'admin', N'2020-07-10 16:53:27.0000000', N'2020-05-08 23:45:32.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'e50b4398731e06572c247993a0dcc38d', N'd35109c3632c4952a19ecc094943dd71', N'name', N'用户名', NULL, N'0', N'1', N'1', N'string', N'200', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'*', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'5', N'admin', N'2022-10-30 11:16:46.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'1')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'e50b4398731e06572c247993a0dcc38d', N'd35109c3632c4952a19ecc094943dd71', N'name', N'用户名', NULL, N'0', N'1', N'1', N'string', N'200', N'0', N'', N'', N'', N'', N'text', N'', N'120', N'*', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'5', N'admin', N'2023-09-16 21:25:25.0000000', N'2019-03-15 14:24:35.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'1')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'e53f53766d1f7718b3ee5eabe105b969', N'402860816bff91c0016bffa220a9000b', N'social_insurance_time', N'五险一金日期', N'social_insurance_time', N'0', N'1', N'1', N'Datetime', N'0', N'0', N'', N'', N'', N'', N'date', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'38', N'admin', N'2019-07-22 16:15:32.0000000', N'2019-07-17 19:12:24.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -8913,7 +8916,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'f5d2475aec4b9016dfc0c8772e1704ea', N'402880eb71d52dc30171d52dc3a10000', N'code', N'编码', NULL, N'0', N'1', N'1', N'string', N'200', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'${order_num_rule_param}', N'0', N'1', N'1', N'0', N'single', NULL, NULL, N'2', NULL, NULL, N'2020-05-02 19:37:59.0000000', N'admin', N'', N'', N'', N'', N'', NULL, N'0', NULL, NULL, N'0')
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'f6076d9c662a0adddb39a91cccb4c993', N'd35109c3632c4952a19ecc094943dd71', N'xiamuti', N'下拉多选', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'sex', N'', N'', N'list_multi', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'16', N'admin', N'2022-10-30 11:16:46.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'f6076d9c662a0adddb39a91cccb4c993', N'd35109c3632c4952a19ecc094943dd71', N'xiamuti', N'下拉多选', NULL, N'0', N'1', N'1', N'string', N'100', N'0', N'', N'sex', N'', N'', N'list_multi', N'', N'120', N'', N'0', N'', N'', N'1', N'1', N'1', N'0', N'single', N'', N'', N'16', N'admin', N'2023-09-16 21:25:25.0000000', N'2020-11-26 18:02:20.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'f6431abe33976df2491df14db01591fe', N'402881e6760269a20176026d25650002', N'key_word', N'关键词', N'key_word', N'0', N'1', N'1', N'string', N'255', N'0', NULL, NULL, NULL, NULL, N'text', NULL, N'120', NULL, N'0', NULL, NULL, N'0', N'1', N'1', N'0', N'single', NULL, NULL, N'3', NULL, NULL, N'2020-11-26 10:41:17.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -9027,7 +9030,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ff601f75d0e7ced226748eb8fba2c896', N'402860816bff91c0016bff91d8830007', N'relation', N'关系', N'relation', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'4', N'admin', N'2019-07-19 18:04:41.0000000', N'2019-07-17 18:54:37.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ffa7afa8b643eaf486f34852d415965b', N'31cf57ac0ce04a34aff6aa15867d6d95', N'log_txt', N'大文本', NULL, N'0', N'1', N'1', N'Text', N'0', N'0', N'', N'', N'', N'', N'markdown', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'13', N'admin', N'2023-03-04 16:42:35.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
+INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ffa7afa8b643eaf486f34852d415965b', N'31cf57ac0ce04a34aff6aa15867d6d95', N'log_txt', N'大文本', NULL, N'0', N'1', N'1', N'Text', N'0', N'0', N'', N'', N'', N'', N'markdown', N'', N'120', N'', N'0', N'', N'', N'0', N'1', N'1', N'0', N'single', N'', N'', N'13', N'admin', N'2023-08-24 16:38:45.0000000', N'2022-10-29 16:45:49.0000000', N'admin', N'', N'', N'', N'', N'', N'text', N'0', NULL, NULL, N'0')
 GO
 
 INSERT INTO [dbo].[onl_cgform_field] ([id], [cgform_head_id], [db_field_name], [db_field_txt], [db_field_name_old], [db_is_key], [db_is_null], [db_is_persist], [db_type], [db_length], [db_point_length], [db_default_val], [dict_field], [dict_table], [dict_text], [field_show_type], [field_href], [field_length], [field_valid_type], [field_must_input], [field_extend_json], [field_default_value], [is_query], [is_show_form], [is_show_list], [is_read_only], [query_mode], [main_table], [main_field], [order_num], [update_by], [update_time], [create_time], [create_by], [converter], [query_def_val], [query_dict_text], [query_dict_field], [query_dict_table], [query_show_type], [query_config_flag], [query_valid_type], [query_must_input], [sort_flag]) VALUES (N'ffacafee9fa46eb297ca3252f95acef9', N'402860816bff91c0016bffa220a9000b', N'school', N'毕业学校', N'school', N'0', N'1', N'1', N'string', N'100', N'0', N'', N'', N'', N'', N'text', N'', N'120', NULL, N'0', N'', N'', N'0', N'1', N'1', N'0', N'group', N'', N'', N'9', N'admin', N'2019-07-22 16:15:32.0000000', N'2019-07-17 19:12:24.0000000', N'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -9330,7 +9333,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'05a3a30dada7411c9109306aa4117068', N'test_note', N'1', N'15', N'请假单@JS增强示例', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, NULL, NULL, NULL, NULL, NULL, N'temp', N'1', NULL, N'1', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":"","commentStatus":0}', N'admin', N'2022-10-28 10:31:07.0000000', N'admin', N'2020-05-06 11:34:31.0000000', N'normal', N'N', N'', NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'31cf57ac0ce04a34aff6aa15867d6d95', N'ceshi_note', N'1', N'16', N'测试请假表', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, NULL, NULL, NULL, NULL, NULL, N'temp', N'1', NULL, N'1', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":"","commentStatus":0}', N'admin', N'2023-03-04 16:42:36.0000000', N'admin', N'2022-10-29 16:45:49.0000000', N'normal', N'N', N'', NULL)
+INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'31cf57ac0ce04a34aff6aa15867d6d95', N'ceshi_note', N'1', N'21', N'测试请假表', N'N', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, NULL, NULL, NULL, NULL, NULL, N'temp', N'1', NULL, N'1', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":"","commentStatus":0,"tableFixedAction":1,"tableFixedActionType":"right"}', N'admin', N'2023-08-24 16:38:45.0000000', N'admin', N'2022-10-29 16:45:49.0000000', N'normal', N'N', N'', NULL)
 GO
 
 INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'3d447fa919b64f6883a834036c14aa67', N'test_enhance_select', N'1', N'6', N'三级联动控件', N'N', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, NULL, NULL, NULL, NULL, NULL, N'bdfl_include', N'1', NULL, N'0', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":"","commentStatus":0}', N'admin', N'2022-10-13 20:58:08.0000000', N'admin', N'2020-02-20 16:19:00.0000000', N'normal', N'N', N'', NULL)
@@ -9363,7 +9366,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'4fb8e12a697f4d5bbe9b9fb1e9009486', N'demo_field_def_val_sub', N'3', N'2', N'示例：控件默认值（子表）', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'group', N'0', NULL, N'1', NULL, NULL, NULL, N'demo', N'1', NULL, N'1', NULL, N'0', NULL, NULL, N'admin', N'2020-11-26 17:28:14.0000000', N'admin', N'2020-04-10 19:47:01.0000000', N'normal', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'56870166aba54ebfacb20ba6c770bd73', N'test_order_main', N'2', N'33', N'测试订单主表', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, N'test_order_product,test_order_customer', NULL, NULL, NULL, NULL, N'bdfl_include', N'2', NULL, N'0', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","tableFixedAction":0,"tableFixedActionType":"right","joinQuery":0,"modelFullscreen":0,"modalMinWidth":900,"commentStatus":0}', N'admin', N'2022-11-23 12:01:37.0000000', N'admin', N'2019-04-20 11:38:39.0000000', N'normal', N'N', N'', NULL)
+INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'56870166aba54ebfacb20ba6c770bd73', N'test_order_main', N'2', N'34', N'测试订单主表', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, N'test_order_product,test_order_customer', NULL, NULL, NULL, NULL, N'bdfl_include', N'2', NULL, N'0', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":900,"commentStatus":0,"tableFixedAction":0,"tableFixedActionType":"right"}', N'admin', N'2023-08-29 10:09:46.0000000', N'admin', N'2019-04-20 11:38:39.0000000', N'erp', N'N', N'', NULL)
 GO
 
 INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'997ee931515a4620bc30a9c1246429a9', N'test_shoptype_tree', N'1', N'2', N'商品分类', N'Y', N'Y', N'Y', N'Y', NULL, N'UUID', N'single', NULL, NULL, NULL, N'pid', N'has_child', N'type_name', N'temp', N'1', NULL, N'1', NULL, N'0', NULL, NULL, N'admin', N'2020-05-03 00:57:47.0000000', N'admin', N'2020-05-03 00:56:56.0000000', N'normal', NULL, NULL, NULL)
@@ -9372,7 +9375,7 @@ GO
 INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'9ab817fd4c2e4e7ba6652c4fa46af389', N'test_v3_hello', N'1', N'17', N'第一个Vue3表单', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'single', NULL, NULL, NULL, NULL, NULL, NULL, N'temp', N'1', NULL, N'1', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":"","tableFixedAction":1,"tableFixedActionType":"right","commentStatus":1}', N'admin', N'2022-11-07 11:42:38.0000000', N'admin', N'2022-06-04 22:53:38.0000000', N'normal', N'N', N'', NULL)
 GO
 
-INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'd35109c3632c4952a19ecc094943dd71', N'test_demo', N'1', N'38', N'测试用户表', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'group', NULL, NULL, NULL, NULL, NULL, NULL, N'bdfl_include', N'1', NULL, N'0', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","tableFixedAction":0,"tableFixedActionType":"right","joinQuery":0,"modelFullscreen":0,"modalMinWidth":900,"commentStatus":0}', N'admin', N'2022-10-30 11:16:46.0000000', N'admin', N'2019-03-15 14:24:35.0000000', N'normal', N'N', N'', NULL)
+INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'd35109c3632c4952a19ecc094943dd71', N'test_demo', N'1', N'39', N'测试用户表', N'Y', N'Y', N'Y', N'N', NULL, N'UUID', N'group', NULL, NULL, NULL, NULL, NULL, NULL, N'bdfl_include', N'1', NULL, N'0', NULL, N'0', NULL, N'{"reportPrintShow":0,"reportPrintUrl":"","joinQuery":0,"modelFullscreen":0,"modalMinWidth":900,"commentStatus":0,"tableFixedAction":0,"tableFixedActionType":"right"}', N'admin', N'2023-09-16 21:25:25.0000000', N'admin', N'2019-03-15 14:24:35.0000000', N'normal', N'N', N'', NULL)
 GO
 
 INSERT INTO [dbo].[onl_cgform_head] ([id], [table_name], [table_type], [table_version], [table_txt], [is_checkbox], [is_db_synch], [is_page], [is_tree], [id_sequence], [id_type], [query_mode], [relation_type], [sub_table_str], [tab_order_num], [tree_parent_id_field], [tree_id_field], [tree_fieldname], [form_category], [form_template], [form_template_mobile], [scroll], [copy_version], [copy_type], [physic_id], [ext_config_json], [update_by], [update_time], [create_by], [create_time], [theme_template], [is_des_form], [des_form_code], [low_app_id]) VALUES (N'deea5a8ec619460c9245ba85dbc59e80', N'test_order_product', N'3', N'12', N'订单产品明细', N'N', N'Y', N'Y', N'N', NULL, N'UUID', N'single', N'0', N'', N'1', NULL, NULL, NULL, N'bdfl_include', N'1', NULL, N'0', NULL, N'0', NULL, NULL, N'admin', N'2022-10-29 17:13:01.0000000', N'admin', N'2019-04-20 11:41:19.0000000', N'normal', NULL, NULL, NULL)
@@ -9618,13 +9621,13 @@ GO
 INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'1260179852088135681', N'tj_user_report', N'统一有效系统用户', N'select id,realname,username,sex,birthday,avatar,phone,email from sys_user', NULL, NULL, N'1', NULL, NULL, NULL, N'2022-11-07 19:09:25.0000000', N'admin', N'2020-05-12 20:07:44.0000000', N'admin')
 GO
 
-INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'1590154651759259649', N'withparamreport', N'带参数报表', N'select * from demo where sex = ''${sex}''', NULL, NULL, N'1', NULL, NULL, NULL, N'2022-11-09 14:38:04.0000000', N'admin', N'2022-11-09 09:29:47.0000000', N'admin')
+INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'1590154651759259649', N'withparamreport', N'带参数报表', N'select * from demo where sex = ''${sex}''', NULL, NULL, N'1', NULL, NULL, NULL, N'2023-09-20 21:47:26.0000000', N'admin', N'2022-11-09 09:29:47.0000000', N'admin')
 GO
 
-INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'6c7f59741c814347905a938f06ee003c', N'report_user', N'统计在线用户', N'select realname,username,sex,birthday,avatar,phone,email from sys_user', NULL, NULL, N'1', N'', NULL, NULL, N'2022-10-25 11:41:18.0000000', N'admin', N'2019-03-25 11:20:45.0000000', N'admin')
+INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'6c7f59741c814347905a938f06ee003c', N'report_user', N'统计在线用户', N'select realname,username,sex,birthday,avatar,phone,email from sys_user', NULL, NULL, N'1', NULL, NULL, NULL, N'2022-10-25 11:41:18.0000000', N'admin', N'2019-03-25 11:20:45.0000000', N'admin')
 GO
 
-INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'87b55a515d3441b6b98e48e5b35474a6', N'demo', N'Report Demo', N'select * from demo', NULL, NULL, N'1', N'', NULL, NULL, N'2020-05-03 01:14:35.0000000', N'admin', N'2019-03-12 11:25:16.0000000', N'admin')
+INSERT INTO [dbo].[onl_cgreport_head] ([id], [code], [name], [cgr_sql], [return_val_field], [return_txt_field], [return_type], [db_source], [content], [low_app_id], [update_time], [update_by], [create_time], [create_by]) VALUES (N'87b55a515d3441b6b98e48e5b35474a6', N'demo', N'Report Demo', N'select * from demo', NULL, NULL, N'1', NULL, NULL, NULL, N'2020-05-03 01:14:35.0000000', N'admin', N'2019-03-12 11:25:16.0000000', N'admin')
 GO
 
 
@@ -10001,7 +10004,7 @@ GO
 -- ----------------------------
 -- Records of onl_cgreport_param
 -- ----------------------------
-INSERT INTO [dbo].[onl_cgreport_param] ([id], [cgrhead_id], [param_name], [param_txt], [param_value], [order_num], [create_by], [create_time], [update_by], [update_time]) VALUES (N'1590154651838951425', N'1590154651759259649', N'sex', N'sex', N'', N'0', N'admin', N'2022-11-09 09:29:47.0000000', NULL, NULL)
+INSERT INTO [dbo].[onl_cgreport_param] ([id], [cgrhead_id], [param_name], [param_txt], [param_value], [order_num], [create_by], [create_time], [update_by], [update_time]) VALUES (N'1590154651838951425', N'1590154651759259649', N'sex', N'sex', N'2', N'0', N'admin', N'2022-11-09 09:29:47.0000000', NULL, NULL)
 GO
 
 
@@ -12773,6 +12776,9 @@ GO
 INSERT INTO [dbo].[onl_drag_dataset_head] ([id], [name], [code], [parent_id], [db_source], [query_sql], [content], [iz_agent], [data_type], [api_method], [create_time], [create_by], [update_time], [update_by], [low_app_id], [tenant_id]) VALUES (N'1522853857095376898', N'示例_日期范围查询', N'', N'1516743332632494082', N'707437208002265088', N'select * from sys_user where create_time >= ''${createTime_begin}'' and create_time <=''${createTime_end}''', N'', N'0', N'sql', N'get', N'2022-05-07 16:20:27.0000000', N'admin', N'2022-05-07 19:29:07.0000000', N'admin', NULL, NULL)
 GO
 
+INSERT INTO [dbo].[onl_drag_dataset_head] ([id], [name], [code], [parent_id], [db_source], [query_sql], [content], [iz_agent], [data_type], [api_method], [create_time], [create_by], [update_time], [update_by], [low_app_id], [tenant_id]) VALUES (N'864649684727169024', N'222', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'2023-09-21 09:35:59.0000000', N'admin', NULL, NULL, NULL, NULL)
+GO
+
 
 -- ----------------------------
 -- Table structure for onl_drag_dataset_item
@@ -13531,10 +13537,16 @@ GO
 INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'1504364941187043329', N'企业门户', N'/drag/page/view/1504364941187043329', NULL, NULL, NULL, NULL, NULL, NULL, N'[{"component":"eoa-cms-banner","w":24,"moved":false,"x":0,"h":34,"i":"43d3d2e3-7311-4714-bf93-8dd4a3984615","y":0,"pageCompId":"1526476125109231618"},{"component":"eoa-cms-news-info","w":16,"moved":false,"x":0,"h":63,"i":"e2b21502-d058-4cad-b16d-9a986ed1c1c4","y":34,"pageCompId":"1526476125247643650"},{"component":"eoa-cms-user-notice","w":8,"moved":false,"x":16,"h":38,"i":"1b834694-04df-491b-a734-aa38d70c1ed6","y":34,"pageCompId":"1526476125352501250"},{"component":"eoa-cms-rule-info","w":9,"moved":false,"x":0,"h":44,"i":"fa29e703-60b0-43b5-a84e-ff92eb9188b5","y":97,"pageCompId":"1526476125457358849"},{"component":"eoa-cms-sign-news","w":7,"moved":false,"x":9,"h":44,"i":"5cd2720b-4ac9-4485-92a1-e77363883012","y":97,"pageCompId":"1526476125562216450"},{"component":"eoa-cms-plan","w":8,"moved":false,"x":16,"h":49,"i":"7bc89a6e-8a1e-4e5e-8aad-a59011bd7bd1","y":72,"pageCompId":"1526476125667074049"},{"component":"eoa-cms-link","w":8,"moved":false,"x":16,"h":20,"i":"5b7716a2-b0ab-4344-8a72-da53b5beb9f0","y":121,"pageCompId":"1526476125771931649"}]', N'', N'2', N'0', N'jeecg', N'2022-03-17 15:52:06.0000000', N'admin', N'2023-05-15 11:07:00.0000000', NULL, NULL, N'1')
 GO
 
+INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'1516742733803323394', N'示例_统计近十日的登陆次数', N'/drag/page/view/1516742733803323394', NULL, NULL, N'100', N'default', N'default', NULL, N'[{"component":"JTabs","w":24,"moved":false,"x":0,"h":49,"i":"2a745b71-b463-401e-895a-8067ea72830b","y":0,"pageCompId":"826049694035705856"},{"component":"JCommonTable","w":24,"moved":false,"x":0,"h":49,"i":"952b9508-df94-4612-abd8-69ca24157572","y":49,"pageCompId":"826049694119591936"}]', N'', N'1', N'0', N'admin', N'2022-04-20 19:37:02.0000000', N'admin', N'2023-06-06 21:13:25.0000000', NULL, NULL, N'2')
+GO
+
 INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'1516747539813007362', N'示例_项目性质收入统计JSON', N'/drag/page/view/1516747539813007362', NULL, NULL, NULL, NULL, NULL, NULL, N'[{"component":"JPie","w":12,"moved":false,"x":0,"h":42,"i":"a2ada7ba-ff55-4d2c-ba1b-10eb3c04b5f7","y":0,"pageCompId":"1517018288431857665"},{"component":"JBar","w":12,"moved":false,"x":12,"h":42,"i":"195569f9-8bd3-4e8f-892a-f81f60a25ba8","y":0,"pageCompId":"1517018288566075393"},{"component":"JLine","w":24,"moved":false,"x":0,"h":44,"i":"5cde89e3-1174-4a95-8385-065c1ee1a22d","y":42,"pageCompId":"1517018288670932994"},{"component":"JCommonTable","w":24,"moved":false,"x":0,"h":48,"i":"2ed05f21-e822-4c4e-8657-02edb10b1cca","y":86,"pageCompId":"1517018288775790593"}]', N'', N'1', N'1', N'admin', N'2022-04-20 19:56:08.0000000', N'admin', N'2023-05-15 11:07:40.0000000', NULL, NULL, N'1')
 GO
 
 INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'1517018517935783937', N'示例_项目性质收入统计SQL', N'/drag/page/view/1517018517935783937', NULL, NULL, NULL, NULL, NULL, NULL, N'[{"component":"JTabs","w":24,"moved":false,"x":0,"h":56,"i":"19dd2a57-e10d-418b-8146-cd30de6e9aea","y":0,"pageCompId":"1524663379220791297"},{"component":"JCommonTable","w":24,"moved":false,"x":0,"h":48,"i":"e9e93d41-076f-436a-b466-3c327478e94d","y":56,"pageCompId":"1524663379359203329"}]', N'', N'1', N'1', N'admin', N'2022-04-21 13:52:54.0000000', N'admin', N'2022-05-12 16:10:51.0000000', NULL, NULL, N'1')
+GO
+
+INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'1517031795361611778', N'示例_统计每日大屏创建情况', N'/drag/page/view/1517031795361611778', NULL, NULL, NULL, NULL, NULL, NULL, N'[{"component":"JTabs","w":24,"moved":false,"x":0,"h":51,"i":"f749bb26-5343-499e-89fd-2228c26495c4","y":0,"pageCompId":"1517062543422554114"},{"component":"JCommonTable","w":24,"moved":false,"x":0,"h":42,"i":"746b3b26-8b4e-426d-8e25-c390e05fa947","y":51,"pageCompId":"1517062543523217409"}]', N'', N'1', N'0', N'admin', N'2022-04-21 14:45:40.0000000', N'admin', N'2023-05-15 11:08:03.0000000', NULL, NULL, N'1')
 GO
 
 INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'1517062686729338882', N'示例_年龄占比API', N'/drag/page/view/1517062686729338882', NULL, NULL, NULL, NULL, NULL, NULL, N'[{"component":"JLine","w":13,"moved":false,"x":0,"h":44,"i":"503ecff5-5f00-4188-90f7-227f5847b895","y":0,"pageCompId":"1517064663387373570"},{"component":"JRing","w":11,"moved":false,"x":13,"h":44,"i":"5a72ce0b-838d-4777-838a-1a0505ef8394","y":0,"pageCompId":"1517064663563534337"},{"component":"JFunnel","w":13,"moved":false,"x":0,"h":49,"i":"39790ea2-63de-41b4-957b-5a51b7e11f29","y":44,"pageCompId":"1517064663664197634"},{"component":"JCommonTable","w":11,"moved":false,"x":13,"h":49,"i":"9c1f12e1-d71d-4a12-b601-d6730fcd0223","y":44,"pageCompId":"1517064663798415361"}]', N'', N'1', N'1', N'admin', N'2022-04-21 16:48:25.0000000', N'admin', N'2022-04-21 16:56:16.0000000', NULL, NULL, N'1')
@@ -13579,10 +13591,10 @@ GO
 INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'750931735173201920', N'双11', N'/drag/page/view/750931735173201920', NULL, NULL, N'100', N'default', N'default', N'', N'[{"component":"JMultipleBar","w":12,"moved":false,"x":12,"h":42,"i":"5a4b8360-890b-4f0e-92a8-342f42573fb1","y":0,"orderNum":126,"pageCompId":"750939797242052608"},{"component":"JMixLineBar","w":12,"moved":false,"x":0,"h":42,"i":"46888850-01e3-4655-8fac-257a82874988","y":16,"orderNum":168,"pageCompId":"750939797271412736"},{"component":"JBar","w":12,"moved":false,"x":12,"h":42,"i":"479c3829-ba95-4522-af6a-49ef84bf029f","y":42,"orderNum":126,"pageCompId":"750939797288189952"},{"component":"JPie","w":12,"moved":false,"x":0,"h":16,"i":"5f4d3595-1886-4528-84e5-b100f64e97ca","y":0,"orderNum":126,"pageCompId":"750939797300772864"},{"component":"JNegativeBar","w":12,"moved":false,"x":12,"h":42,"i":"34f9be94-c288-470a-837e-f5b5e56381e8","y":84,"orderNum":142,"pageCompId":"750939797313355776"},{"component":"JMixLineBar","w":12,"moved":false,"x":0,"h":42,"i":"74c17127-28de-4aa7-b01a-a2f1eb1f9324","y":58,"orderNum":142,"pageCompId":"750939797321744384"}]', N'', N'1', N'0', N'admin', N'2022-11-11 14:21:28.0000000', N'jeecg', N'2023-02-20 10:44:09.0000000', NULL, NULL, N'1')
 GO
 
-INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'817932088040796160', N'111', N'/drag/page/view/817932088040796160', NULL, NULL, N'100', N'default', N'default', NULL, N'[{"component":"JBar","w":12,"moved":false,"x":0,"h":30,"i":"7dd6fde0-caa4-4204-974e-d56300ad69f3","y":0,"orderNum":0,"pageCompId":"817961335140691968"}]', NULL, N'1', N'0', N'admin', N'2023-05-15 11:36:56.0000000', N'admin', N'2023-05-15 13:33:10.0000000', NULL, N'0', N'1')
+INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'750938006131638272', N'单表示例', N'/drag/page/view/750938006131638272', NULL, NULL, N'100', N'default', N'default', NULL, N'[{"component":"JBar","pcX":0,"w":12,"moved":false,"pcY":42,"x":0,"h":39,"i":"cc1f6705-a9f0-4044-8ac2-06eedca5d2bf","y":42,"orderNum":0,"pageCompId":"817922650978430976"},{"component":"JLine","pcX":0,"w":12,"moved":false,"pcY":81,"x":0,"h":42,"i":"79d6ec63-0bb5-4065-8bac-4debeebe4365","y":81,"orderNum":42,"pageCompId":"817922651032956928"},{"component":"JRing","pcX":0,"w":12,"moved":false,"pcY":0,"x":0,"h":42,"i":"68edd288-1c8c-4b6d-8b28-a92efee80d8a","y":0,"orderNum":84,"pageCompId":"817922651049734144"},{"component":"JGauge","pcX":0,"w":12,"moved":false,"pcY":123,"x":0,"h":42,"i":"87836c01-e1aa-4cde-8769-ef3a2bbfaf4b","y":123,"orderNum":126,"pageCompId":"817922651070705664"},{"component":"JFunnel","pcX":12,"w":12,"moved":false,"pcY":0,"x":12,"h":42,"i":"190e9dcc-4f19-4461-a420-0a7d4b340194","y":0,"orderNum":210,"pageCompId":"817922651095871488"},{"component":"JBar","pcX":12,"w":12,"moved":false,"pcY":42,"x":12,"h":42,"i":"77df8b4c-038f-4646-9a14-e1f4ea339cde","y":42,"orderNum":164,"pageCompId":"817922651112648704"},{"component":"JStackBar","pcX":0,"w":12,"moved":false,"pcY":165,"x":0,"h":42,"i":"4d24ed2e-9cef-4f3d-8e42-754346f2d1ce","y":165,"orderNum":164,"pageCompId":"817922651133620224"},{"component":"JDynamicBar","pcX":12,"w":12,"moved":false,"pcY":84,"x":12,"h":42,"i":"d2a65733-dbce-42a8-8cc6-4d8228b664c7","y":84,"orderNum":206,"pageCompId":"817922651154591744"},{"component":"JMultipleBar","pcX":12,"w":12,"moved":false,"pcY":126,"x":12,"h":42,"i":"a1a6fb86-af98-4347-8412-5446acdef70c","y":126,"orderNum":248,"pageCompId":"817922651175563264"},{"component":"JNegativeBar","pcX":12,"w":12,"moved":false,"pcY":168,"x":12,"h":42,"i":"f0840234-2a10-4b7d-8d40-d987c9218911","y":168,"orderNum":248,"pageCompId":"817922651192340480"}]', N'', N'1', N'0', N'admin', N'2022-11-11 14:46:23.0000000', N'admin', N'2023-05-15 10:59:38.0000000', NULL, NULL, N'1')
 GO
 
-INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'825988076505444352', N'示例_项目性质收入统计JSON_副本', N'/drag/page/view/825988076505444352', NULL, NULL, N'100', N'default', N'default', NULL, N'[{"component":"JPie","w":12,"moved":false,"x":0,"h":42,"i":"a2ada7ba-ff55-4d2c-ba1b-10eb3c04b5f7","y":0,"pageCompId":"826005888498184192"},{"component":"JBar","w":12,"moved":false,"x":12,"h":42,"i":"195569f9-8bd3-4e8f-892a-f81f60a25ba8","y":0,"pageCompId":"826005888569487360"},{"component":"JLine","w":24,"moved":false,"x":0,"h":44,"i":"5cde89e3-1174-4a95-8385-065c1ee1a22d","y":42,"pageCompId":"826005888598847488"},{"component":"JCommonTable","w":24,"moved":false,"x":0,"h":48,"i":"2ed05f21-e822-4c4e-8657-02edb10b1cca","y":86,"pageCompId":"826005888611430400"}]', NULL, N'1', N'0', N'admin', N'2023-06-06 17:08:34.0000000', N'admin', N'2023-06-06 18:19:21.0000000', NULL, NULL, N'3')
+INSERT INTO [dbo].[onl_drag_page] ([id], [name], [path], [background_color], [background_image], [design_type], [theme], [style], [cover_url], [template], [protection_code], [type], [iz_template], [create_by], [create_time], [update_by], [update_time], [low_app_id], [tenant_id], [update_count]) VALUES (N'825877703655731200', N'sdf', N'/drag/page/view/825877703655731200', NULL, NULL, N'100', N'default', N'default', NULL, N'[{"component":"JSmoothLine","w":12,"moved":false,"x":0,"h":30,"i":"4b9e6c6c-5b10-4ad7-b60c-39b1a7d6a9d8","y":0,"orderNum":0,"pageCompId":"851377504979591168"},{"component":"JNumber","w":5,"moved":false,"x":12,"h":9,"i":"27572106-cdfe-4826-9641-31af422c7d9d","y":0,"orderNum":30,"pageCompId":"851377505004756992"},{"component":"JList","w":12,"moved":false,"x":0,"h":24,"i":"fef4d669-e64b-45d5-9756-b2eafe79d4f5","y":30,"orderNum":30,"pageCompId":"851377505025728512"}]', NULL, N'1', N'0', N'admin', N'2023-06-06 09:49:59.0000000', N'admin', N'2023-08-15 18:37:05.0000000', NULL, N'0', N'7')
 GO
 
 
@@ -13700,6 +13712,12 @@ INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id],
 GO
 
 INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'1517018288775790593', NULL, N'1516747539813007362', NULL, N'JCommonTable', N'{"paramOption":[],"dataType":2,"dataSetName":"项目性质收入统计JSON","query":[],"h":42,"dataSetApi":"[{\"column1\":\"市场化-电商业务\",\"column2\":4865.41,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":4865.41},{\"column1\":\"统筹型\",\"column2\":35767081.88,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":35767081.88},{\"column1\":\"市场化-非股东\",\"column2\":1487045.35,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1487045.35},{\"column1\":\"市场化-参控股\",\"column2\":382690.56,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":382690.56},{\"column1\":\"市场化-员工福利\",\"column2\":256684.91,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":265684.91},{\"column1\":\"市场化-再保险\",\"column2\":563451.03,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":563451.03},{\"column1\":\"市场化-海外业务\",\"column2\":760576.25,\"column3\":770458.75,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1531035.00},{\"column1\":\"市场化-风险咨询\",\"column2\":0.00,\"column3\":910183.93,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":226415.09,\"column8\":1136599.02}]","timeOut":-1,"chartData":"[{\"name\":\"4月\",\"value\":50},{\"name\":\"2月\",\"value\":200},{\"name\":\"3月\",\"value\":300},{\"name\":\"4月\",\"value\":400},{\"name\":\"5月\",\"value\":50},{\"name\":\"6月\",\"value\":120}]","size":{"width":1650,"height":518},"dataSetId":"1516748630344630273","fieldOption":[{"label":"项目性质","text":"项目性质","value":"column1"},{"label":"保险公估费","text":"保险公估费","value":"column5"},{"label":"承保公估评估费","text":"承保公估评估费","value":"column4"},{"label":"风险咨询费","text":"风险咨询费","value":"column3"},{"label":"保险经纪佣金费","text":"保险经纪佣金费","value":"column2"},{"label":"总计","text":"总计","value":"column8"},{"label":"内控咨询费","text":"内控咨询费","value":"column7"},{"label":"投标咨询费","text":"投标咨询费","value":"column6"}],"dataSetType":"json","w":24,"linkageConfig":[],"dataSetIzAgent":"","option":{"columns":[{"izTotal":"Y","izShow":"Y","dataIndex":"column1","title":"项目性质"},{"izTotal":"Y","izShow":"Y","dataIndex":"column5","title":"保险公估费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column4","title":"承保公估评估费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column3","title":"风险咨询费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column2","title":"保险经纪佣金费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column8","title":"总计"},{"izTotal":"Y","izShow":"Y","dataIndex":"column7","title":"内控咨询费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column6","title":"投标咨询费"}]}}', N'admin', N'2022-04-21 13:52:00.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'1517062543422554114', NULL, N'1517031795361611778', NULL, N'JTabs', N'{"size":{"width":1650,"height":551},"w":12,"h":40,"option":{"title":"选项卡"},"child":[{"component":"JBar","w":12,"x":0,"h":42,"i":"a8461f71-8f4d-420c-9907-298862d2ac9e","title":"柱形图","config":{"dataMapping":[{"mapping":"date","filed":"维度"},{"mapping":"c","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"统计每日大屏创建情况","query":[],"dataSetApi":"SELECTcount(*)c,DATE_FORMAT(create_time,''%Y-%m-%d'')asdatefromjmreport_big_screenGROUPBYdateorderbydatedesc","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"name\":\"苹果\",\"value\":1000879,\"type\":\"手机品牌\"},{\"name\":\"三星\",\"value\":3400879,\"type\":\"手机品牌\"},{\"name\":\"小米\",\"value\":2300879,\"type\":\"手机品牌\"},{\"name\":\"oppo\",\"value\":5400879,\"type\":\"手机品牌\"},{\"name\":\"vivo\",\"value\":3400879,\"type\":\"手机品牌\"}]","paddingBottom":90,"dataSetId":"1517046731341070337","fieldOption":[{"label":"日期","text":"日期","value":"date"},{"label":"数量","text":"数量","value":"c"}],"dataSetType":"sql","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"showBackground":true,"backgroundStyle":{"color":"rgba(180,180,180,0.2)"},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":false,"text":"基础柱形图","textStyle":{"color":"#464646"}},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}}},{"horizontal":false,"component":"JArea","size":10,"w":12,"x":0,"h":42,"i":"9e3efbfd-6945-4f9c-8bc9-ab85ba4414a8","text":"0.042","id":"cba0d0be-3d5d-474e-b272-011ba64bca2f","title":"折线图","config":{"dataMapping":[{"mapping":"date","filed":"维度"},{"mapping":"c","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"统计每日大屏创建情况","query":[],"dataSetApi":"SELECTcount(*)c,DATE_FORMAT(create_time,''%Y-%m-%d'')asdatefromjmreport_big_screenGROUPBYdateorderbydatedesc","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1048,\"name\":\"华为\"},{\"value\":605,\"name\":\"vivo\"},{\"value\":580,\"name\":\"oppo\"},{\"value\":484,\"name\":\"苹果\"},{\"value\":300,\"name\":\"小米\"}]","paddingBottom":90,"dataSetId":"1517046731341070337","fieldOption":[{"label":"日期","text":"日期","value":"date"},{"label":"数量","text":"数量","value":"c"}],"dataSetType":"sql","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"xAxis":{"data":[],"boundaryGap":false},"grid":{"bottom":115},"series":[{"areaStyle":{},"data":[],"type":"line"}],"title":{"show":false,"text":"基础面积图"},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}},"child":[]},{"horizontal":false,"component":"JPie","size":10,"w":12,"x":0,"h":42,"i":"3441183d-6ca1-4ac9-920c-325a1846e941","text":"0.042","id":"995c3285-281b-4b3b-be37-5319add801bd","title":"饼图","config":{"dataMapping":[{"mapping":"date","filed":"维度"},{"mapping":"c","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"统计每日大屏创建情况","query":[],"dataSetApi":"SELECTcount(*)c,DATE_FORMAT(create_time,''%Y-%m-%d'')asdatefromjmreport_big_screenGROUPBYdateorderbydatedesc","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1048,\"name\":\"vivo\"},{\"value\":735,\"name\":\"oppo\"},{\"value\":580,\"name\":\"苹果\"},{\"value\":484,\"name\":\"小米\"},{\"value\":300,\"name\":\"三星\"}]","paddingBottom":90,"dataSetId":"1517046731341070337","fieldOption":[{"label":"日期","text":"日期","value":"date"},{"label":"数量","text":"数量","value":"c"}],"dataSetType":"sql","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"legend":{"orient":"vertical"},"series":[{"data":[],"name":"AccessFrom","emphasis":{"itemStyle":{"shadowOffsetX":0,"shadowBlur":10,"shadowColor":"rgba(0,0,0,0.5)"}},"type":"pie","radius":"50%"}],"tooltip":{"trigger":"item"},"title":{"subtext":"","left":"left","show":false,"text":"基础饼图"},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}},"child":[]}]}', N'admin', N'2022-04-21 16:47:51.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'1517062543523217409', NULL, N'1517031795361611778', NULL, N'JCommonTable', N'{"paramOption":[],"dataType":2,"dataSetName":"统计每日大屏创建情况","query":[],"h":42,"dataSetApi":"SELECTcount(*)c,DATE_FORMAT(create_time,''%Y-%m-%d'')asdatefromjmreport_big_screenGROUPBYdateorderbydatedesc","timeOut":-1,"chartData":"[{\"name\":\"4月\",\"value\":50},{\"name\":\"2月\",\"value\":200},{\"name\":\"3月\",\"value\":300},{\"name\":\"4月\",\"value\":400},{\"name\":\"5月\",\"value\":50},{\"name\":\"6月\",\"value\":120}]","size":{"height":420},"dataSetId":"1517046731341070337","fieldOption":[{"label":"日期","text":"日期","value":"date"},{"label":"数量","text":"数量","value":"c"}],"dataSetType":"sql","w":24,"linkageConfig":[],"dataSetIzAgent":"","option":{"columns":[{"izShow":"Y","dataIndex":"date","title":"日期"},{"izTotal":"Y","izShow":"Y","dataIndex":"c","title":"数量"}]}}', N'admin', N'2022-04-21 16:47:51.0000000', NULL, NULL)
 GO
 
 INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'1517064663387373570', NULL, N'1517062686729338882', NULL, N'JLine', N'{"dataMapping":[{"mapping":"name","filed":"维度"},{"mapping":"value","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"图表API示例-年龄占比","query":[],"dataSetApi":"http://api.jeecg.com/mock/51/jingwu/nianling","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1000,\"name\":\"联想\"},{\"value\":7350,\"name\":\"小米\"},{\"value\":5800,\"name\":\"华为\"},{\"value\":6000,\"name\":\"苹果\"},{\"value\":3000,\"name\":\"戴尔\"}]","size":{"width":889,"height":474},"dataSetId":"1517046231342284802","fieldOption":[{"label":"年龄","text":"年龄","value":"name"},{"label":"数量","text":"数量","value":"value"}],"dataSetType":"api","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"type":"line"}],"title":{"subtext":"","left":"left","show":false,"text":"基础折线图"},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}}', N'admin', N'2022-04-21 16:56:16.0000000', NULL, NULL)
@@ -14803,19 +14821,49 @@ GO
 INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'811451560269754368', NULL, N'1517067453027352578', NULL, N'JProgress', N'{"borderColor":"#FFFFFF00","dataMapping":[{"mapping":"name","filed":"维度"},{"mapping":"age","filed":"数值"}],"paramOption":[{"defaultVal":"","label":"age","text":"age","value":"age"}],"dataType":2,"dataSetName":"示例_根据年龄查询用户","query":[],"dataSetApi":"select*fromdemowhereage=${age}","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"name\":\"内存使用率\",\"value\":50}]","size":{"height":420},"dataSetId":"1517071247723233281","fieldOption":[{"label":"id","text":"id","value":"id"},{"label":"name","text":"name","value":"name"},{"label":"key_word","text":"key_word","value":"key_word"},{"label":"punch_time","text":"punch_time","value":"punch_time"},{"label":"salary_money","text":"salary_money","value":"salary_money"},{"label":"bonus_money","text":"bonus_money","value":"bonus_money"},{"label":"sex","text":"sex","value":"sex"},{"label":"age","text":"age","value":"age"},{"label":"birthday","text":"birthday","value":"birthday"},{"label":"email","text":"email","value":"email"},{"label":"content","text":"content","value":"content"},{"label":"create_by","text":"create_by","value":"create_by"},{"label":"create_time","text":"create_time","value":"create_time"},{"label":"update_by","text":"update_by","value":"update_by"},{"label":"update_time","text":"update_time","value":"update_time"},{"label":"sys_org_code","text":"sys_org_code","value":"sys_org_code"},{"label":"tenant_id","text":"tenant_id","value":"tenant_id"}],"dataSetType":"sql","background":"#FFFFFF","linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"show":false},"series":[{"barWidth":19,"color":"#151B87","itemStyle":{"normal":{"barBorderRadius":10}},"zlevel":1,"label":{"formatter":"{c}{a}","offset":[0,-40],"color":"black","show":true,"fontSize":24,"position":"right"}},{"barWidth":19,"color":"#eeeeee","barGap":"-100%","itemStyle":{"normal":{"barBorderRadius":10}},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"基础进度图","textStyle":{"color":"#464646"}}}}', N'admin', N'2023-04-27 14:25:38.0000000', NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817961335140691968', NULL, N'817932088040796160', NULL, N'JBar', N'{"chartData":[{"name":"苹果","type":"手机品牌","value":1000879},{"name":"三星","type":"手机品牌","value":3400879},{"name":"小米","type":"手机品牌","value":2300879},{"name":"oppo","type":"手机品牌","value":5400879},{"name":"vivo","type":"手机品牌","value":3400879}],"size":{"height":300},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/33/chart","timeOut":0,"option":{"yAxis":{"lineStyle":{"color":"#f3f3f3"},"splitLine":{"interval":2}},"grid":{"top":90,"bottom":115,"show":false},"series":[{"barWidth":40,"data":[],"itemStyle":{"color":"#64b5f6","borderRadius":0},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"基础柱形图","textStyle":{"color":"#464646"}},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 13:33:10.0000000', NULL, NULL)
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922650978430976', NULL, N'750938006131638272', NULL, N'JBar', N'{"chartData":"[{\"name\":\"苹果\",\"type\":\"手机品牌\",\"value\":1000879},{\"name\":\"三星\",\"type\":\"手机品牌\",\"value\":3400879},{\"name\":\"小米\",\"type\":\"手机品牌\",\"value\":2300879},{\"name\":\"oppo\",\"type\":\"手机品牌\",\"value\":5400879},{\"name\":\"vivo\",\"type\":\"手机品牌\",\"value\":3400879}]","borderColor":"#FFFFFF00","size":{"width":861,"height":419},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/33/chart","timeOut":0,"option":{"yAxis":{"lineStyle":{"color":"#f3f3f3"},"splitLine":{"interval":2}},"grid":{"top":90,"bottom":115,"show":false},"series":[{"barWidth":40,"data":[],"itemStyle":{"color":"#5470c6","borderRadius":0},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"基础柱形图","textStyle":{"color":"#464646"}},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:26.0000000', NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'826005888498184192', NULL, N'825988076505444352', NULL, N'JPie', N'{"dataMapping":[{"mapping":"column1","filed":"维度"},{"mapping":"column8","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"项目性质收入统计JSON","query":[],"dataSetApi":"[{\"column1\":\"市场化-电商业务\",\"column2\":4865.41,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":4865.41},{\"column1\":\"统筹型\",\"column2\":35767081.88,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":35767081.88},{\"column1\":\"市场化-非股东\",\"column2\":1487045.35,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1487045.35},{\"column1\":\"市场化-参控股\",\"column2\":382690.56,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":382690.56},{\"column1\":\"市场化-员工福利\",\"column2\":256684.91,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":265684.91},{\"column1\":\"市场化-再保险\",\"column2\":563451.03,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":563451.03},{\"column1\":\"市场化-海外业务\",\"column2\":760576.25,\"column3\":770458.75,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1531035.00},{\"column1\":\"市场化-风险咨询\",\"column2\":0.00,\"column3\":910183.93,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":226415.09,\"column8\":1136599.02}]","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1048,\"name\":\"vivo\"},{\"value\":735,\"name\":\"oppo\"},{\"value\":580,\"name\":\"苹果\"},{\"value\":484,\"name\":\"小米\"},{\"value\":300,\"name\":\"三星\"}]","size":{"height":420},"dataSetId":"1516748630344630273","fieldOption":[{"label":"项目性质","text":"项目性质","value":"column1"},{"label":"保险公估费","text":"保险公估费","value":"column5"},{"label":"承保公估评估费","text":"承保公估评估费","value":"column4"},{"label":"风险咨询费","text":"风险咨询费","value":"column3"},{"label":"保险经纪佣金费","text":"保险经纪佣金费","value":"column2"},{"label":"总计","text":"总计","value":"column8"},{"label":"内控咨询费","text":"内控咨询费","value":"column7"},{"label":"投标咨询费","text":"投标咨询费","value":"column6"}],"dataSetType":"json","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"legend":{"orient":"vertical"},"series":[{"data":[],"name":"AccessFrom","emphasis":{"itemStyle":{"shadowOffsetX":0,"shadowBlur":10,"shadowColor":"rgba(0,0,0,0.5)"}},"type":"pie","radius":"50%"}],"tooltip":{"trigger":"item"},"title":{"subtext":"","left":"left","show":true,"text":"基础饼图"},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}}', N'admin', N'2023-06-06 18:19:20.0000000', NULL, NULL)
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651032956928', NULL, N'750938006131638272', NULL, N'JLine', N'{"chartData":"[{\"name\":\"联想\",\"value\":1000},{\"name\":\"小米\",\"value\":7350},{\"name\":\"华为\",\"value\":5800},{\"name\":\"苹果\",\"value\":6000},{\"name\":\"戴尔\",\"value\":3000}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/33/chart","timeOut":0,"option":{"grid":{"top":90,"bottom":115,"show":false},"series":[{"data":[],"type":"line"}],"title":{"subtext":"","left":10,"text":"基础折线图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'826005888569487360', NULL, N'825988076505444352', NULL, N'JBar', N'{"dataMapping":[{"mapping":"column1","filed":"维度"},{"mapping":"column8","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"项目性质收入统计JSON","query":[],"dataSetApi":"[{\"column1\":\"市场化-电商业务\",\"column2\":4865.41,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":4865.41},{\"column1\":\"统筹型\",\"column2\":35767081.88,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":35767081.88},{\"column1\":\"市场化-非股东\",\"column2\":1487045.35,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1487045.35},{\"column1\":\"市场化-参控股\",\"column2\":382690.56,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":382690.56},{\"column1\":\"市场化-员工福利\",\"column2\":256684.91,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":265684.91},{\"column1\":\"市场化-再保险\",\"column2\":563451.03,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":563451.03},{\"column1\":\"市场化-海外业务\",\"column2\":760576.25,\"column3\":770458.75,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1531035.00},{\"column1\":\"市场化-风险咨询\",\"column2\":0.00,\"column3\":910183.93,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":226415.09,\"column8\":1136599.02}]","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"name\":\"苹果\",\"value\":1000879,\"type\":\"手机品牌\"},{\"name\":\"三星\",\"value\":3400879,\"type\":\"手机品牌\"},{\"name\":\"小米\",\"value\":2300879,\"type\":\"手机品牌\"},{\"name\":\"oppo\",\"value\":5400879,\"type\":\"手机品牌\"},{\"name\":\"vivo\",\"value\":3400879,\"type\":\"手机品牌\"}]","size":{"height":420},"dataSetId":"1516748630344630273","fieldOption":[{"label":"项目性质","text":"项目性质","value":"column1"},{"label":"保险公估费","text":"保险公估费","value":"column5"},{"label":"承保公估评估费","text":"承保公估评估费","value":"column4"},{"label":"风险咨询费","text":"风险咨询费","value":"column3"},{"label":"保险经纪佣金费","text":"保险经纪佣金费","value":"column2"},{"label":"总计","text":"总计","value":"column8"},{"label":"内控咨询费","text":"内控咨询费","value":"column7"},{"label":"投标咨询费","text":"投标咨询费","value":"column6"}],"dataSetType":"json","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"showBackground":true,"backgroundStyle":{"color":"rgba(180,180,180,0.2)"},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"基础柱形图","textStyle":{"color":"#464646"}},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}}', N'admin', N'2023-06-06 18:19:21.0000000', NULL, NULL)
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651049734144', NULL, N'750938006131638272', NULL, N'JRing', N'{"chartData":"[{\"name\":\"oppo\",\"value\":1048},{\"name\":\"vivo\",\"value\":735},{\"name\":\"苹果\",\"value\":580},{\"name\":\"小米\",\"value\":484},{\"name\":\"三星\",\"value\":300}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/33/chart","timeOut":0,"option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"name":"Access From","avoidLabelOverlap":false,"emphasis":{"label":{"show":true,"fontSize":"25","fontWeight":"bold"}},"label":{"show":false,"position":"center"},"labelLine":{"show":false},"type":"pie","radius":["40%","70%"]}],"tooltip":{"trigger":"item"},"title":{"show":true,"text":"基础环形图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'826005888598847488', NULL, N'825988076505444352', NULL, N'JLine', N'{"dataMapping":[{"mapping":"column1","filed":"维度"},{"mapping":"column8","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"项目性质收入统计JSON","query":[],"dataSetApi":"[{\"column1\":\"市场化-电商业务\",\"column2\":4865.41,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":4865.41},{\"column1\":\"统筹型\",\"column2\":35767081.88,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":35767081.88},{\"column1\":\"市场化-非股东\",\"column2\":1487045.35,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1487045.35},{\"column1\":\"市场化-参控股\",\"column2\":382690.56,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":382690.56},{\"column1\":\"市场化-员工福利\",\"column2\":256684.91,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":265684.91},{\"column1\":\"市场化-再保险\",\"column2\":563451.03,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":563451.03},{\"column1\":\"市场化-海外业务\",\"column2\":760576.25,\"column3\":770458.75,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1531035.00},{\"column1\":\"市场化-风险咨询\",\"column2\":0.00,\"column3\":910183.93,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":226415.09,\"column8\":1136599.02}]","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1000,\"name\":\"联想\"},{\"value\":7350,\"name\":\"小米\"},{\"value\":5800,\"name\":\"华为\"},{\"value\":6000,\"name\":\"苹果\"},{\"value\":3000,\"name\":\"戴尔\"}]","size":{"width":1650,"height":474},"dataSetId":"1516748630344630273","fieldOption":[{"label":"项目性质","text":"项目性质","value":"column1"},{"label":"保险公估费","text":"保险公估费","value":"column5"},{"label":"承保公估评估费","text":"承保公估评估费","value":"column4"},{"label":"风险咨询费","text":"风险咨询费","value":"column3"},{"label":"保险经纪佣金费","text":"保险经纪佣金费","value":"column2"},{"label":"总计","text":"总计","value":"column8"},{"label":"内控咨询费","text":"内控咨询费","value":"column7"},{"label":"投标咨询费","text":"投标咨询费","value":"column6"}],"dataSetType":"json","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"type":"line"}],"title":{"subtext":"","left":"left","text":"基础折线图"},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}}', N'admin', N'2023-06-06 18:19:21.0000000', NULL, NULL)
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651070705664', NULL, N'750938006131638272', NULL, N'JGauge', N'{"chartData":"[{\"name\":\"名称\",\"value\":4}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"名称"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/26/gauge","timeOut":0,"option":{"grid":{"bottom":115},"series":[{"axisLabel":{"show":true,"fontSize":12},"data":[],"splitLine":{"lineStyle":{"color":"#eee","width":4},"length":12},"axisTick":{"lineStyle":{"color":"#eee"},"show":true},"progress":{"show":true},"detail":{"formatter":"{value}","fontSize":25},"type":"gauge"}],"tooltip":{"formatter":"{a} <br/>{b} : {c}%"},"title":{"text":"标准仪表盘"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
 GO
 
-INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'826005888611430400', NULL, N'825988076505444352', NULL, N'JCommonTable', N'{"paramOption":[],"dataType":2,"dataSetName":"项目性质收入统计JSON","query":[],"h":42,"dataSetApi":"[{\"column1\":\"市场化-电商业务\",\"column2\":4865.41,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":4865.41},{\"column1\":\"统筹型\",\"column2\":35767081.88,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":35767081.88},{\"column1\":\"市场化-非股东\",\"column2\":1487045.35,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1487045.35},{\"column1\":\"市场化-参控股\",\"column2\":382690.56,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":382690.56},{\"column1\":\"市场化-员工福利\",\"column2\":256684.91,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":265684.91},{\"column1\":\"市场化-再保险\",\"column2\":563451.03,\"column3\":0,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":563451.03},{\"column1\":\"市场化-海外业务\",\"column2\":760576.25,\"column3\":770458.75,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":0,\"column8\":1531035.00},{\"column1\":\"市场化-风险咨询\",\"column2\":0.00,\"column3\":910183.93,\"column4\":0,\"column5\":0,\"column6\":0,\"column7\":226415.09,\"column8\":1136599.02}]","timeOut":-1,"chartData":"[{\"name\":\"4月\",\"value\":50},{\"name\":\"2月\",\"value\":200},{\"name\":\"3月\",\"value\":300},{\"name\":\"4月\",\"value\":400},{\"name\":\"5月\",\"value\":50},{\"name\":\"6月\",\"value\":120}]","size":{"width":1650,"height":518},"dataSetId":"1516748630344630273","fieldOption":[{"label":"项目性质","text":"项目性质","value":"column1"},{"label":"保险公估费","text":"保险公估费","value":"column5"},{"label":"承保公估评估费","text":"承保公估评估费","value":"column4"},{"label":"风险咨询费","text":"风险咨询费","value":"column3"},{"label":"保险经纪佣金费","text":"保险经纪佣金费","value":"column2"},{"label":"总计","text":"总计","value":"column8"},{"label":"内控咨询费","text":"内控咨询费","value":"column7"},{"label":"投标咨询费","text":"投标咨询费","value":"column6"}],"dataSetType":"json","w":24,"linkageConfig":[],"dataSetIzAgent":"","option":{"columns":[{"izTotal":"Y","izShow":"Y","dataIndex":"column1","title":"项目性质"},{"izTotal":"Y","izShow":"Y","dataIndex":"column5","title":"保险公估费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column4","title":"承保公估评估费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column3","title":"风险咨询费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column2","title":"保险经纪佣金费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column8","title":"总计"},{"izTotal":"Y","izShow":"Y","dataIndex":"column7","title":"内控咨询费"},{"izTotal":"Y","izShow":"Y","dataIndex":"column6","title":"投标咨询费"}]}}', N'admin', N'2023-06-06 18:19:21.0000000', NULL, NULL)
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651095871488', NULL, N'750938006131638272', NULL, N'JFunnel', N'{"chartData":"[{\"name\":\"直接访问\",\"value\":335},{\"name\":\"邮件营销\",\"value\":310},{\"name\":\"联盟广告\",\"value\":234}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/26/funnel","timeOut":0,"option":{"grid":{"bottom":115},"legend":{"orient":"horizontal"},"series":[{"left":"10%","gap":2,"name":"Funnel","width":"80%","emphasis":{"label":{"fontSize":20}},"itemStyle":{"borderColor":"#fff","borderWidth":1},"sort":"descending","label":{"show":true,"position":"inside"},"labelLine":{"lineStyle":{"width":1,"type":"solid"},"length":10},"type":"funnel"}],"tooltip":{"formatter":"{a} <br/>{b} : {c}%","trigger":"item"},"title":{"show":true,"text":"基础漏斗图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651112648704', NULL, N'750938006131638272', NULL, N'JBar', N'{"chartData":[{"name":"苹果","type":"手机品牌","value":1000879},{"name":"三星","type":"手机品牌","value":3400879},{"name":"小米","type":"手机品牌","value":2300879},{"name":"oppo","type":"手机品牌","value":5400879},{"name":"vivo","type":"手机品牌","value":3400879}],"size":{"height":420},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/33/chart","timeOut":0,"option":{"yAxis":{"lineStyle":{"color":"#f3f3f3"},"splitLine":{"interval":2}},"grid":{"top":90,"bottom":115,"show":false},"series":[{"barWidth":40,"data":[],"itemStyle":{"color":"#5470c6","borderRadius":0},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"基础柱形图","textStyle":{"color":"#464646"}},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651133620224', NULL, N'750938006131638272', NULL, N'JStackBar', N'{"chartData":"[{\"name\":\"1991\",\"value\":3,\"type\":\"Lon\"},{\"name\":\"1992\",\"value\":4,\"type\":\"Lon\"},{\"name\":\"1993\",\"value\":3.5,\"type\":\"Lon\"},{\"name\":\"1994\",\"value\":5,\"type\":\"Lon\"},{\"name\":\"1995\",\"value\":4.9,\"type\":\"Lon\"},{\"name\":\"1996\",\"value\":6,\"type\":\"Lon\"},{\"name\":\"1997\",\"value\":7,\"type\":\"Lon\"},{\"name\":\"1998\",\"value\":9,\"type\":\"Lon\"},{\"name\":\"1999\",\"value\":13,\"type\":\"Lon\"},{\"name\":\"1991\",\"value\":3,\"type\":\"Bor\"},{\"name\":\"1992\",\"value\":4,\"type\":\"Bor\"},{\"name\":\"1993\",\"value\":3.5,\"type\":\"Bor\"},{\"name\":\"1994\",\"value\":5,\"type\":\"Bor\"},{\"name\":\"1995\",\"value\":4.9,\"type\":\"Bor\"},{\"name\":\"1996\",\"value\":6,\"type\":\"Bor\"},{\"name\":\"1997\",\"value\":7,\"type\":\"Bor\"},{\"name\":\"1998\",\"value\":9,\"type\":\"Bor\"},{\"name\":\"1999\",\"value\":13,\"type\":\"Bor\"}]","borderColor":"#FFFFFF00","size":{"height":420},"background":"#FFFFFF","dataMapping":[{"mapping":"","filed":"分组"},{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/26/stackedBar","timeOut":0,"option":{"grid":{"top":90,"bottom":115},"series":[],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"堆叠柱形图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651154591744', NULL, N'750938006131638272', NULL, N'JDynamicBar', N'{"chartData":"[{\"name\":\"1991\",\"value\":131,\"type\":\"Lon\"},{\"name\":\"1992\",\"value\":141,\"type\":\"Lon\"},{\"name\":\"1993\",\"value\":31.5,\"type\":\"Lon\"},{\"name\":\"1994\",\"value\":53,\"type\":\"Lon\"},{\"name\":\"1995\",\"value\":41.9,\"type\":\"Lon\"},{\"name\":\"1996\",\"value\":61,\"type\":\"Lon\"},{\"name\":\"1997\",\"value\":17,\"type\":\"Lon\"},{\"name\":\"1998\",\"value\":19,\"type\":\"Lon\"},{\"name\":\"1999\",\"value\":113,\"type\":\"Lon\"}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"分组"},{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/26/stackedBar","timeOut":0,"option":{"grid":{"top":90,"bottom":115},"series":[],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"text":"动态柱形图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651175563264', NULL, N'750938006131638272', NULL, N'JMultipleBar', N'{"chartData":"[{\"name\":\"1991\",\"value\":3,\"type\":\"Lon\"},{\"name\":\"1992\",\"value\":4,\"type\":\"Lon\"},{\"name\":\"1993\",\"value\":3.5,\"type\":\"Lon\"},{\"name\":\"1994\",\"value\":5,\"type\":\"Lon\"},{\"name\":\"1995\",\"value\":4.9,\"type\":\"Lon\"},{\"name\":\"1996\",\"value\":6,\"type\":\"Lon\"},{\"name\":\"1997\",\"value\":7,\"type\":\"Lon\"},{\"name\":\"1998\",\"value\":9,\"type\":\"Lon\"},{\"name\":\"1999\",\"value\":13,\"type\":\"Lon\"},{\"name\":\"1991\",\"value\":3,\"type\":\"Bor\"},{\"name\":\"1992\",\"value\":4,\"type\":\"Bor\"},{\"name\":\"1993\",\"value\":3.5,\"type\":\"Bor\"},{\"name\":\"1994\",\"value\":5,\"type\":\"Bor\"},{\"name\":\"1995\",\"value\":4.9,\"type\":\"Bor\"},{\"name\":\"1996\",\"value\":6,\"type\":\"Bor\"},{\"name\":\"1997\",\"value\":7,\"type\":\"Bor\"},{\"name\":\"1998\",\"value\":9,\"type\":\"Bor\"},{\"name\":\"1999\",\"value\":13,\"type\":\"Bor\"}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"分组"},{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/26/stackedBar","timeOut":0,"option":{"grid":{"top":90,"bottom":115},"series":[],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"多数据对比柱形图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'817922651192340480', NULL, N'750938006131638272', NULL, N'JNegativeBar', N'{"chartData":"[{\"name\":\"周一\",\"value\":200,\"type\":\"利润\"},{\"name\":\"周二\",\"value\":170,\"type\":\"利润\"},{\"name\":\"周三\",\"value\":240,\"type\":\"利润\"},{\"name\":\"周四\",\"value\":244,\"type\":\"利润\"},{\"name\":\"周五\",\"value\":200,\"type\":\"利润\"},{\"name\":\"周六\",\"value\":220,\"type\":\"利润\"},{\"name\":\"周日\",\"value\":210,\"type\":\"利润\"},{\"name\":\"周一\",\"value\":320,\"type\":\"收入\"},{\"name\":\"周二\",\"value\":302,\"type\":\"收入\"},{\"name\":\"周三\",\"value\":341,\"type\":\"收入\"},{\"name\":\"周四\",\"value\":374,\"type\":\"收入\"},{\"name\":\"周五\",\"value\":390,\"type\":\"收入\"},{\"name\":\"周六\",\"value\":450,\"type\":\"收入\"},{\"name\":\"周日\",\"value\":420,\"type\":\"收入\"},{\"name\":\"周一\",\"value\":-120,\"type\":\"支出\"},{\"name\":\"周二\",\"value\":-132,\"type\":\"支出\"},{\"name\":\"周三\",\"value\":-101,\"type\":\"支出\"},{\"name\":\"周四\",\"value\":-134,\"type\":\"支出\"},{\"name\":\"周五\",\"value\":-190,\"type\":\"支出\"},{\"name\":\"周六\",\"value\":-230,\"type\":\"支出\"},{\"name\":\"周日\",\"value\":-210,\"type\":\"支出\"}]","borderColor":"#FFFFFF00","size":{"height":420},"dataMapping":[{"mapping":"","filed":"分组"},{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"background":"#FFFFFF","dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/26/stackedBar","timeOut":0,"option":{"xAxis":{"type":"value"},"grid":{"top":90,"bottom":115},"series":[],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"正负条形图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-05-15 10:59:27.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'826049694035705856', NULL, N'1516742733803323394', NULL, N'JTabs', N'{"paramOption":[],"dataType":2,"dataSetName":"统计近十日的登陆次数","query":[],"h":40,"dataSetApi":"SELECT\tcount(*)num,\tDATE_FORMAT(create_time,''%Y-%m-%d'')AS`day`FROM\tsys_logWHERE\tlog_type=1ANDcreate_time>DATE_SUB(NOW(),INTERVAL10DAY)GROUPBY\tDATE_FORMAT(create_time,''%Y-%m-%d'')","size":{"width":1650,"height":529},"dataSetId":"1516743766914924546","fieldOption":[{"label":"登录次数","text":"登录次数","value":"num"},{"label":"日期","text":"日期","value":"day"}],"dataSetType":"sql","w":12,"dataSetIzAgent":"","option":{"title":"选项卡"},"child":[{"component":"JBar","w":12,"x":0,"h":42,"i":"2c5a2c1f-2cab-48bc-9a0c-c3c9b648e9b9","title":"柱状图","config":{"dataMapping":[{"mapping":"day","filed":"维度"},{"mapping":"num","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"统计近十日的登陆次数","query":[],"dataSetApi":"SELECT\tcount(*)num,\tDATE_FORMAT(create_time,''%Y-%m-%d'')AS`day`FROM\tsys_logWHERE\tlog_type=1ANDcreate_time>DATE_SUB(NOW(),INTERVAL10DAY)GROUPBY\tDATE_FORMAT(create_time,''%Y-%m-%d'')","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"name\":\"苹果\",\"value\":1000879,\"type\":\"手机品牌\"},{\"name\":\"三星\",\"value\":3400879,\"type\":\"手机品牌\"},{\"name\":\"小米\",\"value\":2300879,\"type\":\"手机品牌\"},{\"name\":\"oppo\",\"value\":5400879,\"type\":\"手机品牌\"},{\"name\":\"vivo\",\"value\":3400879,\"type\":\"手机品牌\"}]","paddingBottom":90,"dataSetId":"1516743766914924546","fieldOption":[{"label":"登录次数","text":"登录次数","value":"num"},{"label":"日期","text":"日期","value":"day"}],"dataSetType":"sql","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"showBackground":true,"backgroundStyle":{"color":"rgba(180,180,180,0.2)"},"type":"bar"}],"tooltip":{"axisPointer":{"label":{"backgroundColor":"#333","show":true},"type":"shadow"},"trigger":"axis"},"title":{"show":true,"text":"基础柱形图","textStyle":{"color":"#464646"}},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}}},{"horizontal":false,"component":"JLine","size":10,"w":12,"x":0,"h":42,"i":"34e3d56e-f567-45e7-bb59-346a8ec23fc6","text":"0.042","id":"a466d3c1-3a35-45f1-9ef1-271ca1a2e37c","title":"曲线图","config":{"dataMapping":[{"mapping":"day","filed":"维度"},{"mapping":"num","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"统计近十日的登陆次数","query":[],"dataSetApi":"SELECT\tcount(*)num,\tDATE_FORMAT(create_time,''%Y-%m-%d'')AS`day`FROM\tsys_logWHERE\tlog_type=1ANDcreate_time>DATE_SUB(NOW(),INTERVAL10DAY)GROUPBY\tDATE_FORMAT(create_time,''%Y-%m-%d'')","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1000,\"name\":\"联想\"},{\"value\":7350,\"name\":\"小米\"},{\"value\":5800,\"name\":\"华为\"},{\"value\":6000,\"name\":\"苹果\"},{\"value\":3000,\"name\":\"戴尔\"}]","paddingBottom":90,"dataSetId":"1516743766914924546","fieldOption":[{"label":"登录次数","text":"登录次数","value":"num"},{"label":"日期","text":"日期","value":"day"}],"dataSetType":"sql","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"series":[{"data":[],"type":"line"}],"title":{"subtext":"","left":"left","text":"基础折线图"},"card":{"rightHref":"","size":"default","extra":"","textStyle":{"color":"#4A4A4A"},"title":""}}},"child":[]},{"horizontal":false,"component":"JPie","size":10,"w":12,"x":0,"h":42,"i":"9e2087e1-fd80-4096-995c-27d35d05478a","text":"0.042","id":"be62c001-795b-4b77-9a91-d6be1ad6d1ce","title":"饼图","config":{"dataMapping":[{"mapping":"day","filed":"维度"},{"mapping":"num","filed":"数值"}],"paramOption":[],"dataType":2,"dataSetName":"统计近十日的登陆次数","query":[],"dataSetApi":"SELECT\tcount(*)num,\tDATE_FORMAT(create_time,''%Y-%m-%d'')AS`day`FROM\tsys_logWHERE\tlog_type=1ANDcreate_time>DATE_SUB(NOW(),INTERVAL10DAY)GROUPBY\tDATE_FORMAT(create_time,''%Y-%m-%d'')","url":"http://api.jeecg.com/mock/33/chart","timeOut":-1,"chartData":"[{\"value\":1048,\"name\":\"vivo\"},{\"value\":735,\"name\":\"oppo\"},{\"value\":580,\"name\":\"苹果\"},{\"value\":484,\"name\":\"小米\"},{\"value\":300,\"name\":\"三星\"}]","paddingBottom":90,"dataSetId":"1516743766914924546","fieldOption":[{"label":"登录次数","text":"登录次数","value":"num"},{"label":"日期","text":"日期","value":"day"}],"dataSetType":"sql","turnConfig":{"url":""},"linkageConfig":[],"dataSetIzAgent":"","option":{"grid":{"bottom":115,"show":false},"legend":{"orient":"vertical"},"series":[{"data":[],"name":"AccessFrom","emphasis":{"itemStyle":{"shadowOffsetX":0,"shadowBlur":10,"shadowColor":"rgba(0,0,0,0.5)"}},"type":"pie","radius":"50%"}],"tooltip":{"trigger":"item"},"title":{"subtext":"","left":"left","show":true,"text":"基础饼图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}},"child":[]}]}', N'admin', N'2023-06-06 21:13:25.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'826049694119591936', NULL, N'1516742733803323394', NULL, N'JCommonTable', N'{"paramOption":[],"dataType":2,"dataSetName":"统计近十日的登陆次数","query":[],"h":42,"dataSetApi":"SELECT\tcount(*)num,\tDATE_FORMAT(create_time,''%Y-%m-%d'')AS`day`FROM\tsys_logWHERE\tlog_type=1ANDcreate_time>DATE_SUB(NOW(),INTERVAL10DAY)GROUPBY\tDATE_FORMAT(create_time,''%Y-%m-%d'')","timeOut":-1,"chartData":"[{\"name\":\"4月\",\"value\":50},{\"name\":\"2月\",\"value\":200},{\"name\":\"3月\",\"value\":300},{\"name\":\"4月\",\"value\":400},{\"name\":\"5月\",\"value\":50},{\"name\":\"6月\",\"value\":120}]","size":{"width":1636,"height":529},"dataSetId":"1516743766914924546","fieldOption":[{"label":"日期","text":"日期","value":"day"},{"label":"登录次数","text":"登录次数","value":"num"}],"dataSetType":"sql","w":24,"linkageConfig":[],"dataSetIzAgent":"","option":{"columns":[{"izShow":"Y","dataIndex":"day","title":"日期"},{"izTotal":"Y","izShow":"Y","dataIndex":"num","title":"登录次数"}]}}', N'admin', N'2023-06-06 21:13:25.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'851377504979591168', NULL, N'825877703655731200', NULL, N'JSmoothLine', N'{"chartData":[{"name":"联想","value":1000},{"name":"小米","value":7350},{"name":"华为","value":5800},{"name":"苹果","value":6000},{"name":"戴尔","value":3000}],"size":{"height":300},"dataMapping":[{"mapping":"","filed":"维度"},{"mapping":"","filed":"数值"}],"dataType":1,"turnConfig":{"url":""},"linkageConfig":[],"url":"http://api.jeecg.com/mock/33/chart","timeOut":0,"option":{"grid":{"top":90,"bottom":115,"show":false},"series":[{"data":[],"type":"line","smooth":true}],"title":{"subtext":"","left":"left","text":"平滑折线图"},"card":{"rightHref":"","size":"default","extra":"","title":""}}}', N'admin', N'2023-08-15 18:37:05.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'851377505004756992', NULL, N'825877703655731200', NULL, N'JNumber', N'{"chartData":{"value":"1024"},"size":{"height":90},"w":5,"dataType":1,"h":9,"turnConfig":{"url":""},"analysis":{"isCompare":false,"compareType":"","trendType":"1"},"timeOut":0,"option":{"isCompare":false,"trendType":"1","body":{"color":"#000000","text":"","fontWeight":"bold"},"card":{"rightHref":"","size":"small","extra":"","textStyle":{"color":"#464646","fontSize":18,"fontWeight":"bold"},"title":""}}}', N'admin', N'2023-08-15 18:37:05.0000000', NULL, NULL)
+GO
+
+INSERT INTO [dbo].[onl_drag_page_comp] ([id], [parent_id], [page_Id], [comp_id], [component], [config], [create_by], [create_time], [update_by], [update_time]) VALUES (N'851377505025728512', NULL, N'825877703655731200', NULL, N'JList', N'{"chartData":[{"date":"2022-3-9 14:20:21","title":"通知一"},{"date":"2022-3-8 14:20:21","title":"通知二"},{"date":"2022-3-7 14:20:21","title":"通知三"},{"date":"2022-3-4 14:20:21","title":"通知四"}],"size":{"height":240},"dataMapping":[{"mapping":"","filed":"标题"},{"mapping":"","filed":"描述"},{"mapping":"","filed":"时间"},{"mapping":"","filed":"封面"}],"w":12,"dataType":1,"h":24,"linkageConfig":[],"url":"http://api.jeecg.com/mock/42/list","timeOut":-1,"option":{"layout":"horizontal","showTitlePrefix":true,"titleFontSize":18,"showTimePrefix":true}}', N'admin', N'2023-08-15 18:37:05.0000000', NULL, NULL)
 GO
 
 
@@ -16977,7 +17025,7 @@ CREATE TABLE [dbo].[sys_data_log] (
   [create_time] datetime2(7)  NULL,
   [update_by] nvarchar(32) COLLATE Chinese_PRC_CI_AS  NULL,
   [update_time] datetime2(7)  NULL,
-  [data_table] nvarchar(32) COLLATE Chinese_PRC_CI_AS  NULL,
+  [data_table] nvarchar(200) COLLATE Chinese_PRC_CI_AS  NULL,
   [data_id] nvarchar(32) COLLATE Chinese_PRC_CI_AS  NULL,
   [data_content] nvarchar(max) COLLATE Chinese_PRC_CI_AS  NULL,
   [data_version] int  NULL,
@@ -17584,6 +17632,78 @@ GO
 INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1631938221120933890', N'admin', N'2023-03-04 16:42:47.0000000', NULL, NULL, N'ceshi_note', N'1589469175033335809', N'  将名称为【用户名】的字段内容 55599 修改为 55599121；  ', N'1', N'comment')
 GO
 
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1643474607279935490', N'admin', N'2023-04-05 12:44:15.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【下单时间】的字段内容 2022-10-29 02:00:03 修改为 空；    将名称为【生日】的字段内容 2022-10-16 修改为 空；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1648500232399077377', N'admin', N'2023-04-19 09:34:18.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【下单时间】的字段内容 空 修改为 2023-04-19 05:04:04；    将名称为【生日】的字段内容 空 修改为 2023-03-30；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681237995443445762', N'admin', N'2023-07-18 17:42:29.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【用户】的字段内容 jeecg 修改为 admin,jeecg；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681238059117174786', N'admin', N'2023-07-18 17:42:44.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【用户】的字段内容 admin,jeecg 修改为 jeecg；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681238095616008193', N'admin', N'2023-07-18 17:42:53.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【用户】的字段内容 jeecg 修改为 jeecg,zhangsan；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681238128306413570', N'admin', N'2023-07-18 17:43:00.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【用户】的字段内容 jeecg,zhangsan 修改为 zhangsan；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681238186477215746', N'admin', N'2023-07-18 17:43:14.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【弹出报表】的字段内容 空 修改为 孙亦菲；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681238234988535810', N'admin', N'2023-07-18 17:43:26.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【弹出报表】的字段内容 孙亦菲 修改为 龙佳昊；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681268194163769345', N'admin', N'2023-07-18 19:42:29.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【弹出报表】的字段内容 龙佳昊 修改为 孙亦菲,龙佳昊；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681268237037944833', N'admin', N'2023-07-18 19:42:39.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【弹出报表】的字段内容 孙亦菲,龙佳昊 修改为 小红帽4,名字；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681268272211378178', N'admin', N'2023-07-18 19:42:47.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【弹出报表】的字段内容 小红帽4,名字 修改为 名字,龙佳昊；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1681268306852134913', N'admin', N'2023-07-18 19:42:55.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【弹出报表】的字段内容 名字,龙佳昊 修改为 龙建林；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683063964357615617', N'admin', N'2023-07-23 18:38:14.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683066881454104578', N'admin', N'2023-07-23 18:49:49.0000000', NULL, NULL, N'test_v3_hello', N'1586554463777943554', N'  将名称为【他表字段】的字段内容 空 修改为 22233；    将名称为【关联记录】的字段内容 1586554454185570306 修改为 1260208702503366657；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683074492790427649', N'admin', N'2023-07-23 19:20:04.0000000', NULL, NULL, N'demo_field_def_val_main', N'1580543461659652098', N'', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683074855975211010', N'admin', N'2023-07-23 19:21:30.0000000', NULL, NULL, N'test_v3_hello', N'1683074855849381889', N' 创建了记录', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683074970022531073', N'admin', N'2023-07-23 19:21:58.0000000', NULL, NULL, N'test_order_main', N'1683074969561157634', N' 创建了记录', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683075083365208066', N'admin', N'2023-07-23 19:22:25.0000000', NULL, NULL, N'asdfa', N'1683075083251961857', N' 创建了记录', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683075102868721666', N'admin', N'2023-07-23 19:22:29.0000000', NULL, NULL, N'asdfa', N'1683075083251961857', N'  将名称为【cc】的字段内容 111 修改为 11133；    将名称为【aaa】的字段内容 11 修改为 11333；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1683382483502747650', N'admin', N'2023-07-24 15:43:54.0000000', NULL, NULL, N'ceshi_note', N'1586278360710615042', N'  将名称为【物料分类】的字段内容 1185039122143719425 修改为 1590548229606047745；    将名称为【省市区】的字段内容 130303 修改为 120105；  ', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1694630557260689409', N'admin', N'2023-08-24 16:39:44.0000000', NULL, NULL, N'ccccccc', N'1694630556740595713', N' 创建了记录', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1704316219031179266', N'admin', N'2023-09-20 10:07:06.0000000', NULL, NULL, N'ccccccc', N'1694630556740595713', N'', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1704384769024577537', N'admin', N'2023-09-20 14:39:30.0000000', NULL, NULL, N'test_v3_hello', N'1704384768789696513', N' 创建了记录', N'1', N'comment')
+GO
+
+INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'1704384783700447234', N'admin', N'2023-09-20 14:39:33.0000000', NULL, NULL, N'test_v3_hello', N'1704384768789696513', N'', N'1', N'comment')
+GO
+
 INSERT INTO [dbo].[sys_data_log] ([id], [create_by], [create_time], [update_by], [update_time], [data_table], [data_id], [data_content], [data_version], [type]) VALUES (N'402880f05ab0d198015ab12274bf0006', N'admin', N'2017-03-09 11:35:09.0000000', NULL, NULL, N'jeecg_demo', N'4028ef81550c1a7901550c1cd6e70001', N'{"mobilePhone":"","officePhone":"","email":"","createDate":"Jun 23, 2016 12:00:00 PM","sex":"1","depId":"402880e447e99cf10147e9a03b320003","userName":"9001","status":"1","content":"111","id":"4028ef81550c1a7901550c1cd6e70001"}', N'3', N'json')
 GO
 
@@ -17775,7 +17895,7 @@ GO
 -- ----------------------------
 -- Records of sys_data_source
 -- ----------------------------
-INSERT INTO [dbo].[sys_data_source] ([id], [code], [name], [remark], [db_type], [db_driver], [db_url], [db_name], [db_username], [db_password], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [tenant_id]) VALUES (N'1209779538310004737', N'local_mysql', N'MySQL5.7', N'本地数据库MySQL5.7', N'1', N'com.mysql.jdbc.Driver', N'jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false', N'jeecg-boot', N'root', N'f5b6775e8d1749483f2320627de0e706', N'admin', N'2019-12-25 18:14:53.0000000', N'admin', N'2020-07-10 16:54:42.0000000', N'A01', N'0')
+INSERT INTO [dbo].[sys_data_source] ([id], [code], [name], [remark], [db_type], [db_driver], [db_url], [db_name], [db_username], [db_password], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [tenant_id]) VALUES (N'1209779538310004737', N'local_mysql', N'本地测试库', N'本地数据库MySQL5.7', N'1', N'com.mysql.jdbc.Driver', N'jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false', N'jeecg-boot', N'root', N'f5b6775e8d1749483f2320627de0e706', N'admin', N'2019-12-25 18:14:53.0000000', N'admin', N'2023-09-20 10:08:28.0000000', N'A01', N'0')
 GO
 
 
@@ -17866,7 +17986,7 @@ EXEC sp_addextendedproperty
 GO
 
 EXEC sp_addextendedproperty
-'MS_Description', N'机构类别 1公司，2组织机构，2岗位',
+'MS_Description', N'机构类别 1公司，2组织机构，3岗位',
 'SCHEMA', N'dbo',
 'TABLE', N'sys_depart',
 'COLUMN', N'org_category'
@@ -17987,28 +18107,28 @@ GO
 -- ----------------------------
 -- Records of sys_depart
 -- ----------------------------
-INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'1582683631414632450', N'c6d7cb4deeac411cb3384b1b31278596', N'销售公关岗位', NULL, NULL, N'0', NULL, N'3', N'2', N'A01A06', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2022-10-19 18:42:37.0000000', NULL, NULL, N'0', N'0')
+INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'1582683631414632450', N'c6d7cb4deeac411cb3384b1b31278596', N'销售公关岗位', NULL, NULL, N'0', NULL, N'3', N'2', N'A01A06', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2022-10-19 18:42:37.0000000', NULL, NULL, N'0', N'1')
 GO
 
-INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'4f1765520d6346f9bd9c79e2479e5b12', N'c6d7cb4deeac411cb3384b1b31278596', N'市场部', NULL, NULL, N'0', NULL, N'1', N'2', N'A01A03', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-20 17:15:34.0000000', N'admin', N'2019-02-26 16:36:18.0000000', N'0', N'0')
+INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'4f1765520d6346f9bd9c79e2479e5b12', N'c6d7cb4deeac411cb3384b1b31278596', N'市场部', NULL, NULL, N'0', NULL, N'1', N'2', N'A01A03', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-20 17:15:34.0000000', N'admin', N'2019-02-26 16:36:18.0000000', N'0', N'1')
 GO
 
-INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'5159cde220114246b045e574adceafe9', N'6d35e179cd814e3299bd588ea7daed3f', N'研发部', NULL, NULL, N'0', NULL, N'1', N'2', N'A02A02', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-26 16:44:38.0000000', N'admin', N'2019-03-07 09:36:53.0000000', N'0', N'0')
+INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'5159cde220114246b045e574adceafe9', N'6d35e179cd814e3299bd588ea7daed3f', N'研发部', NULL, NULL, N'0', NULL, N'1', N'2', N'A02A02', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-26 16:44:38.0000000', N'admin', N'2019-03-07 09:36:53.0000000', N'0', N'1')
 GO
 
 INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'57197590443c44f083d42ae24ef26a2c', N'c6d7cb4deeac411cb3384b1b31278596', N'研发部', NULL, NULL, N'0', NULL, N'1', N'2', N'A01A05', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-21 16:14:41.0000000', N'admin', N'2019-03-27 19:05:49.0000000', N'0', N'0')
 GO
 
-INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'63775228b7b041a99825f79760590b7d', N'57197590443c44f083d42ae24ef26a2c', N'研发经理', NULL, NULL, N'0', NULL, N'3', N'3', N'A01A05A01', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2020-05-02 15:29:09.0000000', NULL, NULL, N'0', N'0')
+INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'63775228b7b041a99825f79760590b7d', N'57197590443c44f083d42ae24ef26a2c', N'研发经理', NULL, NULL, N'0', NULL, N'3', N'3', N'A01A05A01', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2020-05-02 15:29:09.0000000', NULL, NULL, N'0', N'1')
 GO
 
-INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'67fc001af12a4f9b8458005d3f19934a', N'c6d7cb4deeac411cb3384b1b31278596', N'财务部', NULL, NULL, N'0', NULL, N'1', N'2', N'A01A04', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-21 16:14:35.0000000', N'admin', N'2019-02-25 12:49:41.0000000', N'0', N'0')
+INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'67fc001af12a4f9b8458005d3f19934a', N'c6d7cb4deeac411cb3384b1b31278596', N'财务部', NULL, NULL, N'0', NULL, N'1', N'2', N'A01A04', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-21 16:14:35.0000000', N'admin', N'2019-02-25 12:49:41.0000000', N'0', N'1')
 GO
 
 INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'6d35e179cd814e3299bd588ea7daed3f', N'', N'北京卓尔互动', NULL, NULL, N'0', NULL, N'1', N'1', N'A02', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-26 16:36:39.0000000', N'admin', N'2020-05-02 18:21:22.0000000', N'0', N'0')
 GO
 
-INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'a7d7e77e06c84325a40932163adcdaa6', N'6d35e179cd814e3299bd588ea7daed3f', N'财务部', NULL, NULL, N'0', NULL, N'1', N'2', N'A02A01', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-26 16:36:47.0000000', N'admin', N'2022-10-14 18:57:56.0000000', N'0', N'0')
+INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'a7d7e77e06c84325a40932163adcdaa6', N'6d35e179cd814e3299bd588ea7daed3f', N'财务部', NULL, NULL, N'0', NULL, N'1', N'2', N'A02A01', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-26 16:36:47.0000000', N'admin', N'2022-10-14 18:57:56.0000000', N'0', N'1')
 GO
 
 INSERT INTO [dbo].[sys_depart] ([id], [parent_id], [depart_name], [depart_name_en], [depart_name_abbr], [depart_order], [description], [org_category], [org_type], [org_code], [mobile], [fax], [address], [memo], [status], [del_flag], [qywx_identifier], [create_by], [create_time], [update_by], [update_time], [tenant_id], [iz_leaf]) VALUES (N'c6d7cb4deeac411cb3384b1b31278596', N'', N'北京国炬软件', NULL, NULL, N'0', NULL, N'1', N'1', N'A01', NULL, NULL, NULL, NULL, NULL, N'0', NULL, N'admin', N'2019-02-11 14:21:51.0000000', N'admin', N'2020-05-02 18:21:27.0000000', N'0', N'0')
@@ -18074,6 +18194,12 @@ INSERT INTO [dbo].[sys_depart_permission] ([id], [depart_id], [permission_id], [
 GO
 
 INSERT INTO [dbo].[sys_depart_permission] ([id], [depart_id], [permission_id], [data_rule_ids]) VALUES (N'1260925131959685121', N'6d35e179cd814e3299bd588ea7daed3f', N'1232123780958064642', NULL)
+GO
+
+INSERT INTO [dbo].[sys_depart_permission] ([id], [depart_id], [permission_id], [data_rule_ids]) VALUES (N'1694946354772217858', N'1582683631414632450', N'1588513553652436993', NULL)
+GO
+
+INSERT INTO [dbo].[sys_depart_permission] ([id], [depart_id], [permission_id], [data_rule_ids]) VALUES (N'1694946354784800769', N'1582683631414632450', N'1592114574275211265', NULL)
 GO
 
 
@@ -18458,6 +18584,9 @@ INSERT INTO [dbo].[sys_dict] ([id], [dict_name], [dict_code], [description], [de
 GO
 
 INSERT INTO [dbo].[sys_dict] ([id], [dict_name], [dict_code], [description], [del_flag], [create_by], [create_time], [update_by], [update_time], [type], [tenant_id], [low_app_id]) VALUES (N'1606646440684457986', N'公司部门', N'company_department', N'公司部门', N'0', N'admin', N'2022-12-24 21:42:16.0000000', NULL, NULL, N'0', N'0', NULL)
+GO
+
+INSERT INTO [dbo].[sys_dict] ([id], [dict_name], [dict_code], [description], [del_flag], [create_by], [create_time], [update_by], [update_time], [type], [tenant_id], [low_app_id]) VALUES (N'1693196536609755137', N'ddd', N'ddd', NULL, N'1', N'admin', N'2023-08-20 17:41:27.0000000', NULL, NULL, N'0', N'0', NULL)
 GO
 
 INSERT INTO [dbo].[sys_dict] ([id], [dict_name], [dict_code], [description], [del_flag], [create_by], [create_time], [update_by], [update_time], [type], [tenant_id], [low_app_id]) VALUES (N'236e8a4baff0db8c62c00dd95632834f', N'同步工作流引擎', N'activiti_sync', N'同步工作流引擎', N'0', N'admin', N'2019-05-15 15:27:33.0000000', NULL, NULL, N'0', N'0', NULL)
@@ -19674,7 +19803,7 @@ GO
 INSERT INTO [dbo].[sys_gateway_route] ([id], [router_id], [name], [uri], [predicates], [filters], [retryable], [strip_prefix], [persistable], [show_api], [status], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'jeecg-demo', N'jeecg-demo', N'jeecg-demo', N'lb://jeecg-demo', N'[{"args":["/mock/**","/bigscreen/template1/**","/bigscreen/template2/**","/test/**"],"name":"Path"}]', N'[]', NULL, NULL, NULL, NULL, N'1', N'admin', N'2020-11-16 19:41:51.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_gateway_route] ([id], [router_id], [name], [uri], [predicates], [filters], [retryable], [strip_prefix], [persistable], [show_api], [status], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'jeecg-system', N'jeecg-system', N'jeecg-system', N'lb://jeecg-system', N'[{"args":["/sys/**","/online/**","/bigscreen/**","/jmreport/**","/druid/**","/generic/**"],"name":"Path"}]', N'[]', NULL, NULL, NULL, NULL, N'1', N'admin', N'2020-11-16 19:41:51.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_gateway_route] ([id], [router_id], [name], [uri], [predicates], [filters], [retryable], [strip_prefix], [persistable], [show_api], [status], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'jeecg-system', N'jeecg-system', N'jeecg-system', N'lb://jeecg-system', N'[{"args":["/sys/**","/online/**","/bigscreen/**","/jmreport/**","/druid/**","/generic/**","/actuator/**","/drag/**"],"name":"Path"}]', N'[]', NULL, NULL, NULL, NULL, N'1', N'admin', N'2020-11-16 19:41:51.0000000', NULL, NULL, NULL)
 GO
 
 
@@ -19831,73 +19960,46 @@ GO
 -- ----------------------------
 -- Records of sys_log
 -- ----------------------------
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1632743293639704578', N'1', N'用户名: admin,登录成功！', NULL, N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-06 22:01:51.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704384728536961026', N'2', N'online表单加载,表名:test_note,操作成功', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.online.cgform.c.a.c()', NULL, N'', NULL, N'159', NULL, N'2023-09-20 14:39:20.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633795132552331266', N'1', N'用户名: admin,登录成功！', NULL, N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:41:29.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704384769137823746', N'2', N'online新增数据,表名:test_v3_hello,添加成功!', N'2', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.online.cgform.c.a.a()', NULL, N'["9ab817fd4c2e4e7ba6652c4fa46af389",{"birthday":"2023-09-13","create_by":"admin","create_time":"2023-09-20 14:39:29","sys_org_code":"A01","sex":"1","name":"22","rel_user":"1580543046964621313","id":"1704384768789696513","age":22,"rel_filed":"22"},null]', NULL, N'81', NULL, N'2023-09-20 14:39:30.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633795234301952002', N'3', N'将 jeecg 添加到角色 232', N'2', N'admin', N'管理员', NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:41:53.0000000', NULL, NULL, N'1')
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704384777484488705', N'2', N'online表单数据查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.online.cgform.c.a.b()', NULL, N'', NULL, N'30', NULL, N'2023-09-20 14:39:32.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633795819784847361', N'2', N'编辑用户，username： zhagnxiao', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:44:13.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704384783759167489', N'2', N'online修改数据,表名:test_v3_hello,修改成功！', N'3', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.online.cgform.c.a.a()', NULL, N'["9ab817fd4c2e4e7ba6652c4fa46af389",{"birthday":"2023-09-13","cc":"","rel_user_dictText":"zhangsan","update_time":"2023-09-20 14:39:33","jeecg_row_key":"1704384768789696513","sex":"1","name":"22","rel_user":"1580543046964621313","id":"1704384768789696513","update_by":"admin","age":22,"rel_filed":"22"}]', NULL, N'47', NULL, N'2023-09-20 14:39:33.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633797138973147137', N'2', N'添加用户，username： sdfas', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:49:27.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704483939651670018', N'1', N'用户名: admin,登录成功！', NULL, N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-09-20 21:13:34.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633799025831133186', N'2', N'添加用户，username： 123', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:56:57.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704492335817793537', N'1', N'用户名: admin,登录成功！', NULL, N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-09-20 21:46:55.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633799090641518594', N'2', N'编辑用户，username： 123', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:57:12.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704493689898508289', N'2', N'职务表-分页列表查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.system.controller.SysPositionController.queryPageList()', NULL, N'  sysPosition: SysPosition(id=null, code=null, name=null, postRank=null, companyId=null, createBy=null, createTime=null, updateBy=null, updateTime=null, sysOrgCode=null, tenantId=null)  pageNo: 1  pageSize: 10  req: org.apache.shiro.web.servlet.ShiroHttpServletRequest@44ce6b23', NULL, N'57', NULL, N'2023-09-20 21:52:18.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633799500294995970', N'2', N'添加用户，username： sdfasdf', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:58:50.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704493701705474050', N'2', N'职务表-分页列表查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.system.controller.SysPositionController.queryPageList()', NULL, N'  sysPosition: SysPosition(id=null, code=null, name=null, postRank=null, companyId=null, createBy=null, createTime=null, updateBy=null, updateTime=null, sysOrgCode=null, tenantId=null)  pageNo: 1  pageSize: 99999  req: org.apache.shiro.web.servlet.ShiroHttpServletRequest@71284a4c', NULL, N'24', NULL, N'2023-09-20 21:52:21.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633799606465413122', N'2', N'编辑用户，username： sdfasdf', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 19:59:15.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704670627631927298', N'2', N'数据源表-分页列表查询', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.d.a()', NULL, N'', NULL, N'22', NULL, N'2023-09-21 09:35:24.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802472806670338', N'1', N'用户名: 管理员,退出成功！', NULL, N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:10:39.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704670708699435010', N'2', N'数据源表-添加', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.d.a()', NULL, N'[{"connectTimes":0,"createBy":"admin","createTime":1695260142817,"dbDriver":"com.mysql.jdbc.Driver","dbPassword":"@JimuReportSMy3f94QGFM=","dbType":"MYSQL5.5","dbUrl":"jdbc:mysql://127.0.0.1:3306/jimureport?characterEncoding=UTF-8&useUnicode=true&useSSL=false","dbUsername":"root","id":"864649614879424512","name":"1","type":"drag"},null]', NULL, N'63', NULL, N'2023-09-21 09:35:43.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802491123195906', N'1', N'用户名: admin,登录成功！', NULL, N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:10:43.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704670708963676161', N'2', N'数据源表-分页列表查询', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.d.a()', NULL, N'', NULL, N'8', NULL, N'2023-09-21 09:35:43.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802551785414658', N'2', N'职务表-分页列表查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.system.controller.SysPositionController.queryPageList()', NULL, N'  sysPosition: SysPosition(id=null, code=, name=null, postRank=null, companyId=null, createBy=null, createTime=null, updateBy=null, updateTime=null, sysOrgCode=null, tenantId=0)  pageNo: 1  pageSize: 10  req: org.apache.shiro.web.servlet.ShiroHttpServletRequest@400bd6e8', NULL, N'44', NULL, N'2023-03-09 20:10:58.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704670733940756482', N'2', N'数据源表-通过id删除', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.d.a()', NULL, N'', NULL, N'20', NULL, N'2023-09-21 09:35:49.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802611273228290', N'2', N'添加用户，username： asdfasdf', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:11:12.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704670734070779906', N'2', N'数据源表-分页列表查询', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.d.a()', NULL, N'', NULL, N'6', NULL, N'2023-09-21 09:35:49.0000000', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802653614727170', N'2', N'批量删除用户， ids： 1633802611139010562,1633799500227887106,1633799025764024321,1633797138843123714', N'3', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:11:22.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802992560627713', N'2', N'职务表-分页列表查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.system.controller.SysPositionController.queryPageList()', NULL, N'  sysPosition: SysPosition(id=null, code=, name=null, postRank=null, companyId=null, createBy=null, createTime=null, updateBy=null, updateTime=null, sysOrgCode=null, tenantId=0)  pageNo: 1  pageSize: 10  req: org.apache.shiro.web.servlet.ShiroHttpServletRequest@767bb69d', NULL, N'18', NULL, N'2023-03-09 20:12:43.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633802993412071426', N'2', N'职务表-分页列表查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.system.controller.SysPositionController.queryPageList()', NULL, N'  sysPosition: SysPosition(id=null, code=总经理, name=null, postRank=null, companyId=null, createBy=null, createTime=null, updateBy=null, updateTime=null, sysOrgCode=null, tenantId=0)  pageNo: 1  pageSize: 10  req: org.apache.shiro.web.servlet.ShiroHttpServletRequest@f9470cd', NULL, N'24', NULL, N'2023-03-09 20:12:43.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633803007035170818', N'2', N'编辑用户，username： admin', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:12:46.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633804165707456513', N'2', N'职务表-分页列表查询', N'1', N'admin', N'管理员', N'127.0.0.1', N'org.jeecg.modules.system.controller.SysPositionController.queryPageList()', NULL, N'  sysPosition: SysPosition(id=null, code=null, name=null, postRank=null, companyId=null, createBy=null, createTime=null, updateBy=null, updateTime=null, sysOrgCode=null, tenantId=1000)  pageNo: 1  pageSize: 10  req: org.apache.shiro.web.servlet.ShiroHttpServletRequest@7460e74a', NULL, N'15', NULL, N'2023-03-09 20:17:22.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633804994137026562', N'2', N'修改角色ID: 1501570619841810433 的权限配置，操作人： admin', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:20:40.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1633807285640491010', N'2', N'编辑用户，username： admin', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-03-09 20:29:46.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1666007096779063299', N'2', N'修改角色ID: 1501570619841810433 的权限配置，操作人： admin', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-06-06 17:00:19.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1666007226924122114', N'2', N'数据源表-分页列表查询', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.d.a()', NULL, N'', NULL, N'11', NULL, N'2023-06-06 17:00:50.0000000', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1666008971326767106', N'2', N'修改角色ID: 1501570619841810433 的权限配置，操作人： admin', N'2', N'admin', N'管理员', N'127.0.0.1', NULL, NULL, NULL, NULL, NULL, NULL, N'2023-06-06 17:07:46.0000000', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_log] ([id], [log_type], [log_content], [operate_type], [userid], [username], [ip], [method], [request_url], [request_param], [request_type], [cost_time], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'1704670778513625089', N'2', N'数据集分组-添加', N'1', N'admin', N'管理员', N'0:0:0:0:0:0:0:1', N'org.jeecg.modules.drag.b.e.a()', NULL, N'[{"createBy":"admin","createTime":1695260159478,"id":"864649684727169024","name":"222"}]', NULL, N'47', NULL, N'2023-09-21 09:36:00.0000000', NULL, NULL, NULL)
 GO
 
 
@@ -20156,10 +20258,10 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1214462306546319362', N'3f915b2769fc80648e92d04e84ca059d', N'新增用户', N'', N'', N'0', NULL, NULL, N'2', N'system:user:add', N'1', N'1', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2020-01-07 16:22:32.0000000', N'admin', N'2022-11-17 16:24:47.0000000', N'0', N'0', N'1', N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1280350452934307841', N'd7d6e2e4e2934f2c9385a623fd98c6f3', N'租户管理', N'/system/tenant', N'system/tenant/index', N'1', NULL, NULL, N'1', NULL, N'1', N'3.1', N'0', N'ant-design:appstore-twotone', N'0', N'0', N'0', N'0', NULL, N'admin', N'2020-07-07 11:58:30.0000000', N'admin', N'2023-03-04 15:03:01.0000000', N'0', N'0', N'1', N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1280350452934307841', N'1633804334561746946', N'租户管理', N'/system/tenant', N'system/tenant/index', N'1', NULL, NULL, N'1', NULL, N'1', N'3.1', N'0', N'ant-design:appstore-twotone', N'0', N'0', N'0', N'0', NULL, N'admin', N'2020-07-07 11:58:30.0000000', N'admin', N'2023-05-15 11:16:08.0000000', N'0', N'0', N'1', N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438108176273760258', N'', N'Dashboard', N'/dashboard', N'layouts/default/index', N'1', NULL, N'/dashboard/analysis', N'0', NULL, N'1', N'1', N'0', N'ion:grid-outline', N'0', N'0', N'0', N'0', NULL, N'admin', N'2021-09-15 19:51:23.0000000', N'admin', N'2022-11-10 11:30:19.0000000', N'0', N'1', N'1', N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438108176273760258', N'', N'Dashboard', N'/dashboard', N'layouts/default/index', N'1', NULL, N'/dashboard/analysis', N'0', NULL, N'1', N'1', N'0', N'ion:grid-outline', N'0', N'0', N'0', N'0', NULL, N'admin', N'2021-09-15 19:51:23.0000000', N'admin', N'2023-08-20 17:38:23.0000000', N'0', N'0', N'1', N'0')
 GO
 
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438108176814825473', N'1438108176273760258', N'工作台', N'/dashboard/workbench', N'dashboard/workbench/index', N'1', NULL, NULL, N'1', NULL, N'1', N'1', N'0', N'ant-design:appstore-twotone', N'1', N'0', N'0', NULL, NULL, N'admin', N'2021-09-15 19:51:23.0000000', N'admin', N'2021-09-17 15:42:42.0000000', N'0', N'0', N'1', N'0')
@@ -20636,7 +20738,7 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438115924159881218', N'1438108183395688450', N'Tab带参1', N'/testTab/id1', N'demo/feat/tab-params/index', N'1', NULL, NULL, N'1', NULL, N'0', N'0', N'0', NULL, N'1', N'0', N'0', NULL, NULL, N'admin', N'2021-09-15 20:22:10.0000000', N'admin', N'2021-09-16 14:38:32.0000000', N'0', N'0', N'1', N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438116003012796418', N'1438108183395688450', N'Tab带参2', N'/feat/testTab/id2', N'demo/feat/tab-params/index', N'1', NULL, NULL, N'1', NULL, N'0', N'1', N'0', NULL, N'1', N'0', N'0', NULL, NULL, N'admin', N'2021-09-15 20:22:29.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438116003012796418', N'1438108183395688450', N'Tab带参2', N'/feat/testTab/id2', N'demo/feat/tab-params/index', N'1', NULL, NULL, N'1', NULL, N'0', N'1', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2021-09-15 20:22:29.0000000', N'admin', N'2023-08-25 13:32:42.0000000', N'0', N'0', N'1', N'0')
 GO
 
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1438469604861403137', N'd7d6e2e4e2934f2c9385a623fd98c6f3', N'职务管理', N'/system/position', N'system/position/index', N'1', NULL, NULL, N'1', NULL, N'0', N'5', N'0', N'ant-design:database-filled', N'1', N'0', N'0', NULL, NULL, N'admin', N'2021-09-16 19:47:33.0000000', N'admin', N'2021-09-17 15:58:22.0000000', N'0', N'0', NULL, N'0')
@@ -20669,7 +20771,7 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1439531077792473089', N'1439398677984878593', N'数据日志', N'/monitor/datalog', N'monitor/datalog/index', N'1', NULL, NULL, N'1', NULL, N'0', N'4', N'0', N'ant-design:funnel-plot-twotone', N'1', N'0', N'0', N'0', NULL, N'admin', N'2021-09-19 18:05:28.0000000', NULL, NULL, N'0', N'0', NULL, N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1439533711676973057', N'1439398677984878593', N'日志管理', N'/monitor/log', N'monitor/log/index', N'1', NULL, NULL, N'1', NULL, N'0', N'5', N'0', N'ant-design:interaction-outlined', N'1', N'0', N'0', N'0', NULL, N'admin', N'2021-09-19 18:15:56.0000000', N'admin', N'2021-09-19 18:16:56.0000000', N'0', N'0', NULL, N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1439533711676973057', N'1439398677984878593', N'日志管理', N'/monitor/log', N'monitor/log/index', N'1', NULL, NULL, N'1', NULL, N'0', N'5', N'0', N'ant-design:interaction-outlined', N'0', N'0', N'0', N'0', NULL, N'admin', N'2021-09-19 18:15:56.0000000', N'admin', N'2021-09-19 18:16:56.0000000', N'0', N'0', NULL, N'0')
 GO
 
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1439542701152575489', N'1443390062919208961', N'我的消息', N'/monitor/mynews', N'monitor/mynews/index', N'1', NULL, NULL, N'1', NULL, N'0', N'6', N'0', N'', N'1', N'0', N'0', N'0', NULL, N'admin', N'2021-09-19 18:51:40.0000000', N'admin', N'2022-09-22 10:33:10.0000000', N'0', N'0', NULL, N'0')
@@ -20789,6 +20891,9 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1542385335362383873', N'1473927410093187073', N'删除仪表盘', NULL, NULL, N'0', NULL, NULL, N'2', N'onl:drag:page:delete', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-06-30 13:51:35.0000000', N'admin', N'2022-06-30 13:51:42.0000000', N'0', N'0', N'1', N'0')
 GO
 
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1554384900763729922', N'1473927410093187073', N'模板设置', NULL, NULL, N'0', NULL, NULL, N'2', N'drag:template:edit', N'2', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'jeecg', N'2022-08-02 16:33:34.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580833876002627585', N'1447763172274495489', N'Online报表例子', N'/online/cgreport/1256627801873821698', N'1', N'0', N'', NULL, N'1', NULL, N'0', N'3', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 16:12:21.0000000', N'admin', N'2022-10-14 16:21:55.0000000', N'0', N'0', NULL, N'0')
 GO
 
@@ -20798,10 +20903,10 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580835899477483522', N'1447763172274495489', N'积木报表例子', N'/jmreport/view/961455b47c0b86dc961e90b5893bff05', N'{{ window._CONFIG[''domianURL''] }}/jmreport/view/961455b47c0b86dc961e90b5893bff05?token=${token}', N'1', N'', NULL, N'1', NULL, N'0', N'5', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 16:20:24.0000000', N'admin', N'2022-10-14 16:20:51.0000000', N'0', N'0', NULL, N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580877743141933058', N'1447763172274495489', N'生产销售监控大屏', N'/test/bigScreen1', N'{{ window._CONFIG[''domianURL''] }}/test/bigScreen/templat/index1', N'1', N'', NULL, N'1', NULL, N'0', N'6', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 19:06:40.0000000', N'admin', N'2022-10-14 19:08:25.0000000', N'0', N'0', NULL, N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580877743141933058', N'1447763172274495489', N'生产销售监控大屏', N'/test/bigScreen/templat/index1', N'{{ window._CONFIG[''domianURL''] }}/test/bigScreen/templat/index1', N'1', N'', NULL, N'1', NULL, N'0', N'6', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 19:06:40.0000000', N'admin', N'2023-09-20 21:15:55.0000000', N'0', N'0', NULL, N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580877931331964929', N'1447763172274495489', N'智慧物流监控大屏', N'/test/bigScreen2', N'{{ window._CONFIG[''domianURL''] }}/test/bigScreen/templat/index2', N'1', N'', NULL, N'1', NULL, N'0', N'7', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 19:07:25.0000000', N'admin', N'2022-10-14 19:08:15.0000000', N'0', N'0', NULL, N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580877931331964929', N'1447763172274495489', N'智慧物流监控大屏', N'/test/bigScreen/templat/index2', N'{{ window._CONFIG[''domianURL''] }}/test/bigScreen/templat/index2', N'1', N'', NULL, N'1', NULL, N'0', N'7', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 19:07:25.0000000', N'admin', N'2023-09-20 21:16:03.0000000', N'0', N'0', NULL, N'0')
 GO
 
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1580878668472504321', N'1447763172274495489', N'积木大屏案例', N'/test/jmbigscreen2', N'https://cloud.jimureport.com/bigscreen/#/view/bs_1394991793166094338', N'1', N'', NULL, N'1', NULL, N'0', N'9', N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-10-14 19:10:21.0000000', N'admin', N'2022-10-28 10:18:19.0000000', N'0', N'0', NULL, N'0')
@@ -21011,6 +21116,18 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1600129606082650113', N'1280350452934307841', N'租户请离', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:leave', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-12-06 22:06:42.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
 GO
 
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1609123240547344385', N'1280350452934307841', N'产品包分页列表查询', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:packList', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-12-31 17:44:11.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1609123437247619074', N'1280350452934307841', N'创建租户产品包', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:add:pack', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-12-31 17:44:58.0000000', N'admin', N'2022-12-31 20:27:56.0000000', N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1609164542165012482', N'1280350452934307841', N'编辑租户产品包', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:edit:pack', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-12-31 20:28:18.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1609164635442139138', N'1280350452934307841', N'批量删除租户产品包', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:delete:pack', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2022-12-31 20:28:41.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1611620416187969538', N'1280350452934307841', N'分页获取租户用户数据', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:tenantPageList', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-01-07 15:07:04.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
 GO
 
@@ -21047,7 +21164,28 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1621620772498288641', N'1280350452934307841', N'添加租户', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:add', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-01-11 15:08:29.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1633804334561746946', N'', N'我的租户', N'/mytenant', N'layouts/RouteView', N'1', N'', NULL, N'0', NULL, N'0', N'4', N'0', N'ant-design:ant-design-outlined', N'0', N'0', N'0', N'0', NULL, N'admin', N'2023-03-09 20:18:03.0000000', N'admin', N'2023-03-09 20:20:57.0000000', N'0', N'0', NULL, N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1633804334561746946', N'', N'租户管理', N'/mytenant', N'layouts/RouteView', N'1', N'', NULL, N'0', NULL, N'0', N'4', N'0', N'ant-design:ant-design-outlined', N'0', N'0', N'0', N'0', NULL, N'admin', N'2023-03-09 20:18:03.0000000', N'admin', N'2023-05-15 11:24:28.0000000', N'0', N'0', NULL, N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1660568280725127169', N'1439533711676973057', N'日志列表', NULL, NULL, N'1', NULL, NULL, N'2', N'system:log:list', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-05-22 16:48:25.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1660568368558047234', N'1439533711676973057', N'日志删除', NULL, NULL, N'1', NULL, NULL, N'2', N'system:log:delete', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-05-22 16:48:46.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1660568426632380417', N'1439533711676973057', N'日志批量删除', NULL, NULL, N'1', NULL, NULL, N'2', N'system:log:deleteBatch', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-05-22 16:48:59.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1691031996d593131521', N'1455100420297859074', N'AUTO在线ERP表单', N'/online/cgformErpList/:id', N'super/online/cgform/auto/erp/OnlCgformErpList', N'1', N'', NULL, N'1', NULL, N'0', N'1', N'0', NULL, N'1', N'0', N'1', N'0', NULL, N'admin', N'2023-08-14 18:20:20.0000000', N'admin', N'2023-08-14 18:46:18.0000000', N'0', N'0', NULL, N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1691031996d5931315212', N'14551004202978590741', N'AUTO在线一对多内嵌', N'/online/cgformInnerTableList/:id', N'super/online/cgform/auto/innerTable/OnlCgformInnerTableList', N'1', N'', NULL, N'1', NULL, N'0', N'1', N'0', NULL, N'1', N'0', N'1', N'0', NULL, N'admin', N'2023-08-14 18:20:20.0000000', N'admin', N'2023-08-14 18:46:18.0000000', N'0', N'0', NULL, N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1691031996d5931315213', N'14551004202978590741', N'AUTO在线Tab风格', N'/online/cgformTabList/:id', N'super/online/cgform/auto/tab/OnlCgformTabList', N'1', N'', NULL, N'1', NULL, N'0', N'1', N'0', NULL, N'1', N'0', N'1', N'0', NULL, N'admin', N'2023-08-14 18:20:20.0000000', N'admin', N'2023-08-14 18:46:18.0000000', N'0', N'0', NULL, N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1693195557097164801', N'190c2b43bec6a5f7a4194a85db67d96a', N'查询所有角色', NULL, NULL, N'0', NULL, NULL, N'2', N'system:role:list', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-08-20 17:37:34.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
 GO
 
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1697220712498288641', N'1280350452934307841', N'根据ids查询租户', NULL, NULL, N'0', NULL, NULL, N'2', N'system:tenant:queryList', N'1', NULL, N'0', NULL, N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-01-11 15:08:29.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
@@ -21074,7 +21212,7 @@ GO
 INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'9502685863ab87f0ad1134142788a385', N'1438108176273760258', N'首页', N'/dashboard/analysis', N'dashboard/Analysis', N'1', NULL, NULL, N'1', NULL, NULL, N'1', N'0', N'ant-design:bank-filled', N'1', N'1', N'0', NULL, NULL, NULL, N'2018-12-25 20:34:38.0000000', N'admin', N'2021-09-17 15:43:16.0000000', N'0', N'0', NULL, N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'd7d6e2e4e2934f2c9385a623fd98c6f3', N'', N'系统管理', N'/isystem', N'layouts/RouteView', N'1', NULL, NULL, N'0', NULL, NULL, N'3', N'0', N'ant-design:setting', N'0', N'0', N'0', N'0', NULL, NULL, N'2018-12-25 20:34:38.0000000', N'admin', N'2022-11-11 15:37:11.0000000', N'0', N'0', NULL, N'0')
+INSERT INTO [dbo].[sys_permission] ([id], [parent_id], [name], [url], [component], [is_route], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'd7d6e2e4e2934f2c9385a623fd98c6f3', N'', N'系统管理', N'/isystem', N'layouts/RouteView', N'1', NULL, NULL, N'0', NULL, NULL, N'3', N'0', N'ant-design:setting', N'0', N'0', N'0', N'0', NULL, NULL, N'2018-12-25 20:34:38.0000000', N'admin', N'2023-08-25 13:35:21.0000000', N'0', N'0', NULL, N'0')
 GO
 
 
@@ -21823,6 +21961,15 @@ GO
 INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1620327825894981634', N'1280350452934307841', N'租户还原', NULL, NULL, NULL, NULL, N'2', N'system:tenant:revertTenantLogic', N'1', NULL, N'0', NULL, N'0', N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-01-31 15:47:13.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
 GO
 
+INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1660568280725127169', N'58857ff846e61794c69208e9d3a85466', N'日志列表', NULL, NULL, NULL, NULL, N'2', N'system:log:list', N'1', NULL, N'0', NULL, N'1', N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-05-22 16:48:25.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1660568368558047234', N'58857ff846e61794c69208e9d3a85466', N'日志删除', NULL, NULL, NULL, NULL, N'2', N'system:log:delete', N'1', NULL, N'0', NULL, N'1', N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-05-22 16:48:46.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
+INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'1660568426632380417', N'58857ff846e61794c69208e9d3a85466', N'日志批量删除', NULL, NULL, NULL, NULL, N'2', N'system:log:deleteBatch', N'1', NULL, N'0', NULL, N'1', N'1', N'0', N'0', N'0', NULL, N'admin', N'2023-05-22 16:48:59.0000000', NULL, NULL, N'0', N'0', N'1', N'0')
+GO
+
 INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'190c2b43bec6a5f7a4194a85db67d96a', N'd7d6e2e4e2934f2c9385a623fd98c6f3', N'角色管理', N'/isystem/roleUserList', N'system/RoleUserList', NULL, NULL, N'1', NULL, NULL, N'1.2', N'0', NULL, N'1', N'0', N'0', N'0', NULL, NULL, N'admin', N'2019-04-17 15:13:56.0000000', N'admin', N'2019-12-25 09:36:31.0000000', N'0', N'0', NULL, N'0')
 GO
 
@@ -21895,7 +22042,7 @@ GO
 INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'54dd5457a3190740005c1bfec55b1c34', N'd7d6e2e4e2934f2c9385a623fd98c6f3', N'菜单管理(老)', N'/isystem/permission', N'system/PermissionList', NULL, NULL, N'1', NULL, NULL, N'1.3', N'0', NULL, N'1', N'1', N'0', N'0', N'0', NULL, NULL, N'2018-12-25 20:34:38.0000000', N'admin', N'2022-10-14 18:01:41.0000000', N'0', N'0', NULL, N'0')
 GO
 
-INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'58857ff846e61794c69208e9d3a85466', N'08e6b9dc3c04489c8e1ff2ce6f105aa4', N'日志管理', N'/isystem/log', N'system/LogList', NULL, NULL, N'1', NULL, NULL, N'2', N'0', N'', N'1', N'1', N'0', N'0', NULL, NULL, NULL, N'2018-12-26 10:11:18.0000000', N'admin', N'2020-09-09 14:48:25.0000000', N'0', N'0', NULL, N'0')
+INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'58857ff846e61794c69208e9d3a85466', N'08e6b9dc3c04489c8e1ff2ce6f105aa4', N'日志管理', N'/isystem/log', N'system/LogList', NULL, NULL, N'1', NULL, NULL, N'2', N'0', N'', N'1', N'0', N'0', N'0', NULL, NULL, NULL, N'2018-12-26 10:11:18.0000000', N'admin', N'2020-09-09 14:48:25.0000000', N'0', N'0', NULL, N'0')
 GO
 
 INSERT INTO [dbo].[sys_permission_v2] ([id], [parent_id], [name], [url], [component], [component_name], [redirect], [menu_type], [perms], [perms_type], [sort_no], [always_show], [icon], [is_route], [is_leaf], [keep_alive], [hidden], [hide_tab], [description], [create_by], [create_time], [update_by], [update_time], [del_flag], [rule_flag], [status], [internal_or_external]) VALUES (N'58b9204feaf07e47284ddb36cd2d8468', N'2a470fc0c3954d9dbb61de6d80846549', N'图片翻页', N'/jeecg/imgTurnPage', N'jeecg/ImgTurnPage', NULL, NULL, N'1', NULL, NULL, N'4', N'0', NULL, N'1', N'1', NULL, N'0', NULL, NULL, N'admin', N'2019-04-25 11:36:42.0000000', NULL, NULL, N'0', N'0', NULL, NULL)
@@ -22178,7 +22325,7 @@ GO
 INSERT INTO [dbo].[sys_position] ([id], [code], [name], [post_rank], [company_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [tenant_id]) VALUES (N'1185040064792571906', N'devleader', N'研发部经理', N'2', NULL, N'admin', N'2019-10-18 11:49:03.0000000', N'admin', N'2022-10-25 11:09:06.0000000', N'A01', N'0')
 GO
 
-INSERT INTO [dbo].[sys_position] ([id], [code], [name], [post_rank], [company_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [tenant_id]) VALUES (N'1256485574212153345', N'总经理', N'laozong', N'5', NULL, N'admin', N'2020-05-02 15:28:00.0000000', N'admin', N'2022-10-25 00:16:17.0000000', N'北京国炬公司', N'0')
+INSERT INTO [dbo].[sys_position] ([id], [code], [name], [post_rank], [company_id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [tenant_id]) VALUES (N'1256485574212153345', N'总经理', N'laozong', N'5', NULL, N'admin', N'2020-05-02 15:28:00.0000000', N'admin', N'2023-09-20 14:03:56.0000000', N'北京国炬公司', N'0')
 GO
 
 
@@ -22281,7 +22428,7 @@ GO
 -- ----------------------------
 -- Records of sys_quartz_job
 -- ----------------------------
-INSERT INTO [dbo].[sys_quartz_job] ([id], [create_by], [create_time], [del_flag], [update_by], [update_time], [job_class_name], [cron_expression], [parameter], [description], [status]) VALUES (N'5b3d2c087ad41aa755fc4f89697b01e7', N'admin', N'2019-04-11 19:04:21.0000000', N'0', N'admin', N'2020-05-02 15:48:48.0000000', N'org.jeecg.modules.message.job.SendMsgJob', N'0/50 * * * * ? *', NULL, NULL, N'-1')
+INSERT INTO [dbo].[sys_quartz_job] ([id], [create_by], [create_time], [del_flag], [update_by], [update_time], [job_class_name], [cron_expression], [parameter], [description], [status]) VALUES (N'5b3d2c087ad41aa755fc4f89697b01e7', N'admin', N'2019-04-11 19:04:21.0000000', N'0', N'admin', N'2023-08-20 17:40:04.0000000', N'org.jeecg.modules.message.job.SendMsgJob', N'0/50 * * * * ? *', NULL, NULL, N'-1')
 GO
 
 INSERT INTO [dbo].[sys_quartz_job] ([id], [create_by], [create_time], [del_flag], [update_by], [update_time], [job_class_name], [cron_expression], [parameter], [description], [status]) VALUES (N'a253cdfc811d69fa0efc70d052bc8128', N'admin', N'2019-03-30 12:44:48.0000000', N'0', N'admin', N'2020-05-02 15:48:49.0000000', N'org.jeecg.modules.quartz.job.SampleJob', N'0/1 * * * * ?', NULL, NULL, N'-1')
@@ -22399,7 +22546,7 @@ GO
 INSERT INTO [dbo].[sys_role] ([id], [role_name], [role_code], [description], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'e51758fa916c881624b046d26bd09230', N'人力资源部', N'hr', NULL, N'admin', N'2019-01-21 18:07:24.0000000', N'admin', N'2019-10-18 11:39:43.0000000', N'0')
 GO
 
-INSERT INTO [dbo].[sys_role] ([id], [role_name], [role_code], [description], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'ee8626f80f7c2619917b6236f3a7f02b', N'临时角色', N'test', N'这是新建的临时角色123', NULL, N'2018-12-20 10:59:04.0000000', N'admin', N'2019-02-19 15:08:37.0000000', N'0')
+INSERT INTO [dbo].[sys_role] ([id], [role_name], [role_code], [description], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'ee8626f80f7c2619917b6236f3a7f02b', N'临时角色', N'test', N'这是新建的临时角色123', NULL, N'2018-12-20 10:59:04.0000000', N'admin', N'2023-07-18 13:01:36.0000000', N'0')
 GO
 
 INSERT INTO [dbo].[sys_role] ([id], [role_name], [role_code], [description], [create_by], [create_time], [update_by], [update_time], [tenant_id]) VALUES (N'f6817f48af4fb3af11b9e8bf182f618b', N'管理员', N'admin', N'管理员', NULL, N'2018-12-21 18:03:39.0000000', N'admin', N'2023-03-04 15:00:04.0000000', N'0')
@@ -22519,7 +22666,7 @@ GO
 -- ----------------------------
 -- Records of sys_role_index
 -- ----------------------------
-INSERT INTO [dbo].[sys_role_index] ([id], [role_code], [url], [component], [is_route], [priority], [status], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1549658299929718786', N'admin', N'222', N'22', N'1', N'0', N'0', N'admin', N'2022-07-20 15:31:45.0000000', N'admin', N'2022-07-20 15:31:55.0000000', N'A01')
+INSERT INTO [dbo].[sys_role_index] ([id], [role_code], [url], [component], [is_route], [priority], [status], [create_by], [create_time], [update_by], [update_time], [sys_org_code]) VALUES (N'1549658299929718786', N'admin', N'222', N'22', N'1', N'0', N'0', N'admin', N'2022-07-20 15:31:45.0000000', N'admin', N'2023-08-25 13:35:54.0000000', N'A01')
 GO
 
 
@@ -22591,34 +22738,10 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'00b0748f04d3ea52c8cfa179c1c9d384', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'd7d6e2e4e2934f2c9385a623fd98c6f3', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'00b82058779cca5106fbb84783534c9b', N'f6817f48af4fb3af11b9e8bf182f618b', N'4148ec82b6acd69f470bea75fe41c357', N'', NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0254c0b25694ad5479e6d6935bbc176e', N'f6817f48af4fb3af11b9e8bf182f618b', N'944abf0a8fc22fe1f1154a389a574154', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'09bd4fc30ffe88c4a44ed3868f442719', N'f6817f48af4fb3af11b9e8bf182f618b', N'e6bfd1fcabfd7942fdd05f076d1dad38', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0c2d2db76ee3aa81a4fe0925b0f31365', N'f6817f48af4fb3af11b9e8bf182f618b', N'024f1fd1283dc632458976463d8984e1', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0c6b8facbb1cc874964c87a8cf01e4b1', N'f6817f48af4fb3af11b9e8bf182f618b', N'841057b8a1bef8f6b4b20f9a618a7fa6', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0c6e1075e422972083c3e854d9af7851', N'f6817f48af4fb3af11b9e8bf182f618b', N'08e6b9dc3c04489c8e1ff2ce6f105aa4', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0d9d14bc66e9d5e99b0280095fdc8587', N'ee8626f80f7c2619917b6236f3a7f02b', N'277bfabef7d76e89b33062b16a9a5020', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0dec36b68c234767cd35466efef3b941', N'ee8626f80f7c2619917b6236f3a7f02b', N'54dd5457a3190740005c1bfec55b1c34', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0e1469997af2d3b97fff56a59ee29eeb', N'f6817f48af4fb3af11b9e8bf182f618b', N'e41b69c57a941a3bbcce45032fe57605', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'0f861cb988fdc639bb1ab943471f3a72', N'f6817f48af4fb3af11b9e8bf182f618b', N'97c8629abc7848eccdb6d77c24bb3ebb', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'105c2ac10741e56a618a82cd58c461d7', N'e51758fa916c881624b046d26bd09230', N'1663f3faba244d16c94552f849627d84', NULL, NULL, NULL)
@@ -22627,46 +22750,7 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'115a6673ae6c0816d3f60de221520274', N'21c5a3187763729408b40afb0d0fdfa8', N'63b551e81c5956d5c861593d366d8c57', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1185039870491439105', N'f6817f48af4fb3af11b9e8bf182f618b', N'1174506953255182338', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1185039870529187841', N'f6817f48af4fb3af11b9e8bf182f618b', N'1174590283938041857', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1185039870537576450', N'f6817f48af4fb3af11b9e8bf182f618b', N'1166535831146504193', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1197431682208206850', N'f6817f48af4fb3af11b9e8bf182f618b', N'1192318987661234177', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1197795315916271617', N'f6817f48af4fb3af11b9e8bf182f618b', N'109c78a583d4693ce2f16551b7786786', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1197795316268593154', N'f6817f48af4fb3af11b9e8bf182f618b', N'9fe26464838de2ea5e90f2367e35efa0', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1209423530518761473', N'f6817f48af4fb3af11b9e8bf182f618b', N'1205097455226462210', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1209423530594258945', N'f6817f48af4fb3af11b9e8bf182f618b', N'1205098241075453953', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1209423530606841858', N'f6817f48af4fb3af11b9e8bf182f618b', N'1205306106780364802', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1209423580355481602', N'f6817f48af4fb3af11b9e8bf182f618b', N'190c2b43bec6a5f7a4194a85db67d96a', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1209654501558046722', N'f6817f48af4fb3af11b9e8bf182f618b', N'f2849d3814fc97993bfc519ae6bbf049', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1231590078632955905', N'f6817f48af4fb3af11b9e8bf182f618b', N'1224641973866467330', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1231590078658121729', N'f6817f48af4fb3af11b9e8bf182f618b', N'1209731624921534465', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1231590078662316033', N'f6817f48af4fb3af11b9e8bf182f618b', N'1229674163694841857', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1232123957949304833', N'ee8626f80f7c2619917b6236f3a7f02b', N'f0675b52d89100ee88472b6800754a08', NULL, NULL, NULL)
@@ -22681,19 +22765,7 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1232123957987053570', N'ee8626f80f7c2619917b6236f3a7f02b', N'2aeddae571695cd6380f6d6d334d6e7d', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1232124727411150850', N'f6817f48af4fb3af11b9e8bf182f618b', N'1232123780958064642', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1232125488694104066', N'ee8626f80f7c2619917b6236f3a7f02b', N'e41b69c57a941a3bbcce45032fe57605', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1260923306820882434', N'f6817f48af4fb3af11b9e8bf182f618b', N'1260923256208216065', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1260923306841853953', N'f6817f48af4fb3af11b9e8bf182f618b', N'1260922988733255681', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1260928399955836929', N'f6817f48af4fb3af11b9e8bf182f618b', N'1260928341675982849', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1260929736852488194', N'ee8626f80f7c2619917b6236f3a7f02b', N'1260929666434318338', NULL, NULL, NULL)
@@ -22702,55 +22774,7 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1260931414095937537', N'ee8626f80f7c2619917b6236f3a7f02b', N'1260931366557696001', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1269526122208522241', N'f6817f48af4fb3af11b9e8bf182f618b', N'1267412134208319489', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'126ea9faebeec2b914d6d9bef957afb6', N'f6817f48af4fb3af11b9e8bf182f618b', N'f1cb187abf927c88b89470d08615f5ac', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1281494164924653569', N'f6817f48af4fb3af11b9e8bf182f618b', N'1280350452934307841', NULL, N'2020-07-10 15:43:13.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1281494164945625089', N'f6817f48af4fb3af11b9e8bf182f618b', N'1280464606292099074', NULL, N'2020-07-10 15:43:13.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1281494684632473602', N'f6817f48af4fb3af11b9e8bf182f618b', N'1265162119913824258', NULL, N'2020-07-10 15:45:16.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1303585080082485250', N'f6817f48af4fb3af11b9e8bf182f618b', N'1287715272999944193', NULL, N'2020-09-09 14:44:37.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1303585080103456769', N'f6817f48af4fb3af11b9e8bf182f618b', N'1287715783966834689', NULL, N'2020-09-09 14:44:37.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1303585080116039682', N'f6817f48af4fb3af11b9e8bf182f618b', N'1287716451494510593', NULL, N'2020-09-09 14:44:37.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1303585080124428290', N'f6817f48af4fb3af11b9e8bf182f618b', N'1287718919049691137', NULL, N'2020-09-09 14:44:37.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1303585080128622593', N'f6817f48af4fb3af11b9e8bf182f618b', N'1287718938179911682', NULL, N'2020-09-09 14:44:37.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1303585080141205506', N'f6817f48af4fb3af11b9e8bf182f618b', N'1287718956957810689', NULL, N'2020-09-09 14:44:37.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1335960787783098369', N'f6817f48af4fb3af11b9e8bf182f618b', N'1335960713267093506', NULL, N'2020-12-07 22:54:07.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1372092783227596802', N'f6817f48af4fb3af11b9e8bf182f618b', N'1352200630711652354', NULL, N'2021-03-17 15:49:46.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1372092783240179713', N'f6817f48af4fb3af11b9e8bf182f618b', N'1365187528377102337', NULL, N'2021-03-17 15:49:46.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1400734738941505537', N'f6817f48af4fb3af11b9e8bf182f618b', N'1400726868091015170', NULL, N'2021-06-04 16:42:41.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1427184491288727554', N'f6817f48af4fb3af11b9e8bf182f618b', N'1404684556047024130', NULL, N'2021-08-16 16:24:33.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1427184491297116161', N'f6817f48af4fb3af11b9e8bf182f618b', N'1387612436586065922', NULL, N'2021-08-16 16:24:33.0000000', N'0:0:0:0:0:0:0:1')
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1427184775947751425', N'ee8626f80f7c2619917b6236f3a7f02b', N'1352200630711652354', NULL, N'2021-08-16 16:25:41.0000000', N'0:0:0:0:0:0:0:1')
@@ -22889,9 +22913,6 @@ INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'145eac8dd88eddbd4ce0a800ab40a92c', N'e51758fa916c881624b046d26bd09230', N'08e6b9dc3c04489c8e1ff2ce6f105aa4', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1496429874513534978', N'f6817f48af4fb3af11b9e8bf182f618b', N'1494641317580423169', NULL, N'2022-02-23 18:20:59.0000000', N'0:0:0:0:0:0:0:1')
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1501570988789567490', N'1501570619841810433', N'1438108176273760258', NULL, N'2022-03-09 22:49:56.0000000', N'127.0.0.1')
@@ -23536,24 +23557,6 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1501576328708984834', N'1501570619841810433', N'1438108222721482753', NULL, N'2022-03-09 23:11:09.0000000', N'127.0.0.1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1522909726999498754', N'f6817f48af4fb3af11b9e8bf182f618b', N'121008911426059sc9473', NULL, N'2022-05-07 20:02:28.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1522909726999498755', N'f6817f48af4fb3af11b9e8bf182f618b', N'121008911426059sc9472', NULL, N'2022-05-07 20:02:28.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1522909726999498756', N'f6817f48af4fb3af11b9e8bf182f618b', N'121008911426059sc9471', NULL, N'2022-05-07 20:02:28.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1522910722202980354', N'f6817f48af4fb3af11b9e8bf182f618b', N'121008911426059sc94722', NULL, N'2022-05-07 20:06:25.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1523502432196915202', N'f6817f48af4fb3af11b9e8bf182f618b', N'121008911426059sc94711', NULL, N'2022-05-09 11:17:40.0000000', N'127.0.0.1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'154edd0599bd1dc2c7de220b489cd1e2', N'f6817f48af4fb3af11b9e8bf182f618b', N'7ac9eb9ccbde2f7a033cd4944272bf1e', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1572775794261581825', N'1501570619841810433', N'1443391584864358402', NULL, N'2022-09-22 10:32:25.0000000', N'127.0.0.1')
 GO
 
@@ -23788,9 +23791,6 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153006416388098', N'f6817f48af4fb3af11b9e8bf182f618b', N'1592114721138765826', NULL, N'2022-11-17 16:04:11.0000000', N'0:0:0:0:0:0:0:1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153006416388099', N'f6817f48af4fb3af11b9e8bf182f618b', N'1260929666434318338', NULL, N'2022-11-17 16:04:11.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153006416388100', N'f6817f48af4fb3af11b9e8bf182f618b', N'1592120323667750914', NULL, N'2022-11-17 16:04:11.0000000', N'0:0:0:0:0:0:0:1')
 GO
 
@@ -23879,12 +23879,6 @@ INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153006416388129', N'f6817f48af4fb3af11b9e8bf182f618b', N'1592118497606201346', NULL, N'2022-11-17 16:04:11.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153065098895362', N'f6817f48af4fb3af11b9e8bf182f618b', N'1235823781053313025', NULL, N'2022-11-17 16:04:25.0000000', N'0:0:0:0:0:0:0:1')
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153065098895363', N'f6817f48af4fb3af11b9e8bf182f618b', N'1304032910990495745', NULL, N'2022-11-17 16:04:25.0000000', N'0:0:0:0:0:0:0:1')
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1593153077300125697', N'f6817f48af4fb3af11b9e8bf182f618b', N'1592115610431877122', NULL, N'2022-11-17 16:04:28.0000000', N'0:0:0:0:0:0:0:1')
@@ -24010,22 +24004,814 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1633804994019586049', N'1501570619841810433', N'1633804334561746946', NULL, N'2023-03-09 20:20:40.0000000', N'127.0.0.1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'165acd6046a0eaf975099f46a3c898ea', N'f6817f48af4fb3af11b9e8bf182f618b', N'4f66409ef3bbd69c1d80469d6e2a885e', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1657938323991883777', N'1501570619841810433', N'1473927410093187073', NULL, N'2023-05-15 10:37:54.0000000', N'127.0.0.1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1664b92dff13e1575e3a929caa2fa14d', N'f6817f48af4fb3af11b9e8bf182f618b', N'd2bbf9ebca5a8fa2e227af97d2da7548', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1657938324004466690', N'1501570619841810433', N'1542385335362383873', NULL, N'2023-05-15 10:37:54.0000000', N'127.0.0.1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1666007096779063297', N'1501570619841810433', N'1473927410093187073', NULL, N'2023-06-06 17:00:19.0000000', N'127.0.0.1')
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1657938324004466691', N'1501570619841810433', N'1554384900763729922', NULL, N'2023-05-15 10:37:54.0000000', N'127.0.0.1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1666007096779063298', N'1501570619841810433', N'1542385335362383873', NULL, N'2023-06-06 17:00:19.0000000', N'127.0.0.1')
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1657940202041831426', N'1501570619841810433', N'1473955758466981890', NULL, N'2023-05-15 10:45:22.0000000', N'127.0.0.1')
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1666008971238686721', N'1501570619841810433', N'1473955758466981890', NULL, N'2023-06-06 17:07:46.0000000', N'127.0.0.1')
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779465240578', N'f6817f48af4fb3af11b9e8bf182f618b', N'1447535997560909826', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779486212097', N'f6817f48af4fb3af11b9e8bf182f618b', N'1542385335362383873', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779486212098', N'f6817f48af4fb3af11b9e8bf182f618b', N'1554384900763729922', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779486212099', N'f6817f48af4fb3af11b9e8bf182f618b', N'1592120224120850434', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779490406401', N'f6817f48af4fb3af11b9e8bf182f618b', N'1592135223910765570', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779490406402', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593160905216663554', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779490406403', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593160959633563650', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779490406404', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161025790320641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779498795010', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161089787011074', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779498795011', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161421350936578', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779498795012', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161483627962370', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989314', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161551202394114', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989315', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161608362369026', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989316', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161657385394177', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989317', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161697348722689', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989318', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593161743607701505', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989319', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593173018886709250', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989320', N'f6817f48af4fb3af11b9e8bf182f618b', N'1593185714482880514', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779502989321', N'f6817f48af4fb3af11b9e8bf182f618b', N'1596335805278990338', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377921', N'f6817f48af4fb3af11b9e8bf182f618b', N'1600105607009165314', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377922', N'f6817f48af4fb3af11b9e8bf182f618b', N'1600108123037917186', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377923', N'f6817f48af4fb3af11b9e8bf182f618b', N'1600129606082650113', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377924', N'f6817f48af4fb3af11b9e8bf182f618b', N'1611620416187969538', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377925', N'f6817f48af4fb3af11b9e8bf182f618b', N'1611620600003342337', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377926', N'f6817f48af4fb3af11b9e8bf182f618b', N'1611620654621569026', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377927', N'f6817f48af4fb3af11b9e8bf182f618b', N'1611620772498218641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377928', N'f6817f48af4fb3af11b9e8bf182f618b', N'1611620772498288641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377929', N'f6817f48af4fb3af11b9e8bf182f618b', N'1611650772498288641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377930', N'f6817f48af4fb3af11b9e8bf182f618b', N'1612438989792034818', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779511377931', N'f6817f48af4fb3af11b9e8bf182f618b', N'1613620712498288641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766529', N'f6817f48af4fb3af11b9e8bf182f618b', N'1620261087828418562', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766530', N'f6817f48af4fb3af11b9e8bf182f618b', N'1620305415648989186', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766531', N'f6817f48af4fb3af11b9e8bf182f618b', N'1620327825894981634', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766532', N'f6817f48af4fb3af11b9e8bf182f618b', N'1621620772498288641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766533', N'f6817f48af4fb3af11b9e8bf182f618b', N'1693195557097164801', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766534', N'f6817f48af4fb3af11b9e8bf182f618b', N'1697220712498288641', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766535', N'f6817f48af4fb3af11b9e8bf182f618b', N'15c92115213910765570', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766536', N'f6817f48af4fb3af11b9e8bf182f618b', N'1d592115213910765570', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766537', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108177074872321', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779519766538', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108177351696386', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155138', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108177720795137', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155139', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178127642626', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155140', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183630569474', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155141', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183630569477', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155142', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183777370114', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155143', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108184049999873', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779528155144', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108186717577217', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779532349442', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108187678072833', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779532349443', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108189062193153', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779532349444', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108190110769154', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543746', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108190777663490', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543747', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108192623157249', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543748', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108194992939010', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543749', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108196263813121', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543750', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197270446081', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543751', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108202366525441', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543752', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108205004742657', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543753', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108208817364993', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543754', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108210117599234', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543755', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108211325558785', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543756', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108214882328577', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779536543757', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108215511474177', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932354', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108216300003330', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932355', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108216971091969', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932356', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108217860284417', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932357', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108218787225601', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932358', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108219592531970', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932359', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108220523667458', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779544932360', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108220896960513', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126657', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108221127647234', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126658', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108221849067522', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126659', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438115924159881218', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126660', N'f6817f48af4fb3af11b9e8bf182f618b', N'1211885237487923202', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126661', N'f6817f48af4fb3af11b9e8bf182f618b', N'1214376304951664642', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126662', N'f6817f48af4fb3af11b9e8bf182f618b', N'1214462306546319362', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126663', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108176273760258', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779549126664', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108176814825473', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320962', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108177188118529', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320963', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108177565605889', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320964', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108177880178689', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320965', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178257666049', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320966', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183907393538', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320967', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108187103453186', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320968', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108187871010818', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320969', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108189427097601', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320970', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108190404370433', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320971', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108191356477442', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320972', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108193701093378', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320973', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108195307511809', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779553320974', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108196528054273', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709569', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197958311537', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709570', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197958315557', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709571', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108203649982466', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709572', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108205180903426', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709573', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108208980942850', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709574', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108210260205570', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779561709575', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108211661103106', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903874', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108215335313409', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903875', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108215687634945', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903876', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108216597798914', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903877', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108217449242626', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903878', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108218049028097', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903879', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108219034689538', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903880', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108219793858561', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903881', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108220724994049', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779565903882', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108221270253570', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098177', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108222218166273', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098178', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438116003012796418', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098179', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438783058792951810', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098180', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439399179791409153', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098181', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439488251473993730', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098182', N'f6817f48af4fb3af11b9e8bf182f618b', N'1446778415130722306', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098183', N'f6817f48af4fb3af11b9e8bf182f618b', N'1447763517847396354', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098184', N'f6817f48af4fb3af11b9e8bf182f618b', N'1454031324835807233', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098185', N'f6817f48af4fb3af11b9e8bf182f618b', N'1455101470794850305', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098186', N'f6817f48af4fb3af11b9e8bf182f618b', N'1590154870697734146', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098187', N'f6817f48af4fb3af11b9e8bf182f618b', N'1a0811914300741f4e11838ff37a1d3a', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098188', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108176932265985', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098189', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178421243905', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098190', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108188034588674', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779570098191', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108189754253313', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486786', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108195487866881', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486787', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108196855209985', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486788', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197958311937', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486789', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108203817754625', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486790', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108205357064193', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486791', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108209228406785', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486792', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108211778543618', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486793', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108215989624834', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486794', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108219240210434', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486795', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108220137791489', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486796', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108222721482753', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486797', N'f6817f48af4fb3af11b9e8bf182f618b', N'1443391584864358402', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486798', N'f6817f48af4fb3af11b9e8bf182f618b', N'1448252726202859522', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486799', N'f6817f48af4fb3af11b9e8bf182f618b', N'1454031820661260289', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486800', N'f6817f48af4fb3af11b9e8bf182f618b', N'1455100420297859074', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486801', N'f6817f48af4fb3af11b9e8bf182f618b', N'1460888189937176577', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486802', N'f6817f48af4fb3af11b9e8bf182f618b', N'1461291438825558017', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779578486803', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178643542017', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875394', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108188378521602', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875395', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108195638861825', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875396', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108198113501186', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875397', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108204023275521', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875398', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108205587750914', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875399', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108218409738242', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875400', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439511654494937090', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875401', N'f6817f48af4fb3af11b9e8bf182f618b', N'1452508868884353026', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875402', N'f6817f48af4fb3af11b9e8bf182f618b', N'1454034512171302914', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875403', N'f6817f48af4fb3af11b9e8bf182f618b', N'1473927410093187073', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875404', N'f6817f48af4fb3af11b9e8bf182f618b', N'1580833876002627585', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779586875405', N'f6817f48af4fb3af11b9e8bf182f618b', N'119213522910765570', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069698', N'f6817f48af4fb3af11b9e8bf182f618b', N'1597419994965786625', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069699', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178781954049', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069700', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178781954050', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069701', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108188542099458', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069702', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108195924074497', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069703', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108199413735425', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069704', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108204232990721', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069705', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108205742940161', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069706', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438782641187074050', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069707', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439531077792473089', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069708', N'f6817f48af4fb3af11b9e8bf182f618b', N'1455019819440021505', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069709', N'f6817f48af4fb3af11b9e8bf182f618b', N'1580834045490257922', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069710', N'f6817f48af4fb3af11b9e8bf182f618b', N'1633804334561746946', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069711', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178911977473', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069712', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108188714065922', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779591069713', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108199539564546', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264002', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108204400762881', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264003', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108205919100930', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264004', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108223489040385', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264005', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438469604861403137', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264006', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439398677984878593', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264007', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439533711676973057', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264008', N'f6817f48af4fb3af11b9e8bf182f618b', N'1443390062919208961', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264009', N'f6817f48af4fb3af11b9e8bf182f618b', N'1447763172274495489', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264010', N'f6817f48af4fb3af11b9e8bf182f618b', N'1455067599277662209', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264011', N'f6817f48af4fb3af11b9e8bf182f618b', N'1465686870713782273', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264012', N'f6817f48af4fb3af11b9e8bf182f618b', N'1509417558230999041', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264013', N'f6817f48af4fb3af11b9e8bf182f618b', N'1580835899477483522', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264014', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108179226550273', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264015', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197958311637', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264016', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108198679732226', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264017', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108204576923649', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779595264018', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108206086873089', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779603652609', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108223661006850', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779603652610', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439542701152575489', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779603652611', N'f6817f48af4fb3af11b9e8bf182f618b', N'1580877743141933058', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779603652612', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108179381739521', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779603652613', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197958311677', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779603652614', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108198855892993', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846913', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108204732112898', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846914', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108206258839553', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846915', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108217562488834', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846916', N'f6817f48af4fb3af11b9e8bf182f618b', N'1441340399835742209', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846917', N'f6817f48af4fb3af11b9e8bf182f618b', N'1580877931331964929', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846918', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108179599843330', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779607846919', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108197790539778', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041218', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108199120134145', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041219', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108206489526274', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041220', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108219445731330', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041221', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438782851980210178', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041222', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439784356766064642', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041223', N'f6817f48af4fb3af11b9e8bf182f618b', N'1441357157443371009', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041224', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108179910221825', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041225', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108198339993602', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041226', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108199304683521', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041227', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108206661492738', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779612041228', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108220418809857', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235521', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438782530717495298', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235522', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439797053314342913', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235523', N'f6817f48af4fb3af11b9e8bf182f618b', N'1441361249200832513', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235524', N'f6817f48af4fb3af11b9e8bf182f618b', N'1457678003102879745', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235525', N'f6817f48af4fb3af11b9e8bf182f618b', N'1580878668472504321', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235526', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108180077993985', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779616235527', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108206959288321', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429825', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108221551271937', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429826', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439839507094740994', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429827', N'f6817f48af4fb3af11b9e8bf182f618b', N'1450308897429536769', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429828', N'f6817f48af4fb3af11b9e8bf182f618b', N'1455735714507472898', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429829', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108180258349057', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429830', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108196993622018', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429831', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108199631839234', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429832', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108207160614913', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429833', N'f6817f48af4fb3af11b9e8bf182f618b', N'1439842640030113793', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429834', N'f6817f48af4fb3af11b9e8bf182f618b', N'1442055284830769154', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429835', N'f6817f48af4fb3af11b9e8bf182f618b', N'1458389305235984385', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429836', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108180434509826', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429837', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108187455774722', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429838', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108200076435458', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429839', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108207374524418', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429840', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108225263230978', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429841', N'f6817f48af4fb3af11b9e8bf182f618b', N'1453250018282573826', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779620429842', N'f6817f48af4fb3af11b9e8bf182f618b', N'1594930803956920321', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624130', N'f6817f48af4fb3af11b9e8bf182f618b', N'1596141938193747970', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624131', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108180631642113', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624132', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108200391008257', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624133', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108207563268097', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624134', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108225451974658', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624135', N'f6817f48af4fb3af11b9e8bf182f618b', N'1534418199197323265', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624136', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108180770054145', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624137', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108200672026626', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624138', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108207793954818', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624139', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108200802050050', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624140', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108208024641538', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624141', N'f6817f48af4fb3af11b9e8bf182f618b', N'1458353686530232321', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624142', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108200919490562', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624143', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108208297271297', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624144', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183085309954', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624145', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108201150177281', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624146', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108201502498817', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624147', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183395688450', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779624624148', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108178010202113', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779633012738', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108183492157442', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779633012739', N'f6817f48af4fb3af11b9e8bf182f618b', N'1438108202060341249', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779633012740', N'f6817f48af4fb3af11b9e8bf182f618b', N'1461270075543347202', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1693199779633012741', N'f6817f48af4fb3af11b9e8bf182f618b', N'1473955758466981890', NULL, N'2023-08-20 17:54:20.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1694946655432511489', N'ee8626f80f7c2619917b6236f3a7f02b', N'1438108176814825473', NULL, N'2023-08-25 13:35:48.0000000', N'127.0.0.1')
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'16ef8ed3865ccc6f6306200760896c50', N'ee8626f80f7c2619917b6236f3a7f02b', N'e8af452d8948ea49d37c934f5100ae6a', NULL, NULL, NULL)
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1703032629144289281', N'f6817f48af4fb3af11b9e8bf182f618b', N'1609123240547344385', NULL, N'2023-09-16 21:06:34.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1703032629144289282', N'f6817f48af4fb3af11b9e8bf182f618b', N'1609123437247619074', NULL, N'2023-09-16 21:06:34.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1703032629144289283', N'f6817f48af4fb3af11b9e8bf182f618b', N'1609164542165012482', NULL, N'2023-09-16 21:06:34.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1703032629211398145', N'f6817f48af4fb3af11b9e8bf182f618b', N'1609164635442139138', NULL, N'2023-09-16 21:06:34.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1704379601608437762', N'f6817f48af4fb3af11b9e8bf182f618b', N'1691031996d593131521', NULL, N'2023-09-20 14:18:58.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1704379601608437763', N'f6817f48af4fb3af11b9e8bf182f618b', N'1660568426632380417', NULL, N'2023-09-20 14:18:58.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1704379601608437764', N'f6817f48af4fb3af11b9e8bf182f618b', N'1660568368558047234', NULL, N'2023-09-20 14:18:58.0000000', N'127.0.0.1')
+GO
+
+INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1704379601608437765', N'f6817f48af4fb3af11b9e8bf182f618b', N'1660568280725127169', NULL, N'2023-09-20 14:18:58.0000000', N'127.0.0.1')
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'17ead5b7d97ed365398ab20009a69ea3', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'e08cb190ef230d5d4f03824198773950', NULL, NULL, NULL)
@@ -24040,28 +24826,16 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1ba162bbc2076c25561f8622f610d5bf', N'ee8626f80f7c2619917b6236f3a7f02b', N'aedbf679b5773c1f25e9f7b10111da73', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1c1dbba68ef1817e7fb19c822d2854e8', N'f6817f48af4fb3af11b9e8bf182f618b', N'fb367426764077dcf94640c843733985', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1c55c4ced20765b8ebab383caa60f0b6', N'e51758fa916c881624b046d26bd09230', N'fb367426764077dcf94640c843733985', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1e099baeae01b747d67aca06bdfc34d1', N'e51758fa916c881624b046d26bd09230', N'6ad53fd1b220989a8b71ff482d683a5a', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1e47db875601fd97723254046b5bba90', N'f6817f48af4fb3af11b9e8bf182f618b', N'baf16b7174bd821b6bab23fa9abb200d', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'1fe4d408b85f19618c15bcb768f0ec22', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'9502685863ab87f0ad1134142788a385', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'20e53c87a785688bdc0a5bb6de394ef1', N'f6817f48af4fb3af11b9e8bf182f618b', N'540a2936940846cb98114ffb0d145cb8', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'248d288586c6ff3bd14381565df84163', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'3f915b2769fc80648e92d04e84ca059d', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'25491ecbd5a9b34f09c8bc447a10ede1', N'f6817f48af4fb3af11b9e8bf182f618b', N'd07a2c87a451434c99ab06296727ec4f', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'25f5443f19c34d99718a016d5f54112e', N'ee8626f80f7c2619917b6236f3a7f02b', N'6e73eb3c26099c191bf03852ee1310a1', NULL, NULL, NULL)
@@ -24070,19 +24844,10 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'27489816708b18859768dfed5945c405', N'a799c3b1b12dd3ed4bd046bfaef5fe6e', N'9502685863ab87f0ad1134142788a385', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'2779cdea8367fff37db26a42c1a1f531', N'f6817f48af4fb3af11b9e8bf182f618b', N'fef097f3903caf3a3c3a6efa8de43fbb', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'296f9c75ca0e172ae5ce4c1022c996df', N'646c628b2b8295fbdab2d34044de0354', N'732d48f8e0abe99fe6a23d18a3171cd1', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'29fb4d37aa29b9fa400f389237cf9fe7', N'ee8626f80f7c2619917b6236f3a7f02b', N'05b3c82ddb2536a4a5ee1a4c46b5abef', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'29fb6b0ad59a7e911c8d27e0bdc42d23', N'f6817f48af4fb3af11b9e8bf182f618b', N'9a90363f216a6a08f32eecb3f0bf12a3', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'2ad37346c1b83ddeebc008f6987b2227', N'f6817f48af4fb3af11b9e8bf182f618b', N'8d1ebd663688965f1fd86a2f0ead3416', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'2c462293cbb0eab7e8ae0a3600361b5f', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'9502685863ab87f0ad1134142788a385', NULL, NULL, NULL)
@@ -24130,19 +24895,7 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'38dd7a19711e7ffe864232954c06fae9', N'e51758fa916c881624b046d26bd09230', N'd2bbf9ebca5a8fa2e227af97d2da7548', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'3b1886f727ac503c93fecdd06dcb9622', N'f6817f48af4fb3af11b9e8bf182f618b', N'c431130c0bc0ec71b0a5be37747bb36a', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'3de2a60c7e42a521fecf6fcc5cb54978', N'f6817f48af4fb3af11b9e8bf182f618b', N'2d83d62bd2544b8994c8f38cf17b0ddf', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'3e4e38f748b8d87178dd62082e5b7b60', N'f6817f48af4fb3af11b9e8bf182f618b', N'7960961b0063228937da5fa8dd73d371', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'3e563751942b0879c88ca4de19757b50', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'58857ff846e61794c69208e9d3a85466', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'3f1d04075e3c3254666a4138106a4e51', N'f6817f48af4fb3af11b9e8bf182f618b', N'3fac0d3c9cd40fa53ab70d4c583821f8', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'412e2de37a35b3442d68db8dd2f3c190', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'f1cb187abf927c88b89470d08615f5ac', NULL, NULL, NULL)
@@ -24151,22 +24904,10 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4204f91fb61911ba8ce40afa7c02369f', N'f6817f48af4fb3af11b9e8bf182f618b', N'3f915b2769fc80648e92d04e84ca059d', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'444126230885d5d38b8fa6072c9f43f8', N'f6817f48af4fb3af11b9e8bf182f618b', N'f780d0d3083d849ccbdb1b1baee4911d', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'445656dd187bd8a71605f4bbab1938a3', N'f6817f48af4fb3af11b9e8bf182f618b', N'020b06793e4de2eee0007f603000c769', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'44b5a73541bcb854dd5d38c6d1fb93a1', N'ee8626f80f7c2619917b6236f3a7f02b', N'418964ba087b90a84897b62474496b93', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'455cdb482457f529b79b479a2ff74427', N'f6817f48af4fb3af11b9e8bf182f618b', N'e1979bb53e9ea51cecc74d86fd9d2f64', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'459aa2e7021b435b4d65414cfbc71c66', N'e51758fa916c881624b046d26bd09230', N'4148ec82b6acd69f470bea75fe41c357', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'45a358bb738782d1a0edbf7485e81459', N'f6817f48af4fb3af11b9e8bf182f618b', N'0ac2ad938963b6c6d1af25477d5b8b51', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4c0940badae3ef9231ee9d042338f2a4', N'e51758fa916c881624b046d26bd09230', N'2a470fc0c3954d9dbb61de6d80846549', NULL, NULL, NULL)
@@ -24175,28 +24916,7 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4d56ce2f67c94b74a1d3abdbea340e42', N'ee8626f80f7c2619917b6236f3a7f02b', N'd86f58e7ab516d3bc6bfb1fe10585f97', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4dab5a06acc8ef3297889872caa74747', N'f6817f48af4fb3af11b9e8bf182f618b', N'ffb423d25cc59dcd0532213c4a518261', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4e0a37ed49524df5f08fc6593aee875c', N'f6817f48af4fb3af11b9e8bf182f618b', N'f23d9bfff4d9aa6b68569ba2cff38415', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4ea403fc1d19feb871c8bdd9f94a4ecc', N'f6817f48af4fb3af11b9e8bf182f618b', N'2e42e3835c2b44ec9f7bc26c146ee531', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4f254549d9498f06f4cc9b23f3e2c070', N'f6817f48af4fb3af11b9e8bf182f618b', N'93d5cfb4448f11e9916698e7f462b4b6', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'4faad8ff93cb2b5607cd3d07c1b624ee', N'a799c3b1b12dd3ed4bd046bfaef5fe6e', N'70b8f33da5f39de1981bf89cf6c99792', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'504e326de3f03562cdd186748b48a8c7', N'f6817f48af4fb3af11b9e8bf182f618b', N'027aee69baee98a0ed2e01806e89c891', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'520b5989e6fe4a302a573d4fee12a40a', N'f6817f48af4fb3af11b9e8bf182f618b', N'6531cf3421b1265aeeeabaab5e176e6d', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'54fdf85e52807bdb32ce450814abc256', N'f6817f48af4fb3af11b9e8bf182f618b', N'cc50656cf9ca528e6f2150eba4714ad2', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'57c0b3a547b815ea3ec8e509b08948b3', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'3f915b2769fc80648e92d04e84ca059d', NULL, NULL, NULL)
@@ -24208,15 +24928,6 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'5affc85021fcba07d81c09a6fdfa8dc6', N'ee8626f80f7c2619917b6236f3a7f02b', N'078f9558cdeab239aecb2bda1a8ed0d1', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'5d230e6cd2935c4117f6cb9a7a749e39', N'f6817f48af4fb3af11b9e8bf182f618b', N'fc810a2267dd183e4ef7c71cc60f4670', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'5de6871fadb4fe1cdd28989da0126b07', N'f6817f48af4fb3af11b9e8bf182f618b', N'a400e4f4d54f79bf5ce160a3432231af', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'5e4015a9a641cbf3fb5d28d9f885d81a', N'f6817f48af4fb3af11b9e8bf182f618b', N'2dbbafa22cda07fa5d169d741b81fe12', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'5e634a89f75b7a421c02aecfd520325f', N'e51758fa916c881624b046d26bd09230', N'339329ed54cf255e1f9392e84f136901', NULL, NULL, NULL)
 GO
 
@@ -24226,43 +24937,16 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'5fc194b709336d354640fe29fefd65a3', N'a799c3b1b12dd3ed4bd046bfaef5fe6e', N'9ba60e626bf2882c31c488aba62b89f0', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'60eda4b4db138bdb47edbe8e10e71675', N'f6817f48af4fb3af11b9e8bf182f618b', N'fb07ca05a3e13674dbf6d3245956da2e', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'61835e48f3e675f7d3f5c9dd3a10dcf3', N'f6817f48af4fb3af11b9e8bf182f618b', N'f0675b52d89100ee88472b6800754a08', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'6451dac67ba4acafb570fd6a03f47460', N'ee8626f80f7c2619917b6236f3a7f02b', N'e3c13679c73a4f829bcff2aba8fd68b1', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'660fbc40bcb1044738f7cabdf1708c28', N'f6817f48af4fb3af11b9e8bf182f618b', N'b3c824fc22bd953e2eb16ae6914ac8f9', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'66b202f8f84fe766176b3f51071836ef', N'f6817f48af4fb3af11b9e8bf182f618b', N'1367a93f2c410b169faa7abcbad2f77c', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'6b605c261ffbc8ac8a98ae33579c8c78', N'f6817f48af4fb3af11b9e8bf182f618b', N'fba41089766888023411a978d13c0aa4', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'6c43fd3f10fdaf2a0646434ae68709b5', N'ee8626f80f7c2619917b6236f3a7f02b', N'540a2936940846cb98114ffb0d145cb8', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'6c74518eb6bb9a353f6a6c459c77e64b', N'f6817f48af4fb3af11b9e8bf182f618b', N'b4dfc7d5dd9e8d5b6dd6d4579b1aa559', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'6daddafacd7eccb91309530c17c5855d', N'f6817f48af4fb3af11b9e8bf182f618b', N'edfa74d66e8ea63ea432c2910837b150', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'6fb4c2142498dd6d5b6c014ef985cb66', N'f6817f48af4fb3af11b9e8bf182f618b', N'6e73eb3c26099c191bf03852ee1310a1', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'71a5f54a90aa8c7a250a38b7dba39f6f', N'ee8626f80f7c2619917b6236f3a7f02b', N'8fb8172747a78756c11916216b8b8066', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'737d35f582036cd18bfd4c8e5748eaa4', N'e51758fa916c881624b046d26bd09230', N'693ce69af3432bd00be13c3971a57961', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'7413acf23b56c906aedb5a36fb75bd3a', N'f6817f48af4fb3af11b9e8bf182f618b', N'a4fc7b64b01a224da066bb16230f9c5a', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'75002588591820806', N'16457350655250432', N'5129710648430592', NULL, NULL, NULL)
@@ -24284,9 +24968,6 @@ INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'75002588650541056', N'16457350655250432', N'16439068543946752', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'76a54a8cc609754360bf9f57e7dbb2db', N'f6817f48af4fb3af11b9e8bf182f618b', N'c65321e57b7949b7a975313220de0422', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'77277779875336192', N'496138616573952', N'5129710648430592', NULL, NULL, NULL)
@@ -24676,12 +25357,6 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'7a5d31ba48fe3fb1266bf186dc5f7ba7', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'58857ff846e61794c69208e9d3a85466', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'7a6bca9276c128309c80d21e795c66c6', N'f6817f48af4fb3af11b9e8bf182f618b', N'54097c6a3cf50fad0793a34beff1efdf', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'7ca833caa5eac837b7200d8b6de8b2e3', N'f6817f48af4fb3af11b9e8bf182f618b', N'fedfbf4420536cacc0218557d263dfea', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'7d2ea745950be3357747ec7750c31c57', N'ee8626f80f7c2619917b6236f3a7f02b', N'2a470fc0c3954d9dbb61de6d80846549', NULL, NULL, NULL)
 GO
 
@@ -24703,19 +25378,10 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'84d32474316a43b01256d6644e6e7751', N'ee8626f80f7c2619917b6236f3a7f02b', N'ec8d607d0156e198b11853760319c646', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'84eac2f113c23737128fb099d1d1da89', N'f6817f48af4fb3af11b9e8bf182f618b', N'03dc3d93261dda19fc86dd7ca486c6cf', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'85755a6c0bdff78b3860b52d35310c7f', N'e51758fa916c881624b046d26bd09230', N'c65321e57b7949b7a975313220de0422', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'86060e2867a5049d8a80d9fe5d8bc28b', N'f6817f48af4fb3af11b9e8bf182f618b', N'765dd244f37b804e3d00f475fd56149b', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8703a2410cddb713c33232ce16ec04b9', N'ee8626f80f7c2619917b6236f3a7f02b', N'1367a93f2c410b169faa7abcbad2f77c', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'884f147c20e003cc80ed5b7efa598cbe', N'f6817f48af4fb3af11b9e8bf182f618b', N'e5973686ed495c379d829ea8b2881fc6', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'885c1a827383e5b2c6c4f8ca72a7b493', N'ee8626f80f7c2619917b6236f3a7f02b', N'4148ec82b6acd69f470bea75fe41c357', N'', NULL, NULL)
@@ -24724,25 +25390,13 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8a60df8d8b4c9ee5fa63f48aeee3ec00', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'd7d6e2e4e2934f2c9385a623fd98c6f3', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8b09925bdc194ab7f3559cd3a7ea0507', N'f6817f48af4fb3af11b9e8bf182f618b', N'ebb9d82ea16ad864071158e0c449d186', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8b1e326791375f325d3e6b797753b65e', N'ee8626f80f7c2619917b6236f3a7f02b', N'2dbbafa22cda07fa5d169d741b81fe12', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8ce1022dac4e558ff9694600515cf510', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'08e6b9dc3c04489c8e1ff2ce6f105aa4', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8d154c2382a8ae5c8d1b84bd38df2a93', N'f6817f48af4fb3af11b9e8bf182f618b', N'd86f58e7ab516d3bc6bfb1fe10585f97', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8d848ca7feec5b7ebb3ecb32b2c8857a', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'4148ec82b6acd69f470bea75fe41c357', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8dd64f65a1014196078d0882f767cd85', N'f6817f48af4fb3af11b9e8bf182f618b', N'e3c13679c73a4f829bcff2aba8fd68b1', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8e3dc1671abad4f3c83883b194d2e05a', N'f6817f48af4fb3af11b9e8bf182f618b', N'b1cb0a3fedf7ed0e4653cb5a229837ee', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'8eec2c510f1ac9c5eee26c041b1f00ca', N'ee8626f80f7c2619917b6236f3a7f02b', N'58857ff846e61794c69208e9d3a85466', NULL, NULL, NULL)
@@ -24754,9 +25408,6 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'903b790e6090414343502c6dc393b7c9', N'ee8626f80f7c2619917b6236f3a7f02b', N'de13e0f6328c069748de7399fcc1dbbd', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'905bf419332ebcb83863603b3ebe30f0', N'f6817f48af4fb3af11b9e8bf182f618b', N'8fb8172747a78756c11916216b8b8066', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'90996d56357730e173e636b99fc48bea', N'ee8626f80f7c2619917b6236f3a7f02b', N'fb07ca05a3e13674dbf6d3245956da2e', NULL, NULL, NULL)
 GO
 
@@ -24766,46 +25417,19 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9264104cee9b10c96241d527b2d0346d', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'54dd5457a3190740005c1bfec55b1c34', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9380121ca9cfee4b372194630fce150e', N'f6817f48af4fb3af11b9e8bf182f618b', N'65a8f489f25a345836b7f44b1181197a', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'94911fef73a590f6824105ebf9b6cab3', N'f6817f48af4fb3af11b9e8bf182f618b', N'8b3bff2eee6f1939147f5c68292a1642', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9700d20dbc1ae3cbf7de1c810b521fe6', N'f6817f48af4fb3af11b9e8bf182f618b', N'ec8d607d0156e198b11853760319c646', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'980171fda43adfe24840959b1d048d4d', N'f6817f48af4fb3af11b9e8bf182f618b', N'd7d6e2e4e2934f2c9385a623fd98c6f3', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'987c23b70873bd1d6dca52f30aafd8c2', N'f6817f48af4fb3af11b9e8bf182f618b', N'00a2a0ae65cdca5e93209cdbde97cbe6', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'98f02353f91dd569e3c6b8fd6b4f4034', N'ee8626f80f7c2619917b6236f3a7f02b', N'6531cf3421b1265aeeeabaab5e176e6d', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9b2ad767f9861e64a20b097538feafd3', N'f6817f48af4fb3af11b9e8bf182f618b', N'73678f9daa45ed17a3674131b03432fb', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9d8772c310b675ae43eacdbc6c7fa04a', N'a799c3b1b12dd3ed4bd046bfaef5fe6e', N'1663f3faba244d16c94552f849627d84', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9d980ec0489040e631a9c24a6af42934', N'f6817f48af4fb3af11b9e8bf182f618b', N'05b3c82ddb2536a4a5ee1a4c46b5abef', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'9f8311ecccd44e079723098cf2ffe1cc', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'693ce69af3432bd00be13c3971a57961', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'a034ed7c38c996b880d3e78f586fe0ae', N'f6817f48af4fb3af11b9e8bf182f618b', N'c89018ea6286e852b424466fd92a2ffc', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'a098e2acc3f90316f161f6648d085640', N'ee8626f80f7c2619917b6236f3a7f02b', N'e6bfd1fcabfd7942fdd05f076d1dad38', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'a307a9349ad64a2eff8ab69582fa9be4', N'f6817f48af4fb3af11b9e8bf182f618b', N'0620e402857b8c5b605e1ad9f4b89350', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'a5d25fdb3c62904a8474182706ce11a0', N'f6817f48af4fb3af11b9e8bf182f618b', N'418964ba087b90a84897b62474496b93', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'a66feaaf128417ad762e946abccf27ec', N'ee8626f80f7c2619917b6236f3a7f02b', N'c6cf95444d80435eb37b2f9db3971ae6', NULL, NULL, NULL)
@@ -24820,28 +25444,10 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'abdc324a2df9f13ee6e73d44c6e62bc8', N'ee8626f80f7c2619917b6236f3a7f02b', N'f1cb187abf927c88b89470d08615f5ac', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'acacce4417e5d7f96a9c3be2ded5b4be', N'f6817f48af4fb3af11b9e8bf182f618b', N'f9d3f4f27653a71c52faa9fb8070fbe7', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ae1852fb349d8513eb3fdc173da3ee56', N'f6817f48af4fb3af11b9e8bf182f618b', N'8d4683aacaa997ab86b966b464360338', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'aefc8c22e061171806e59cd222f6b7e1', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'e8af452d8948ea49d37c934f5100ae6a', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'af60ac8fafd807ed6b6b354613b9ccbc', N'f6817f48af4fb3af11b9e8bf182f618b', N'58857ff846e61794c69208e9d3a85466', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b0c8a20800b8bf1ebdd7be473bceb44f', N'f6817f48af4fb3af11b9e8bf182f618b', N'58b9204feaf07e47284ddb36cd2d8468', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b128ebe78fa5abb54a3a82c6689bdca3', N'f6817f48af4fb3af11b9e8bf182f618b', N'aedbf679b5773c1f25e9f7b10111da73', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b131ebeafcfd059f3c7e542606ea9ff5', N'ee8626f80f7c2619917b6236f3a7f02b', N'e5973686ed495c379d829ea8b2881fc6', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b21b07951bb547b09cc85624a841aea0', N'f6817f48af4fb3af11b9e8bf182f618b', N'4356a1a67b564f0988a484f5531fd4d9', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b2b2dcfff6986d3d7f890ea62d474651', N'ee8626f80f7c2619917b6236f3a7f02b', N'200006f0edf145a2b50eacca07585451', NULL, NULL, NULL)
@@ -24850,34 +25456,13 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b495a46fa0e0d4637abe0db7fd12fe1a', N'ee8626f80f7c2619917b6236f3a7f02b', N'717f6bee46f44a3897eca9abd6e2ec44', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'b64c4ab9cd9a2ea8ac1e9db5fb7cf522', N'f6817f48af4fb3af11b9e8bf182f618b', N'2aeddae571695cd6380f6d6d334d6e7d', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'bbec16ad016efec9ea2def38f4d3d9dc', N'f6817f48af4fb3af11b9e8bf182f618b', N'13212d3416eb690c2e1d5033166ff47a', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'bd30561f141f07827b836878137fddd8', N'e51758fa916c881624b046d26bd09230', N'65a8f489f25a345836b7f44b1181197a', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'be8e5a9080569e59863f20c4c57a8e22', N'f6817f48af4fb3af11b9e8bf182f618b', N'22d6a3d39a59dd7ea9a30acfa6bfb0a5', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c09373ebfc73fb5740db5ff02cba4f91', N'f6817f48af4fb3af11b9e8bf182f618b', N'339329ed54cf255e1f9392e84f136901', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c56fb1658ee5f7476380786bf5905399', N'f6817f48af4fb3af11b9e8bf182f618b', N'de13e0f6328c069748de7399fcc1dbbd', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c689539d20a445b0896270290c58d01f', N'e51758fa916c881624b046d26bd09230', N'13212d3416eb690c2e1d5033166ff47a', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c6fee38d293b9d0596436a0cbd205070', N'f6817f48af4fb3af11b9e8bf182f618b', N'4f84f9400e5e92c95f05b554724c2b58', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c8571839e6b14796e661f3e2843b80b6', N'ee8626f80f7c2619917b6236f3a7f02b', N'45c966826eeff4c99b8f8ebfe74511fc', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c90b0b01c7ca454d2a1cb7408563e696', N'f6817f48af4fb3af11b9e8bf182f618b', N'882a73768cfd7f78f3a37584f7299656', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'c9d35261cccd67ab2932107a0967a7d7', N'e51758fa916c881624b046d26bd09230', N'b4dfc7d5dd9e8d5b6dd6d4579b1aa559', NULL, NULL, NULL)
@@ -24886,52 +25471,16 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ced80e43584ce15e97bb07298e93020d', N'e51758fa916c881624b046d26bd09230', N'45c966826eeff4c99b8f8ebfe74511fc', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'cf1feb1bf69eafc982295ad6c9c8d698', N'f6817f48af4fb3af11b9e8bf182f618b', N'a2b11669e98c5fe54a53c3e3c4f35d14', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'cf2ef620217673e4042f695743294f01', N'f6817f48af4fb3af11b9e8bf182f618b', N'717f6bee46f44a3897eca9abd6e2ec44', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'cf43895aef7fc684669483ab00ef2257', N'f6817f48af4fb3af11b9e8bf182f618b', N'700b7f95165c46cc7a78bf227aa8fed3', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd03d792b0f312e7b490afc5cec3dd6c5', N'e51758fa916c881624b046d26bd09230', N'8fb8172747a78756c11916216b8b8066', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd281a95b8f293d0fa2a136f46c4e0b10', N'f6817f48af4fb3af11b9e8bf182f618b', N'5c8042bd6c601270b2bbd9b20bccc68b', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd37ad568e26f46ed0feca227aa9c2ffa', N'f6817f48af4fb3af11b9e8bf182f618b', N'9502685863ab87f0ad1134142788a385', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd3ddcacee1acdfaa0810618b74e38ef2', N'f6817f48af4fb3af11b9e8bf182f618b', N'c6cf95444d80435eb37b2f9db3971ae6', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd3fe195d59811531c05d31d8436f5c8b', N'1750a8fb3e6d90cb7957c02de1dc8e59', N'e8af452d8948ea49d37c934f5100ae6a', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd5267597a4450f06d49d2fb63859641a', N'e51758fa916c881624b046d26bd09230', N'2dbbafa22cda07fa5d169d741b81fe12', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd83282192a69514cfe6161b3087ff962', N'f6817f48af4fb3af11b9e8bf182f618b', N'53a9230444d33de28aa11cc108fb1dba', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'd8a5c9079df12090e108e21be94b4fd7', N'f6817f48af4fb3af11b9e8bf182f618b', N'078f9558cdeab239aecb2bda1a8ed0d1', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'dbc5dd836d45c5bc7bc94b22596ab956', N'f6817f48af4fb3af11b9e8bf182f618b', N'1939e035e803a99ceecb6f5563570fb2', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'dc83bb13c0e8c930e79d28b2db26f01f', N'f6817f48af4fb3af11b9e8bf182f618b', N'63b551e81c5956d5c861593d366d8c57', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'dc8fd3f79bd85bd832608b42167a1c71', N'f6817f48af4fb3af11b9e8bf182f618b', N'91c23960fab49335831cf43d820b0a61', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'de82e89b8b60a3ea99be5348f565c240', N'f6817f48af4fb3af11b9e8bf182f618b', N'56ca78fe0f22d815fabc793461af67b8', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'de8f43229e351d34af3c95b1b9f0a15d', N'f6817f48af4fb3af11b9e8bf182f618b', N'a400e4f4d54f79bf5ce160ae432231af', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'e258ca8bf7ee168b93bfee739668eb15', N'ee8626f80f7c2619917b6236f3a7f02b', N'fb367426764077dcf94640c843733985', NULL, NULL, NULL)
@@ -24943,52 +25492,16 @@ GO
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'e3e922673f4289b18366bb51b6200f17', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'45c966826eeff4c99b8f8ebfe74511fc', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'e7467726ee72235baaeb47df04a35e73', N'f6817f48af4fb3af11b9e8bf182f618b', N'e08cb190ef230d5d4f03824198773950', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'eaef4486f1c9b0408580bbfa2037eb66', N'f6817f48af4fb3af11b9e8bf182f618b', N'2a470fc0c3954d9dbb61de6d80846549', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ec4bc97829ab56afd83f428b6dc37ff6', N'f6817f48af4fb3af11b9e8bf182f618b', N'200006f0edf145a2b50eacca07585451', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ec846a3f85fdb6813e515be71f11b331', N'f6817f48af4fb3af11b9e8bf182f618b', N'732d48f8e0abe99fe6a23d18a3171cd1', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ec93bb06f5be4c1f19522ca78180e2ef', N'f6817f48af4fb3af11b9e8bf182f618b', N'265de841c58907954b8877fb85212622', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ecdd72fe694e6bba9c1d9fc925ee79de', N'f6817f48af4fb3af11b9e8bf182f618b', N'45c966826eeff4c99b8f8ebfe74511fc', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'edefd8d468f5727db465cf1b860af474', N'f6817f48af4fb3af11b9e8bf182f618b', N'6ad53fd1b220989a8b71ff482d683a5a', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'ef8bdd20d29447681ec91d3603e80c7b', N'f6817f48af4fb3af11b9e8bf182f618b', N'ae4fed059f67086fd52a73d913cf473d', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'f12b6c90e8913183d7ca547c66600891', N'e51758fa916c881624b046d26bd09230', N'aedbf679b5773c1f25e9f7b10111da73', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'f177acac0276329dc66af0c9ad30558a', N'f6817f48af4fb3af11b9e8bf182f618b', N'c2c356bf4ddd29975347a7047a062440', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'f17ab8ad1e71341140857ef4914ef297', N'21c5a3187763729408b40afb0d0fdfa8', N'732d48f8e0abe99fe6a23d18a3171cd1', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'f99f99cc3bc27220cdd4f5aced33b7d7', N'f6817f48af4fb3af11b9e8bf182f618b', N'655563cd64b75dcf52ef7bcdd4836953', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'fafe73c4448b977fe42880a6750c3ee8', N'f6817f48af4fb3af11b9e8bf182f618b', N'9cb91b8851db0cf7b19d7ecc2a8193dd', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'fced905c7598973b970d42d833f73474', N'f6817f48af4fb3af11b9e8bf182f618b', N'4875ebe289344e14844d8e3ea1edd73f', NULL, NULL, NULL)
-GO
-
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'fd86f6b08eb683720ba499f9d9421726', N'ee8626f80f7c2619917b6236f3a7f02b', N'693ce69af3432bd00be13c3971a57961', NULL, NULL, NULL)
-GO
-
-INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'fd97963dc5f144d3aecfc7045a883427', N'f6817f48af4fb3af11b9e8bf182f618b', N'043780fa095ff1b2bec4dc406d76f023', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_role_permission] ([id], [role_id], [permission_id], [data_rule_ids], [operate_date], [operate_ip]) VALUES (N'fed41a4671285efb266cd404f24dd378', N'52b0cf022ac4187b2a70dfa4f8b2d940', N'00a2a0ae65cdca5e93209cdbde97cbe6', NULL, NULL, NULL)
@@ -25501,10 +26014,10 @@ GO
 -- ----------------------------
 -- Records of sys_tenant
 -- ----------------------------
-INSERT INTO [dbo].[sys_tenant] ([id], [name], [create_time], [create_by], [begin_date], [end_date], [status], [trade], [company_size], [company_address], [company_logo], [house_number], [work_place], [secondary_domain], [login_bkgd_img], [position], [department], [del_flag], [update_by], [update_time], [apply_status]) VALUES (N'1', N'白酒集团', N'2020-07-10 15:43:32.0000000', N'admin', NULL, NULL, N'1', NULL, NULL, NULL, NULL, N'7WIUCW', NULL, NULL, NULL, NULL, NULL, N'1', N'admin', N'2023-03-09 20:27:48.0000000', N'1')
+INSERT INTO [dbo].[sys_tenant] ([id], [name], [create_time], [create_by], [begin_date], [end_date], [status], [trade], [company_size], [company_address], [company_logo], [house_number], [work_place], [secondary_domain], [login_bkgd_img], [position], [department], [del_flag], [update_by], [update_time], [apply_status]) VALUES (N'1000', N'北京敲敲云科技有限公司', N'2023-03-09 19:55:11.0000000', N'admin', NULL, NULL, N'1', NULL, NULL, NULL, NULL, N'2PI3U6', NULL, NULL, NULL, NULL, NULL, N'0', N'admin', N'2023-03-09 21:38:56.0000000', NULL)
 GO
 
-INSERT INTO [dbo].[sys_tenant] ([id], [name], [create_time], [create_by], [begin_date], [end_date], [status], [trade], [company_size], [company_address], [company_logo], [house_number], [work_place], [secondary_domain], [login_bkgd_img], [position], [department], [del_flag], [update_by], [update_time], [apply_status]) VALUES (N'1000', N'北京敲敲云科技有限公司', N'2023-03-09 19:55:11.0000000', N'admin', NULL, NULL, N'1', NULL, NULL, NULL, NULL, N'2PI3U6', NULL, NULL, NULL, NULL, NULL, N'0', N'admin', N'2023-03-09 21:38:56.0000000', NULL)
+INSERT INTO [dbo].[sys_tenant] ([id], [name], [create_time], [create_by], [begin_date], [end_date], [status], [trade], [company_size], [company_address], [company_logo], [house_number], [work_place], [secondary_domain], [login_bkgd_img], [position], [department], [del_flag], [update_by], [update_time], [apply_status]) VALUES (N'1001', N'dddd', N'2023-08-20 17:42:59.0000000', N'admin', NULL, NULL, N'1', NULL, NULL, NULL, NULL, N'DFUS8W', NULL, NULL, NULL, NULL, NULL, N'1', NULL, NULL, NULL)
 GO
 
 
@@ -26158,16 +26671,16 @@ GO
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'3d464b4ea0d2491aab8a7bde74c57e95', N'zhangsan', N'张三', N'02ea098224c7d0d2077c14b9a3a1ed16', N'x5xRdeKB', N'https://static.jeecg.com/temp/jmlogo_1606575041993.png', NULL, NULL, NULL, NULL, N'财务部', N'1', N'0', NULL, NULL, N'1', N'0005', N'总经理', NULL, N'admin', N'2020-05-14 21:26:24.0000000', N'admin', N'2020-09-09 14:42:51.0000000', N'1', N'', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'3d464b4ea0d2491aab8a7bde74c57e95', N'zhangsan', N'张三', N'02ea098224c7d0d2077c14b9a3a1ed16', N'x5xRdeKB', N'https://static.jeecg.com/temp/jmlogo_1606575041993.png', NULL, NULL, N'111@1.com', N'13426432920', N'财务部', N'1', N'0', NULL, NULL, N'1', N'0005', N'总经理', NULL, N'admin', N'2020-05-14 21:26:24.0000000', N'admin', N'2023-08-24 16:39:56.0000000', N'1', N'', NULL, NULL, NULL)
 GO
 
 INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'a75d45a015c44384a04449ee80dc3503', N'jeecg', N'jeecg', N'eee378a1258530cb', N'mIgiYJow', N'https://static.jeecg.com/temp/国炬软件logo_1606575029126.png', NULL, N'1', NULL, NULL, N'A02A01', N'1', N'0', NULL, NULL, N'1', N'00002', N'devleader', NULL, N'admin', N'2019-02-13 16:02:36.0000000', N'jeecg', N'2022-03-09 23:03:21.0000000', N'1', N'', NULL, NULL, NULL)
 GO
 
-INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'e9ca23d68d884d4ebb19d07889727dae', N'admin', N'管理员', N'cb362cfeefbf3d8d', N'RCGTeGiH', N'https://static.jeecg.com/temp/国炬软件logo_1606575029126.png', N'2018-12-05 00:00:00.0000000', N'1', N'jeecg@163.com', N'18611111111', N'A01', N'1', N'0', NULL, NULL, N'1', N'00001', N'总经理', NULL, NULL, N'2019-06-21 17:54:10.0000000', N'admin', N'2023-03-09 20:29:46.0000000', N'2', N'', NULL, N'1000', NULL)
+INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'e9ca23d68d884d4ebb19d07889727dae', N'admin', N'管理员', N'cb362cfeefbf3d8d', N'RCGTeGiH', N'https://static.jeecg.com/temp/国炬软件logo_1606575029126.png', N'2018-12-05 00:00:00.0000000', N'1', N'jeecg@163.com', N'18611111111', N'A01', N'1', N'0', NULL, NULL, N'1', N'00001', N'总经理', NULL, NULL, N'2019-06-21 17:54:10.0000000', N'admin', N'2023-09-20 10:06:51.0000000', N'2', N'', NULL, N'0', NULL)
 GO
 
-INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'f0019fdebedb443c98dcb17d88222c38', N'zhagnxiao', N'张小红12', N'f898134e5e52ae11a2ffb2c3b57a4e90', N'go3jJ4zX', N'https://static.jeecg.com/temp/jmlogo_1606575041993.png', N'2019-04-01 00:00:00.0000000', NULL, NULL, N'18611711111', N'研发部,财务部', N'1', N'0', NULL, NULL, N'1', N'00003', N'devleader,总经理', NULL, N'admin', N'2020-10-01 19:34:10.0000000', N'admin', N'2023-03-09 19:44:13.0000000', N'2', N'1582683631414632450', NULL, NULL, NULL)
+INSERT INTO [dbo].[sys_user] ([id], [username], [realname], [password], [salt], [avatar], [birthday], [sex], [email], [phone], [org_code], [status], [del_flag], [third_id], [third_type], [activiti_sync], [work_no], [post], [telephone], [create_by], [create_time], [update_by], [update_time], [user_identity], [depart_ids], [client_id], [login_tenant_id], [bpm_status]) VALUES (N'f0019fdebedb443c98dcb17d88222c38', N'zhagnxiao', N'张小红12', N'f898134e5e52ae11a2ffb2c3b57a4e90', N'go3jJ4zX', N'https://static.jeecg.com/temp/jmlogo_1606575041993.png', N'2019-04-01 00:00:00.0000000', NULL, N'qinfeng@jeecg.org', N'18611711111', N'研发部,财务部', N'1', N'1', NULL, NULL, N'1', N'00003', N'devleader,总经理', NULL, N'admin', N'2020-10-01 19:34:10.0000000', N'admin', N'2023-07-18 12:39:42.0000000', N'2', N'1582683631414632450', NULL, NULL, NULL)
 GO
 
 
@@ -26353,7 +26866,7 @@ GO
 -- ----------------------------
 -- Records of sys_user_depart
 -- ----------------------------
-INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1303584634328633345', N'3d464b4ea0d2491aab8a7bde74c57e95', N'a7d7e77e06c84325a40932163adcdaa6')
+INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1694630606510206978', N'3d464b4ea0d2491aab8a7bde74c57e95', N'a7d7e77e06c84325a40932163adcdaa6')
 GO
 
 INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1256487210695356418', N'a75d45a015c44384a04449ee80dc3503', N'a7d7e77e06c84325a40932163adcdaa6')
@@ -26362,13 +26875,13 @@ GO
 INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1f3a0267811327b9eca86b0cc2b956f3', N'bcbe1290783a469a83ae3bd8effe15d4', N'5159cde220114246b045e574adceafe9')
 GO
 
-INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1633795820112003074', N'f0019fdebedb443c98dcb17d88222c38', N'1582683631414632450')
+INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1681161797501677570', N'f0019fdebedb443c98dcb17d88222c38', N'1582683631414632450')
 GO
 
-INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1633795820124585985', N'f0019fdebedb443c98dcb17d88222c38', N'57197590443c44f083d42ae24ef26a2c')
+INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1681161797501677571', N'f0019fdebedb443c98dcb17d88222c38', N'57197590443c44f083d42ae24ef26a2c')
 GO
 
-INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1633795820137168898', N'f0019fdebedb443c98dcb17d88222c38', N'67fc001af12a4f9b8458005d3f19934a')
+INSERT INTO [dbo].[sys_user_depart] ([ID], [user_id], [dep_id]) VALUES (N'1681161797510066177', N'f0019fdebedb443c98dcb17d88222c38', N'67fc001af12a4f9b8458005d3f19934a')
 GO
 
 
@@ -26434,16 +26947,16 @@ GO
 INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1256487210544361473', N'a75d45a015c44384a04449ee80dc3503', N'ee8626f80f7c2619917b6236f3a7f02b', N'0')
 GO
 
-INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1303584634118918145', N'3d464b4ea0d2491aab8a7bde74c57e95', N'ee8626f80f7c2619917b6236f3a7f02b', N'0')
+INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1681161797489094657', N'f0019fdebedb443c98dcb17d88222c38', N'ee8626f80f7c2619917b6236f3a7f02b', N'0')
 GO
 
-INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1633795820044894209', N'f0019fdebedb443c98dcb17d88222c38', N'ee8626f80f7c2619917b6236f3a7f02b', N'0')
+INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1694630606380183554', N'3d464b4ea0d2491aab8a7bde74c57e95', N'ee8626f80f7c2619917b6236f3a7f02b', N'0')
 GO
 
-INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1633807285908926466', N'e9ca23d68d884d4ebb19d07889727dae', N'1501570619841810433', N'1000')
+INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1704316154732498946', N'e9ca23d68d884d4ebb19d07889727dae', N'1501570619841810433', N'0')
 GO
 
-INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1633807285971841026', N'e9ca23d68d884d4ebb19d07889727dae', N'f6817f48af4fb3af11b9e8bf182f618b', N'1000')
+INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'1704316154732498947', N'e9ca23d68d884d4ebb19d07889727dae', N'f6817f48af4fb3af11b9e8bf182f618b', N'0')
 GO
 
 INSERT INTO [dbo].[sys_user_role] ([id], [user_id], [role_id], [tenant_id]) VALUES (N'31af310584bd5795f76b1fe8c38294a0', N'70f5dcf03f36471dabba81381919291f', N'e51758fa916c881624b046d26bd09230', N'0')
@@ -27089,6 +27602,9 @@ GO
 INSERT INTO [dbo].[test_order_customer] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [sex], [age], [birthday], [order_id], [address]) VALUES (N'1597149156416937985', N'admin', N'2022-11-28 16:43:27.0000000', NULL, NULL, N'A01', N'33', N'1', N'33', N'2022-11-03', N'1597149156089782273', NULL)
 GO
 
+INSERT INTO [dbo].[test_order_customer] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [sex], [age], [birthday], [order_id], [address]) VALUES (N'1683074969947033601', N'admin', N'2023-07-23 19:21:57.0000000', NULL, NULL, N'A01', N'222', N'1', N'22', N'2023-07-06', N'1683074969561157634', NULL)
+GO
+
 
 -- ----------------------------
 -- Table structure for test_order_main
@@ -27196,6 +27712,9 @@ INSERT INTO [dbo].[test_order_main] ([id], [create_by], [create_time], [update_b
 GO
 
 INSERT INTO [dbo].[test_order_main] ([id], [create_by], [create_time], [update_by], [update_time], [order_code], [order_date], [descc], [xiala]) VALUES (N'1597149156089782273', N'admin', N'2022-11-28 16:43:27.0000000', NULL, NULL, N'CN2022112816431596', NULL, NULL, NULL)
+GO
+
+INSERT INTO [dbo].[test_order_main] ([id], [create_by], [create_time], [update_by], [update_time], [order_code], [order_date], [descc], [xiala]) VALUES (N'1683074969561157634', N'admin', N'2023-07-23 19:21:57.0000000', NULL, NULL, N'CN2023072319214115', NULL, N'111', N'1,2')
 GO
 
 
@@ -27348,6 +27867,9 @@ INSERT INTO [dbo].[test_order_product] ([id], [create_by], [create_time], [updat
 GO
 
 INSERT INTO [dbo].[test_order_product] ([id], [create_by], [create_time], [update_by], [update_time], [product_name], [price], [num], [descc], [order_fk_id], [pro_type]) VALUES (N'1597149156278525953', N'admin', N'2022-11-28 16:43:27.0000000', NULL, NULL, N'22', N'2', N'2', N'22', N'1597149156089782273', N'1')
+GO
+
+INSERT INTO [dbo].[test_order_product] ([id], [create_by], [create_time], [update_by], [update_time], [product_name], [price], [num], [descc], [order_fk_id], [pro_type]) VALUES (N'1683074969716346881', N'admin', N'2023-07-23 19:21:57.0000000', NULL, NULL, N'1212', N'1212', N'21', N'121', N'1683074969561157634', N'1')
 GO
 
 INSERT INTO [dbo].[test_order_product] ([id], [create_by], [create_time], [update_by], [update_time], [product_name], [price], [num], [descc], [order_fk_id], [pro_type]) VALUES (N'402831816a38e7fd016a38e7fdeb0001', N'admin', N'2019-04-20 12:01:29.0000000', NULL, NULL, N'笔记本', N'100', N'10', NULL, N'402831816a38e7fd016a38e7fddf0000', NULL)
@@ -27611,7 +28133,13 @@ INSERT INTO [dbo].[test_v3_hello] ([id], [create_by], [create_time], [update_by]
 就我个人来说, 随机一段废话对我的意义, 不能不说非常重大. 既然如此, 我们一般认为, 抓住了问题的关键, 其他一切则会迎刃而解.对我', N'1260208702503366657', NULL)
 GO
 
-INSERT INTO [dbo].[test_v3_hello] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [age], [sex], [birthday], [cc], [rel_user], [rel_filed]) VALUES (N'1586554463777943554', N'admin', N'2022-10-30 11:03:55.0000000', NULL, NULL, N'A01', N'袁清妍', N'30', N'1', N'2022-10-30', NULL, N'1586554454185570306', NULL)
+INSERT INTO [dbo].[test_v3_hello] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [age], [sex], [birthday], [cc], [rel_user], [rel_filed]) VALUES (N'1586554463777943554', N'admin', N'2022-10-30 11:03:55.0000000', N'admin', N'2023-07-23 18:49:49.0000000', N'A01', N'袁清妍', N'30', N'1', N'2022-10-30', N'', N'1260208702503366657', N'22233')
+GO
+
+INSERT INTO [dbo].[test_v3_hello] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [age], [sex], [birthday], [cc], [rel_user], [rel_filed]) VALUES (N'1683074855849381889', N'admin', N'2023-07-23 19:21:30.0000000', NULL, NULL, N'A01', N'123', N'123', N'1', N'2023-07-12', NULL, N'1586554454185570306', N'44')
+GO
+
+INSERT INTO [dbo].[test_v3_hello] ([id], [create_by], [create_time], [update_by], [update_time], [sys_org_code], [name], [age], [sex], [birthday], [cc], [rel_user], [rel_filed]) VALUES (N'1704384768789696513', N'admin', N'2023-09-20 14:39:29.0000000', N'admin', N'2023-09-20 14:39:33.0000000', N'A01', N'22', N'22', N'1', N'2023-09-13', N'', N'1580543046964621313', N'22')
 GO
 
 
@@ -27728,7 +28256,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table ceshi_note
 -- ----------------------------
-ALTER TABLE [dbo].[ceshi_note] ADD CONSTRAINT [PK__ceshi_no__3213E83F8D5CD362] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[ceshi_note] ADD CONSTRAINT [PK__ceshi_no__3213E83F4F903BF3] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27737,7 +28265,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table demo
 -- ----------------------------
-ALTER TABLE [dbo].[demo] ADD CONSTRAINT [PK__demo__3213E83F25821FE3] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[demo] ADD CONSTRAINT [PK__demo__3213E83F084476AA] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27746,7 +28274,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table demo_field_def_val_main
 -- ----------------------------
-ALTER TABLE [dbo].[demo_field_def_val_main] ADD CONSTRAINT [PK__demo_fie__3213E83F5322E239] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[demo_field_def_val_main] ADD CONSTRAINT [PK__demo_fie__3213E83F8E207EF0] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27755,7 +28283,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table demo_field_def_val_sub
 -- ----------------------------
-ALTER TABLE [dbo].[demo_field_def_val_sub] ADD CONSTRAINT [PK__demo_fie__3213E83F794844AB] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[demo_field_def_val_sub] ADD CONSTRAINT [PK__demo_fie__3213E83F17781ECD] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27764,7 +28292,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jeecg_monthly_growth_analysis
 -- ----------------------------
-ALTER TABLE [dbo].[jeecg_monthly_growth_analysis] ADD CONSTRAINT [PK__jeecg_mo__3213E83F5258F5C5] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jeecg_monthly_growth_analysis] ADD CONSTRAINT [PK__jeecg_mo__3213E83FF33DE64B] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27773,7 +28301,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jeecg_order_customer
 -- ----------------------------
-ALTER TABLE [dbo].[jeecg_order_customer] ADD CONSTRAINT [PK__jeecg_or__3213E83F76C9610C] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jeecg_order_customer] ADD CONSTRAINT [PK__jeecg_or__3213E83F80880BE6] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27782,7 +28310,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jeecg_order_main
 -- ----------------------------
-ALTER TABLE [dbo].[jeecg_order_main] ADD CONSTRAINT [PK__jeecg_or__3213E83F7B8F2553] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jeecg_order_main] ADD CONSTRAINT [PK__jeecg_or__3213E83F4A888A0A] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27791,7 +28319,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jeecg_order_ticket
 -- ----------------------------
-ALTER TABLE [dbo].[jeecg_order_ticket] ADD CONSTRAINT [PK__jeecg_or__3213E83F5C24FD14] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jeecg_order_ticket] ADD CONSTRAINT [PK__jeecg_or__3213E83F0DE795A2] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27800,7 +28328,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jeecg_project_nature_income
 -- ----------------------------
-ALTER TABLE [dbo].[jeecg_project_nature_income] ADD CONSTRAINT [PK__jeecg_pr__3213E83F50FE75BA] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jeecg_project_nature_income] ADD CONSTRAINT [PK__jeecg_pr__3213E83F7278AA70] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27819,7 +28347,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_dict
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_dict] ADD CONSTRAINT [PK__jimu_dic__3213E83F2D4444AC] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_dict] ADD CONSTRAINT [PK__jimu_dic__3213E83F44136D52] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27857,7 +28385,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_dict_item
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_dict_item] ADD CONSTRAINT [PK__jimu_dic__3213E83FEC7C2E77] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_dict_item] ADD CONSTRAINT [PK__jimu_dic__3213E83FAA7BAF00] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27888,7 +28416,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report] ADD CONSTRAINT [PK__jimu_rep__3213E83F188040AE] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report] ADD CONSTRAINT [PK__jimu_rep__3213E83FC7A2C7C1] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27913,7 +28441,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report_data_source
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_data_source] ADD CONSTRAINT [PK__jimu_rep__3213E83FEC1E5491] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_data_source] ADD CONSTRAINT [PK__jimu_rep__3213E83F093C869D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27944,7 +28472,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report_db
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_db] ADD CONSTRAINT [PK__jimu_rep__3213E83F7B09AA81] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_db] ADD CONSTRAINT [PK__jimu_rep__3213E83FEE0588F0] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27969,7 +28497,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report_db_field
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_db_field] ADD CONSTRAINT [PK__jimu_rep__3213E83F42AA59B5] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_db_field] ADD CONSTRAINT [PK__jimu_rep__3213E83F33A03CF2] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -27988,7 +28516,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report_db_param
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_db_param] ADD CONSTRAINT [PK__jimu_rep__3213E83F2B7AA030] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_db_param] ADD CONSTRAINT [PK__jimu_rep__3213E83FBF095087] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28007,7 +28535,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report_link
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_link] ADD CONSTRAINT [PK__jimu_rep__3213E83F0DE5358D] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_link] ADD CONSTRAINT [PK__jimu_rep__3213E83FEB77C425] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28026,16 +28554,26 @@ GO
 -- ----------------------------
 -- Primary Key structure for table jimu_report_map
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_map] ADD CONSTRAINT [PK__jimu_rep__3213E83F5014F834] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_map] ADD CONSTRAINT [PK__jimu_rep__3213E83F29D540B2] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
 
 
 -- ----------------------------
+-- Indexes structure for table jimu_report_share
+-- ----------------------------
+CREATE UNIQUE NONCLUSTERED INDEX [uniq_report_id]
+ON [dbo].[jimu_report_share] (
+  [report_id] ASC
+)
+GO
+
+
+-- ----------------------------
 -- Primary Key structure for table jimu_report_share
 -- ----------------------------
-ALTER TABLE [dbo].[jimu_report_share] ADD CONSTRAINT [PK__jimu_rep__3213E83F4DD2FB11] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[jimu_report_share] ADD CONSTRAINT [PK__jimu_rep__3213E83F1E5F8413] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28044,7 +28582,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_auth_data
 -- ----------------------------
-ALTER TABLE [dbo].[onl_auth_data] ADD CONSTRAINT [PK__onl_auth__3213E83F580A32AD] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_auth_data] ADD CONSTRAINT [PK__onl_auth__3213E83F062FE7A7] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28053,7 +28591,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_auth_page
 -- ----------------------------
-ALTER TABLE [dbo].[onl_auth_page] ADD CONSTRAINT [PK__onl_auth__3213E83FC432ED56] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_auth_page] ADD CONSTRAINT [PK__onl_auth__3213E83F4743B088] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28062,7 +28600,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_auth_relation
 -- ----------------------------
-ALTER TABLE [dbo].[onl_auth_relation] ADD CONSTRAINT [PK__onl_auth__3213E83F600E31FB] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_auth_relation] ADD CONSTRAINT [PK__onl_auth__3213E83F4F34F484] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28099,7 +28637,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_button
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_button] ADD CONSTRAINT [PK__onl_cgfo__3214EC27BEADCF86] PRIMARY KEY CLUSTERED ([ID])
+ALTER TABLE [dbo].[onl_cgform_button] ADD CONSTRAINT [PK__onl_cgfo__3214EC2706E515AA] PRIMARY KEY CLUSTERED ([ID])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28130,7 +28668,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_enhance_java
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_enhance_java] ADD CONSTRAINT [PK__onl_cgfo__3214EC27CB48C2F9] PRIMARY KEY CLUSTERED ([ID])
+ALTER TABLE [dbo].[onl_cgform_enhance_java] ADD CONSTRAINT [PK__onl_cgfo__3214EC271EACBF1E] PRIMARY KEY CLUSTERED ([ID])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28155,7 +28693,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_enhance_js
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_enhance_js] ADD CONSTRAINT [PK__onl_cgfo__3214EC27FBB74D5E] PRIMARY KEY CLUSTERED ([ID])
+ALTER TABLE [dbo].[onl_cgform_enhance_js] ADD CONSTRAINT [PK__onl_cgfo__3214EC273E67965D] PRIMARY KEY CLUSTERED ([ID])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28174,7 +28712,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_enhance_sql
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_enhance_sql] ADD CONSTRAINT [PK__onl_cgfo__3214EC27721BD4F3] PRIMARY KEY CLUSTERED ([ID])
+ALTER TABLE [dbo].[onl_cgform_enhance_sql] ADD CONSTRAINT [PK__onl_cgfo__3214EC27200D9077] PRIMARY KEY CLUSTERED ([ID])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28193,7 +28731,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_field
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_field] ADD CONSTRAINT [PK__onl_cgfo__3213E83F6418492E] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_cgform_field] ADD CONSTRAINT [PK__onl_cgfo__3213E83FC8DD5574] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28230,7 +28768,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_head
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_head] ADD CONSTRAINT [PK__onl_cgfo__3213E83F00693F65] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_cgform_head] ADD CONSTRAINT [PK__onl_cgfo__3213E83F1A997C5F] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28249,7 +28787,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgform_index
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgform_index] ADD CONSTRAINT [PK__onl_cgfo__3213E83F2BB48F39] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_cgform_index] ADD CONSTRAINT [PK__onl_cgfo__3213E83F8A8CA82D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28264,17 +28802,11 @@ ON [dbo].[onl_cgreport_head] (
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_och_code]
-ON [dbo].[onl_cgreport_head] (
-  [code] ASC
-)
-GO
-
 
 -- ----------------------------
 -- Primary Key structure for table onl_cgreport_head
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgreport_head] ADD CONSTRAINT [PK__onl_cgre__3213E83FDCB3F5C9] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_cgreport_head] ADD CONSTRAINT [PK__onl_cgre__3213E83FE561FCE3] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28305,7 +28837,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgreport_item
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgreport_item] ADD CONSTRAINT [PK__onl_cgre__3213E83F364AD8D8] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_cgreport_item] ADD CONSTRAINT [PK__onl_cgre__3213E83FC015A44D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28324,7 +28856,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_cgreport_param
 -- ----------------------------
-ALTER TABLE [dbo].[onl_cgreport_param] ADD CONSTRAINT [PK__onl_cgre__3213E83F66D22633] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_cgreport_param] ADD CONSTRAINT [PK__onl_cgre__3213E83FB38AF3BD] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28333,7 +28865,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_drag_comp
 -- ----------------------------
-ALTER TABLE [dbo].[onl_drag_comp] ADD CONSTRAINT [PK__onl_drag__3213E83F7946B343] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_drag_comp] ADD CONSTRAINT [PK__onl_drag__3213E83FE32D9F55] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28342,7 +28874,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_drag_dataset_head
 -- ----------------------------
-ALTER TABLE [dbo].[onl_drag_dataset_head] ADD CONSTRAINT [PK__onl_drag__3213E83F2DBA5686] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_drag_dataset_head] ADD CONSTRAINT [PK__onl_drag__3213E83F316C793D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28361,7 +28893,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_drag_dataset_item
 -- ----------------------------
-ALTER TABLE [dbo].[onl_drag_dataset_item] ADD CONSTRAINT [PK__onl_drag__3213E83F5CDB94CB] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_drag_dataset_item] ADD CONSTRAINT [PK__onl_drag__3213E83F7B90011E] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28380,7 +28912,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_drag_dataset_param
 -- ----------------------------
-ALTER TABLE [dbo].[onl_drag_dataset_param] ADD CONSTRAINT [PK__onl_drag__3213E83FAB0A5E2A] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_drag_dataset_param] ADD CONSTRAINT [PK__onl_drag__3213E83F9B408C67] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28389,7 +28921,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_drag_page
 -- ----------------------------
-ALTER TABLE [dbo].[onl_drag_page] ADD CONSTRAINT [PK__onl_drag__3213E83F09AA0B64] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_drag_page] ADD CONSTRAINT [PK__onl_drag__3213E83F953ECEEF] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28398,7 +28930,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table onl_drag_page_comp
 -- ----------------------------
-ALTER TABLE [dbo].[onl_drag_page_comp] ADD CONSTRAINT [PK__onl_drag__3213E83FE3DB0999] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[onl_drag_page_comp] ADD CONSTRAINT [PK__onl_drag__3213E83F835C9B38] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28407,7 +28939,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table oss_file
 -- ----------------------------
-ALTER TABLE [dbo].[oss_file] ADD CONSTRAINT [PK__oss_file__3213E83F6541D98D] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[oss_file] ADD CONSTRAINT [PK__oss_file__3213E83F05FCD160] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28506,7 +29038,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table rep_demo_dxtj
 -- ----------------------------
-ALTER TABLE [dbo].[rep_demo_dxtj] ADD CONSTRAINT [PK__rep_demo__3213E83F8199307D] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[rep_demo_dxtj] ADD CONSTRAINT [PK__rep_demo__3213E83F3FA23718] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28515,7 +29047,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table rep_demo_employee
 -- ----------------------------
-ALTER TABLE [dbo].[rep_demo_employee] ADD CONSTRAINT [PK__rep_demo__3213E83F31475988] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[rep_demo_employee] ADD CONSTRAINT [PK__rep_demo__3213E83FB25B4916] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28524,7 +29056,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table rep_demo_gongsi
 -- ----------------------------
-ALTER TABLE [dbo].[rep_demo_gongsi] ADD CONSTRAINT [PK__rep_demo__3213E83FBD9870B0] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[rep_demo_gongsi] ADD CONSTRAINT [PK__rep_demo__3213E83F46499F94] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28533,27 +29065,97 @@ GO
 -- ----------------------------
 -- Primary Key structure for table rep_demo_jianpiao
 -- ----------------------------
-ALTER TABLE [dbo].[rep_demo_jianpiao] ADD CONSTRAINT [PK__rep_demo__3213E83F3764277F] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[rep_demo_jianpiao] ADD CONSTRAINT [PK__rep_demo__3213E83F87EC95E3] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
+GO
+
+
+-- ----------------------------
+-- Indexes structure for table sys_announcement
+-- ----------------------------
+CREATE NONCLUSTERED INDEX [idx_sanno_endtime]
+ON [dbo].[sys_announcement] (
+  [end_time] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_start_time]
+ON [dbo].[sys_announcement] (
+  [start_time] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_msg_type]
+ON [dbo].[sys_announcement] (
+  [msg_type] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_send_status]
+ON [dbo].[sys_announcement] (
+  [send_status] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_del_flag]
+ON [dbo].[sys_announcement] (
+  [del_flag] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_tenant_id]
+ON [dbo].[sys_announcement] (
+  [tenant_id] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_sender]
+ON [dbo].[sys_announcement] (
+  [sender] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sanno_create_time]
+ON [dbo].[sys_announcement] (
+  [create_time] ASC
+)
 GO
 
 
 -- ----------------------------
 -- Primary Key structure for table sys_announcement
 -- ----------------------------
-ALTER TABLE [dbo].[sys_announcement] ADD CONSTRAINT [PK__sys_anno__3213E83FEF0AA031] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_announcement] ADD CONSTRAINT [PK__sys_anno__3213E83F22A1816D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
 
 
 -- ----------------------------
--- Indexes structure for table sys_category
+-- Indexes structure for table sys_announcement_send
 -- ----------------------------
-CREATE NONCLUSTERED INDEX [idx_sc_code]
-ON [dbo].[sys_category] (
-  [code] ASC
+CREATE NONCLUSTERED INDEX [idx_sacm_annt_id]
+ON [dbo].[sys_announcement_send] (
+  [annt_id] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sacm_user_id]
+ON [dbo].[sys_announcement_send] (
+  [user_id] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sacm_read_flag]
+ON [dbo].[sys_announcement_send] (
+  [read_flag] ASC
+)
+GO
+
+CREATE NONCLUSTERED INDEX [idx_sacm_star_flag]
+ON [dbo].[sys_announcement_send] (
+  [star_flag] ASC
 )
 GO
 
@@ -28561,7 +29163,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_category
 -- ----------------------------
-ALTER TABLE [dbo].[sys_category] ADD CONSTRAINT [PK__sys_cate__3213E83FC903358B] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_category] ADD CONSTRAINT [PK__sys_cate__3213E83FF687A5CB] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28580,7 +29182,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_check_rule
 -- ----------------------------
-ALTER TABLE [dbo].[sys_check_rule] ADD CONSTRAINT [PK__sys_chec__3213E83FED10D033] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_check_rule] ADD CONSTRAINT [PK__sys_chec__3213E83F35F926ED] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28600,7 +29202,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_comment
 -- ----------------------------
-ALTER TABLE [dbo].[sys_comment] ADD CONSTRAINT [PK__sys_comm__3213E83FE8A2C8A9] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_comment] ADD CONSTRAINT [PK__sys_comm__3213E83FBD93B561] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28620,7 +29222,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_data_log
 -- ----------------------------
-ALTER TABLE [dbo].[sys_data_log] ADD CONSTRAINT [PK__sys_data__3213E83F55FB2A53] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_data_log] ADD CONSTRAINT [PK__sys_data__3213E83FDA268CD0] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28639,7 +29241,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_data_source
 -- ----------------------------
-ALTER TABLE [dbo].[sys_data_source] ADD CONSTRAINT [PK__sys_data__3213E83FEFCA2564] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_data_source] ADD CONSTRAINT [PK__sys_data__3213E83F5A94F3FD] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28666,17 +29268,11 @@ ON [dbo].[sys_depart] (
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_sd_org_code]
-ON [dbo].[sys_depart] (
-  [org_code] ASC
-)
-GO
-
 
 -- ----------------------------
 -- Primary Key structure for table sys_depart
 -- ----------------------------
-ALTER TABLE [dbo].[sys_depart] ADD CONSTRAINT [PK__sys_depa__3213E83F4EE70371] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_depart] ADD CONSTRAINT [PK__sys_depa__3213E83F8FDA5914] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28685,7 +29281,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_depart_permission
 -- ----------------------------
-ALTER TABLE [dbo].[sys_depart_permission] ADD CONSTRAINT [PK__sys_depa__3213E83FA6A7CF63] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_depart_permission] ADD CONSTRAINT [PK__sys_depa__3213E83FBE83F40C] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28694,7 +29290,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_depart_role
 -- ----------------------------
-ALTER TABLE [dbo].[sys_depart_role] ADD CONSTRAINT [PK__sys_depa__3213E83F4FCD4E53] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_depart_role] ADD CONSTRAINT [PK__sys_depa__3213E83FC8DC293A] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28726,7 +29322,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_depart_role_permission
 -- ----------------------------
-ALTER TABLE [dbo].[sys_depart_role_permission] ADD CONSTRAINT [PK__sys_depa__3213E83FAA3CE439] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_depart_role_permission] ADD CONSTRAINT [PK__sys_depa__3213E83F8435B260] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28735,7 +29331,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_depart_role_user
 -- ----------------------------
-ALTER TABLE [dbo].[sys_depart_role_user] ADD CONSTRAINT [PK__sys_depa__3213E83F3E414059] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_depart_role_user] ADD CONSTRAINT [PK__sys_depa__3213E83FCD041E86] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28754,7 +29350,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_dict
 -- ----------------------------
-ALTER TABLE [dbo].[sys_dict] ADD CONSTRAINT [PK__sys_dict__3213E83F33B0867C] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_dict] ADD CONSTRAINT [PK__sys_dict__3213E83F21ADBFC3] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28763,25 +29359,25 @@ GO
 -- ----------------------------
 -- Indexes structure for table sys_dict_item
 -- ----------------------------
-CREATE NONCLUSTERED INDEX [idx_sdi_role_dict_id]
+CREATE NONCLUSTERED INDEX [idx_sditem_role_dict_id]
 ON [dbo].[sys_dict_item] (
   [dict_id] ASC
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_sdi_role_sort_order]
+CREATE NONCLUSTERED INDEX [idx_sditem_role_sort_order]
 ON [dbo].[sys_dict_item] (
   [sort_order] ASC
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_sdi_status]
+CREATE NONCLUSTERED INDEX [idx_sditem_status]
 ON [dbo].[sys_dict_item] (
   [status] ASC
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_sdi_dict_val]
+CREATE NONCLUSTERED INDEX [idx_sditem_dict_val]
 ON [dbo].[sys_dict_item] (
   [dict_id] ASC,
   [item_value] ASC
@@ -28792,7 +29388,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_dict_item
 -- ----------------------------
-ALTER TABLE [dbo].[sys_dict_item] ADD CONSTRAINT [PK__sys_dict__3213E83F5784787D] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_dict_item] ADD CONSTRAINT [PK__sys_dict__3213E83F46C3E7C6] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28817,7 +29413,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_files
 -- ----------------------------
-ALTER TABLE [dbo].[sys_files] ADD CONSTRAINT [PK__sys_file__3213E83F67541EDB] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_files] ADD CONSTRAINT [PK__sys_file__3213E83F3E2392CC] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28836,7 +29432,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_fill_rule
 -- ----------------------------
-ALTER TABLE [dbo].[sys_fill_rule] ADD CONSTRAINT [PK__sys_fill__3213E83FA6773AC4] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_fill_rule] ADD CONSTRAINT [PK__sys_fill__3213E83FB9CA1A3A] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28862,7 +29458,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_form_file
 -- ----------------------------
-ALTER TABLE [dbo].[sys_form_file] ADD CONSTRAINT [PK__sys_form__3213E83FFA26491A] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_form_file] ADD CONSTRAINT [PK__sys_form__3213E83F28ADDA9F] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28871,7 +29467,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_gateway_route
 -- ----------------------------
-ALTER TABLE [dbo].[sys_gateway_route] ADD CONSTRAINT [PK__sys_gate__3213E83FD5908936] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_gateway_route] ADD CONSTRAINT [PK__sys_gate__3213E83FA345363A] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28908,7 +29504,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_log
 -- ----------------------------
-ALTER TABLE [dbo].[sys_log] ADD CONSTRAINT [PK__sys_log__3213E83F923CE65D] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_log] ADD CONSTRAINT [PK__sys_log__3213E83F6189B2E0] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28939,7 +29535,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_permission
 -- ----------------------------
-ALTER TABLE [dbo].[sys_permission] ADD CONSTRAINT [PK__sys_perm__3213E83FAD2D6645] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_permission] ADD CONSTRAINT [PK__sys_perm__3213E83FFC939BFE] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -28958,7 +29554,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_permission_data_rule
 -- ----------------------------
-ALTER TABLE [dbo].[sys_permission_data_rule] ADD CONSTRAINT [PK__sys_perm__3213E83F3D8BA6FA] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_permission_data_rule] ADD CONSTRAINT [PK__sys_perm__3213E83FCF6D75F3] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29019,7 +29615,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_permission_v2
 -- ----------------------------
-ALTER TABLE [dbo].[sys_permission_v2] ADD CONSTRAINT [PK__sys_perm__3213E83F56EE97A4] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_permission_v2] ADD CONSTRAINT [PK__sys_perm__3213E83FF8DC0B1D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29038,7 +29634,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_position
 -- ----------------------------
-ALTER TABLE [dbo].[sys_position] ADD CONSTRAINT [PK__sys_posi__3213E83FFBB5443A] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_position] ADD CONSTRAINT [PK__sys_posi__3213E83F42230B0B] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29047,7 +29643,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_quartz_job
 -- ----------------------------
-ALTER TABLE [dbo].[sys_quartz_job] ADD CONSTRAINT [PK__sys_quar__3213E83F1542EA83] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_quartz_job] ADD CONSTRAINT [PK__sys_quar__3213E83F3FA511ED] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29062,17 +29658,11 @@ ON [dbo].[sys_role] (
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_sr_role_code]
-ON [dbo].[sys_role] (
-  [role_code] ASC
-)
-GO
-
 
 -- ----------------------------
 -- Primary Key structure for table sys_role
 -- ----------------------------
-ALTER TABLE [dbo].[sys_role] ADD CONSTRAINT [PK__sys_role__3213E83F462B1101] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_role] ADD CONSTRAINT [PK__sys_role__3213E83F6531AB55] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29081,7 +29671,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_role_index
 -- ----------------------------
-ALTER TABLE [dbo].[sys_role_index] ADD CONSTRAINT [PK__sys_role__3213E83F948A50FB] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_role_index] ADD CONSTRAINT [PK__sys_role__3213E83F21355462] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29113,7 +29703,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_role_permission
 -- ----------------------------
-ALTER TABLE [dbo].[sys_role_permission] ADD CONSTRAINT [PK__sys_role__3213E83F749F6CE4] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_role_permission] ADD CONSTRAINT [PK__sys_role__3213E83F52F12EB4] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29150,7 +29740,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_sms
 -- ----------------------------
-ALTER TABLE [dbo].[sys_sms] ADD CONSTRAINT [PK__sys_sms__3213E83F439D2EA6] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_sms] ADD CONSTRAINT [PK__sys_sms__3213E83FCE10485F] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29169,7 +29759,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_sms_template
 -- ----------------------------
-ALTER TABLE [dbo].[sys_sms_template] ADD CONSTRAINT [PK__sys_sms___3213E83FFFC6F5A2] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_sms_template] ADD CONSTRAINT [PK__sys_sms___3213E83FC4AA1B1D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29178,7 +29768,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_tenant
 -- ----------------------------
-ALTER TABLE [dbo].[sys_tenant] ADD CONSTRAINT [PK__sys_tena__3213E83F6A008036] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_tenant] ADD CONSTRAINT [PK__sys_tena__3213E83F5998385E] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29187,7 +29777,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_tenant_pack
 -- ----------------------------
-ALTER TABLE [dbo].[sys_tenant_pack] ADD CONSTRAINT [PK__sys_tena__3213E83F708CFFB3] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_tenant_pack] ADD CONSTRAINT [PK__sys_tena__3213E83FACAC1BBE] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29196,7 +29786,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_tenant_pack_perms
 -- ----------------------------
-ALTER TABLE [dbo].[sys_tenant_pack_perms] ADD CONSTRAINT [PK__sys_tena__3213E83F692247E9] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_tenant_pack_perms] ADD CONSTRAINT [PK__sys_tena__3213E83F1E32C375] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29205,7 +29795,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_tenant_pack_user
 -- ----------------------------
-ALTER TABLE [dbo].[sys_tenant_pack_user] ADD CONSTRAINT [PK__sys_tena__3213E83F8DDA7AB1] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_tenant_pack_user] ADD CONSTRAINT [PK__sys_tena__3213E83F274C1E6F] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29214,7 +29804,7 @@ GO
 -- ----------------------------
 -- Indexes structure for table sys_third_account
 -- ----------------------------
-CREATE UNIQUE NONCLUSTERED INDEX [uniq_sys_third_account_third_type_third_user_id]
+CREATE UNIQUE NONCLUSTERED INDEX [uniq_stat_third_type_user_id]
 ON [dbo].[sys_third_account] (
   [third_type] ASC,
   [third_user_id] ASC
@@ -29225,7 +29815,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_third_account
 -- ----------------------------
-ALTER TABLE [dbo].[sys_third_account] ADD CONSTRAINT [PK__sys_thir__3213E83FFB516205] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_third_account] ADD CONSTRAINT [PK__sys_thir__3213E83F97447373] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29246,9 +29836,15 @@ ON [dbo].[sys_user] (
 )
 GO
 
-CREATE NONCLUSTERED INDEX [idx_su_username]
+CREATE UNIQUE NONCLUSTERED INDEX [uniq_sys_user_phone]
 ON [dbo].[sys_user] (
-  [username] ASC
+  [phone] ASC
+)
+GO
+
+CREATE UNIQUE NONCLUSTERED INDEX [uniq_sys_user_email]
+ON [dbo].[sys_user] (
+  [email] ASC
 )
 GO
 
@@ -29268,7 +29864,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_user
 -- ----------------------------
-ALTER TABLE [dbo].[sys_user] ADD CONSTRAINT [PK__sys_user__3213E83F51E93394] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_user] ADD CONSTRAINT [PK__sys_user__3213E83FDAF6BA57] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29305,7 +29901,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_user_agent
 -- ----------------------------
-ALTER TABLE [dbo].[sys_user_agent] ADD CONSTRAINT [PK__sys_user__3213E83F1AD9C164] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_user_agent] ADD CONSTRAINT [PK__sys_user__3213E83FECB73D60] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29337,7 +29933,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_user_depart
 -- ----------------------------
-ALTER TABLE [dbo].[sys_user_depart] ADD CONSTRAINT [PK__sys_user__3214EC27A3E20949] PRIMARY KEY CLUSTERED ([ID])
+ALTER TABLE [dbo].[sys_user_depart] ADD CONSTRAINT [PK__sys_user__3214EC2772BCAD53] PRIMARY KEY CLUSTERED ([ID])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29369,7 +29965,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table sys_user_role
 -- ----------------------------
-ALTER TABLE [dbo].[sys_user_role] ADD CONSTRAINT [PK__sys_user__3213E83FC8AD7BE0] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_user_role] ADD CONSTRAINT [PK__sys_user__3213E83F247277DD] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29378,6 +29974,13 @@ GO
 -- ----------------------------
 -- Indexes structure for table sys_user_tenant
 -- ----------------------------
+CREATE UNIQUE NONCLUSTERED INDEX [uniq_sut_user_rel_tenant]
+ON [dbo].[sys_user_tenant] (
+  [user_id] ASC,
+  [tenant_id] ASC
+)
+GO
+
 CREATE NONCLUSTERED INDEX [idx_sut_user_id]
 ON [dbo].[sys_user_tenant] (
   [user_id] ASC
@@ -29390,18 +29993,11 @@ ON [dbo].[sys_user_tenant] (
 )
 GO
 
-CREATE NONCLUSTERED INDEX [uniq_sut_user_rel_tenant]
-ON [dbo].[sys_user_tenant] (
-  [user_id] ASC,
-  [tenant_id] ASC
-)
-GO
-
 
 -- ----------------------------
 -- Primary Key structure for table sys_user_tenant
 -- ----------------------------
-ALTER TABLE [dbo].[sys_user_tenant] ADD CONSTRAINT [PK__sys_user__3213E83F96EDAE89] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[sys_user_tenant] ADD CONSTRAINT [PK__sys_user__3213E83F1DACDAD5] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29410,7 +30006,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_demo
 -- ----------------------------
-ALTER TABLE [dbo].[test_demo] ADD CONSTRAINT [PK__test_dem__3213E83FBB350386] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_demo] ADD CONSTRAINT [PK__test_dem__3213E83FBBC50EE5] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29419,7 +30015,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_enhance_select
 -- ----------------------------
-ALTER TABLE [dbo].[test_enhance_select] ADD CONSTRAINT [PK__test_enh__3213E83FB2AFE765] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_enhance_select] ADD CONSTRAINT [PK__test_enh__3213E83FEE43F4E6] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29428,7 +30024,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_note
 -- ----------------------------
-ALTER TABLE [dbo].[test_note] ADD CONSTRAINT [PK__test_not__3213E83F9368EFBB] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_note] ADD CONSTRAINT [PK__test_not__3213E83FDB158E20] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29437,7 +30033,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_order_customer
 -- ----------------------------
-ALTER TABLE [dbo].[test_order_customer] ADD CONSTRAINT [PK__test_ord__3213E83F8D7A9256] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_order_customer] ADD CONSTRAINT [PK__test_ord__3213E83FD1241C4F] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29446,7 +30042,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_order_main
 -- ----------------------------
-ALTER TABLE [dbo].[test_order_main] ADD CONSTRAINT [PK__test_ord__3213E83FD333BC08] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_order_main] ADD CONSTRAINT [PK__test_ord__3213E83FA9F4AF30] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29455,7 +30051,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_order_product
 -- ----------------------------
-ALTER TABLE [dbo].[test_order_product] ADD CONSTRAINT [PK__test_ord__3213E83F9773EF98] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_order_product] ADD CONSTRAINT [PK__test_ord__3213E83F3D407B94] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29464,7 +30060,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_shoptype_tree
 -- ----------------------------
-ALTER TABLE [dbo].[test_shoptype_tree] ADD CONSTRAINT [PK__test_sho__3213E83FA49BC9A7] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_shoptype_tree] ADD CONSTRAINT [PK__test_sho__3213E83F970B1D8D] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
@@ -29473,7 +30069,7 @@ GO
 -- ----------------------------
 -- Primary Key structure for table test_v3_hello
 -- ----------------------------
-ALTER TABLE [dbo].[test_v3_hello] ADD CONSTRAINT [PK__test_v3___3213E83FF8331800] PRIMARY KEY CLUSTERED ([id])
+ALTER TABLE [dbo].[test_v3_hello] ADD CONSTRAINT [PK__test_v3___3213E83F1C2B8715] PRIMARY KEY CLUSTERED ([id])
 WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)  
 ON [PRIMARY]
 GO
