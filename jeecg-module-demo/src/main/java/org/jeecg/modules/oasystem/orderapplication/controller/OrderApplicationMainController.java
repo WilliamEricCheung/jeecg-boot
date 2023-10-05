@@ -10,12 +10,16 @@ import java.util.HashMap;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.jeecg.common.api.dto.message.MessageDTO;
 import org.jeecg.common.constant.enums.MessageTypeEnum;
 import org.jeecg.common.system.api.ISysBaseAPI;
 import org.jeecg.common.util.DateUtils;
 import org.jeecg.modules.message.entity.SysMessageTemplate;
 import org.jeecg.modules.oasystem.orderapplication.constant.OrderApplicationConstant;
+import org.jeecg.modules.oasystem.orderapplication.rule.UserVisibilityRule;
+import org.jeecg.modules.system.entity.SysDepart;
+import org.jeecg.modules.system.service.ISysDepartService;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
 import org.jeecgframework.poi.excel.def.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.ExportParams;
@@ -64,6 +68,8 @@ public class OrderApplicationMainController {
     private IOrderApplicationListService orderApplicationListService;
 
     @Autowired
+    private ISysDepartService sysDepartService;
+    @Autowired
     private ISysBaseAPI sysBaseApi;
 
     /**
@@ -82,10 +88,27 @@ public class OrderApplicationMainController {
                                                              @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo,
                                                              @RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
                                                              HttpServletRequest req) {
-        QueryWrapper<OrderApplicationMain> queryWrapper = QueryGenerator.initQueryWrapper(orderApplicationMain, req.getParameterMap());
+        QueryWrapper<OrderApplicationMain> queryWrapper = UserVisibilityRule.viewListRule(QueryGenerator.initQueryWrapper(orderApplicationMain, req.getParameterMap()));
         Page<OrderApplicationMain> page = new Page<OrderApplicationMain>(pageNo, pageSize);
         IPage<OrderApplicationMain> pageList = orderApplicationMainService.page(page, queryWrapper);
         return Result.OK(pageList);
+    }
+
+    /**
+     * 根据部门编码获取部门信息
+     *
+     * @param orgCode
+     * @return
+     */
+    @GetMapping("/getDepartName")
+    public Result<String> getDepartName(@RequestParam(name = "orgCode") String orgCode) {
+        Result<String> result = new Result<>();
+        LambdaQueryWrapper<SysDepart> query = new LambdaQueryWrapper<>();
+        query.eq(SysDepart::getOrgCode, orgCode);
+        SysDepart sysDepart = sysDepartService.getOne(query);
+        result.setSuccess(true);
+        result.setResult(sysDepart.getDepartName());
+        return result;
     }
 
     /**

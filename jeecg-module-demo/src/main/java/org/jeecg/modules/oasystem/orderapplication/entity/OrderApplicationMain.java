@@ -31,9 +31,12 @@ public class OrderApplicationMain implements Serializable {
 	@TableId(type = IdType.ASSIGN_ID)
     @ApiModelProperty(value = "编号")
     private java.lang.String id;
-	/**申请部门*/
+	/**申请部门编码*/
     @ApiModelProperty(value = "申请部门")
     private java.lang.String sysOrgCode;
+    /**申请部门*/
+    @ApiModelProperty(value = "申请部门")
+    private java.lang.String departmentName;
 	/**申请时间*/
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")

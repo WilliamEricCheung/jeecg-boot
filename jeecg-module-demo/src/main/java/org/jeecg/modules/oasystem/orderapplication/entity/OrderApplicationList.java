@@ -30,9 +30,12 @@ public class OrderApplicationList implements Serializable {
 	@TableId(type = IdType.ASSIGN_ID)
     @ApiModelProperty(value = "主键")
     private java.lang.String id;
-	/**申请人所属部门*/
+	/**申请人所属部门编码*/
     @ApiModelProperty(value = "申请人所属部门")
     private java.lang.String sysOrgCode;
+    /**申请部门*/
+    @ApiModelProperty(value = "申请部门")
+    private java.lang.String departmentName;
 	/**申请人*/
     @ApiModelProperty(value = "申请人")
     private java.lang.String createBy;
