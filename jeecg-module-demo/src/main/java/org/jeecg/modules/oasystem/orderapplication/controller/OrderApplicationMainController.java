@@ -12,12 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.jeecg.common.api.dto.message.MessageDTO;
+import org.jeecg.common.aspect.annotation.PermissionData;
 import org.jeecg.common.constant.enums.MessageTypeEnum;
 import org.jeecg.common.system.api.ISysBaseAPI;
 import org.jeecg.common.util.DateUtils;
 import org.jeecg.modules.message.entity.SysMessageTemplate;
 import org.jeecg.modules.oasystem.orderapplication.constant.OrderApplicationConstant;
-import org.jeecg.modules.oasystem.orderapplication.rule.UserVisibilityRule;
 import org.jeecg.modules.system.entity.SysDepart;
 import org.jeecg.modules.system.service.ISysDepartService;
 import org.jeecgframework.poi.excel.ExcelImportUtil;
@@ -84,11 +84,12 @@ public class OrderApplicationMainController {
     //@AutoLog(value = "电商采购月度申请表-分页列表查询")
     @ApiOperation(value = "电商采购月度申请表-分页列表查询", notes = "电商采购月度申请表-分页列表查询")
     @GetMapping(value = "/list")
+    @PermissionData(pageComponent = "demo/orderapplication/OrderApplicationMainList")
     public Result<IPage<OrderApplicationMain>> queryPageList(OrderApplicationMain orderApplicationMain,
                                                              @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo,
                                                              @RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
                                                              HttpServletRequest req) {
-        QueryWrapper<OrderApplicationMain> queryWrapper = UserVisibilityRule.viewListRule(QueryGenerator.initQueryWrapper(orderApplicationMain, req.getParameterMap()));
+        QueryWrapper<OrderApplicationMain> queryWrapper = QueryGenerator.initQueryWrapper(orderApplicationMain, req.getParameterMap());
         Page<OrderApplicationMain> page = new Page<OrderApplicationMain>(pageNo, pageSize);
         IPage<OrderApplicationMain> pageList = orderApplicationMainService.page(page, queryWrapper);
         return Result.OK(pageList);
