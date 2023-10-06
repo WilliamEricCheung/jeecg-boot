@@ -77,13 +77,13 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 				orderApplicationListMapper.insert(entity);
 				//判断同意情况
 				if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
-					if (entity.getManagerOpinion().equals(OrderApplicationConstant.DISAGREE)) {
+					if (OrderApplicationConstant.DISAGREE.equals(entity.getManagerOpinion())) {
 						disagrees++;
 					}else {
 						agrees++;
 					}
 				}else {
-					if (entity.getLeaderOpinion().equals(OrderApplicationConstant.DISAGREE)) {
+					if (OrderApplicationConstant.DISAGREE.equals(entity.getLeaderOpinion())) {
 						disagrees++;
 					}else {
 						agrees++;
