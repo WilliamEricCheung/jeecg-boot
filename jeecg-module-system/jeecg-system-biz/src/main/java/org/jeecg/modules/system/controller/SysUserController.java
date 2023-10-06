@@ -30,6 +30,7 @@ import org.jeecg.modules.system.entity.*;
 import org.jeecg.modules.system.model.DepartIdModel;
 import org.jeecg.modules.system.model.SysUserSysDepartModel;
 import org.jeecg.modules.system.service.*;
+import org.jeecg.modules.system.service.impl.SysBaseApiImpl;
 import org.jeecg.modules.system.vo.SysDepartUsersVO;
 import org.jeecg.modules.system.vo.SysUserRoleVO;
 import org.jeecg.modules.system.vo.lowapp.DepartAndUserInfo;
@@ -64,6 +65,9 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/sys/user")
 public class SysUserController {
+
+    @Autowired
+    private SysBaseApiImpl sysBaseApi;
 
 	@Autowired
 	private ISysUserService sysUserService;
@@ -291,6 +295,19 @@ public class SysUserController {
             }
             result.setSuccess(true);
             result.setResult(list);
+        }
+        return result;
+    }
+
+    @RequestMapping(value = "/getUserRole", method = RequestMethod.GET)
+    public Result<Set<String>> getUserRole(@RequestParam("username") String username) {
+        Result<Set<String>> result = new Result<>();
+        Set<String> set = sysUserService.getUserRolesSet(username);
+        if (set == null || set.size() <= 0) {
+            result.error500("未找到用户相关角色信息");
+        }else {
+            result.setSuccess(true);
+            result.setResult(set);
         }
         return result;
     }

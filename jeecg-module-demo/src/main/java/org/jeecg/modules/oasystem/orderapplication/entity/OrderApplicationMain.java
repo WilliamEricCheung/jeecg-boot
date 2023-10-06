@@ -44,6 +44,7 @@ public class OrderApplicationMain implements Serializable {
     private java.util.Date createTime;
 	/**经办人*/
     @ApiModelProperty(value = "经办人")
+    @Dict(dictTable = "sys_user", dicText = "realname", dicCode = "username")
     private java.lang.String createBy;
 	/**更新时间*/
 	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
@@ -52,6 +53,7 @@ public class OrderApplicationMain implements Serializable {
     private java.util.Date updateTime;
 	/**更新人*/
     @ApiModelProperty(value = "更新人")
+    @Dict(dictTable = "sys_user", dicText = "realname", dicCode = "username")
     private java.lang.String updateBy;
 	/**部门主管*/
 	@Excel(name = "部门主管", width = 15, dictTable = "sys_user", dicText = "realname", dicCode = "username")
@@ -78,7 +80,7 @@ public class OrderApplicationMain implements Serializable {
     @ApiModelProperty(value = "申请理由")
     private java.lang.String reason;
 	/**申请状态*/
-	@Excel(name = "申请状态", width = 15)
+	@Excel(name = "申请状态", width = 15, dicCode = "application_status")
     @ApiModelProperty(value = "申请状态")
     private java.lang.String applicationStatus;
 }
