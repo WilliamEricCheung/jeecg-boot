@@ -36,8 +36,9 @@ public interface IOrderApplicationMainService extends IService<OrderApplicationM
 	 * @param auditorType
 	 * @param orderApplicationMain
 	 * @param orderApplicationListList
+	 * @return 返回申请状态
 	 */
-	public void auditMain(String auditorType, OrderApplicationMain orderApplicationMain,List<OrderApplicationList> orderApplicationListList);
+	public String auditMain(String auditorType, OrderApplicationMain orderApplicationMain,List<OrderApplicationList> orderApplicationListList);
 
 	/**
 	 * 修改申请状态

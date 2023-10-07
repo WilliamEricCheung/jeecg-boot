@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import org.jeecg.common.api.CommonAPI;
 import org.jeecg.common.api.dto.message.MessageDTO;
 import org.jeecg.common.aspect.annotation.PermissionData;
 import org.jeecg.common.constant.enums.MessageTypeEnum;
@@ -71,6 +72,8 @@ public class OrderApplicationMainController {
     private ISysDepartService sysDepartService;
     @Autowired
     private ISysBaseAPI sysBaseApi;
+    @Autowired
+    private CommonAPI commonAPI;
 
     /**
      * 分页列表查询
@@ -81,7 +84,7 @@ public class OrderApplicationMainController {
      * @param req
      * @return
      */
-    //@AutoLog(value = "电商采购月度申请表-分页列表查询")
+    @AutoLog(value = "电商采购月度申请表-分页列表查询")
     @ApiOperation(value = "电商采购月度申请表-分页列表查询", notes = "电商采购月度申请表-分页列表查询")
     @GetMapping(value = "/list")
     @PermissionData(pageComponent = "demo/orderapplication/OrderApplicationMainList")
@@ -156,25 +159,38 @@ public class OrderApplicationMainController {
     @ApiOperation(value = "电商采购月度申请表-审核", notes = "电商采购月度申请表-审核")
     @RequiresPermissions("orderapplication:order_application_main:audit")
     @RequestMapping(value = "/audit", method = {RequestMethod.PUT, RequestMethod.POST})
-    public Result<String> audit(@RequestBody OrderApplicationMainPage orderApplicationMainPage) {
+    public Result<?> audit(@RequestBody OrderApplicationMainPage orderApplicationMainPage) {
         OrderApplicationMain orderApplicationMain = new OrderApplicationMain();
         BeanUtils.copyProperties(orderApplicationMainPage, orderApplicationMain);
         OrderApplicationMain orderApplicationMainEntity = orderApplicationMainService.getById(orderApplicationMain.getId());
         if (orderApplicationMainEntity == null) {
             return Result.error("未找到对应数据");
         }
-        //获取当前用户
+        // 获取当前用户
         LoginUser sysUser = (LoginUser) SecurityUtils.getSubject().getPrincipal();
         String auditorType = null;
+        String receiver2 = null;
         if (sysUser.getUsername().equals(orderApplicationMainEntity.getManagerUsername())) {
             auditorType = OrderApplicationConstant.AUDITOR_TYPE_MANAGER;
+            receiver2 = orderApplicationMain.getLeaderUsername();
         } else if (sysUser.getUsername().equals(orderApplicationMainEntity.getLeaderUsername())) {
             auditorType = OrderApplicationConstant.AUDITOR_TYPE_LEADER;
+            receiver2 = orderApplicationMain.getManagerUsername();
         } else {
             return Result.error("{}无权审核该申请！", sysUser.getRealname());
         }
-        orderApplicationMainService.auditMain(auditorType, orderApplicationMain, orderApplicationMainPage.getOrderApplicationListList());
-        return Result.OK("审核完毕！");
+        String applicationStatus = orderApplicationMainService.auditMain(auditorType, orderApplicationMain, orderApplicationMainPage.getOrderApplicationListList());
+        String sender = sysUser.getRealname();
+        String departmentName = orderApplicationMain.getDepartmentName();
+        // 收件人1为申请人，收件人2为经理或者领导（根据auditorType来判断）
+        String receiver1 = orderApplicationMain.getCreateBy();
+        String receiver = receiver1 + "," + receiver2;
+        log.info("departmentName: {}", departmentName);
+        String createBy = commonAPI.getUserByName(receiver1).getRealname();
+        String createTime = DateUtils.formatDate(orderApplicationMain.getCreateTime(), "yyyy-MM-dd HH:mm:ss");
+        String reason = orderApplicationMain.getReason();
+        return sendAuditMessage(sender, receiver, "物资采购申请审核状态更新", applicationStatus,
+                departmentName, createBy, createTime, reason);
     }
 
     /**
@@ -192,16 +208,20 @@ public class OrderApplicationMainController {
         if (orderApplicationMain == null) {
             return Result.error("未找到对应数据");
         }
-        orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_SUBMITTED_WATING_FOR_MANAGER);
+        orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_SUBMITTED);
         orderApplicationMainService.updateApplicationStatus(orderApplicationMain);
         // 消息提示 https://help.jeecg.com/java/java/msgpush.html
-        String receiver = orderApplicationMain.getManagerUsername() + "," + orderApplicationMain.getLeaderUsername();
-        Map<String, Object> data = new HashMap<>();
-        data.put("sys_org_code", orderApplicationMain.getSysOrgCode());
-        data.put("create_by", orderApplicationMain.getCreateBy());
-        data.put("create_time", DateUtils.formatDate(orderApplicationMain.getCreateTime(), "yyyy-MM-dd HH:mm:ss"));
-        data.put("reason", orderApplicationMain.getReason());
-        return sendMessageByType(receiver, MessageTypeEnum.XT.getType(), data);
+        // 获取当前用户
+        LoginUser sysUser = (LoginUser) SecurityUtils.getSubject().getPrincipal();
+        String sender = sysUser.getRealname();
+        // 仅提醒经理
+        String receiver = orderApplicationMain.getManagerUsername();
+        String departmentName = orderApplicationMain.getDepartmentName();
+        String createBy = commonAPI.getUserByName(orderApplicationMain.getCreateBy()).getRealname();
+        String createTime = DateUtils.formatDate(orderApplicationMain.getCreateTime(), "yyyy-MM-dd HH:mm:ss");
+        String reason = orderApplicationMain.getReason();
+        return sendAuditMessage(sender, receiver, "新的物资采购申请审核", OrderApplicationConstant.APPLICANT_SUBMITTED,
+                departmentName, createBy, createTime, reason);
     }
 
     /**
@@ -398,27 +418,35 @@ public class OrderApplicationMainController {
     }
 
     /**
+     * 发送审核消息
+     *
+     * @param sender   消息发布人
      * @param receiver 用英文小写逗号分隔，例如：system,admin
-     * @param type     标识发送系统推送或邮件类型
-     * @param data     消息模板中例如${sys_org_code}自定义参数，用json形式保存
      * @return
      */
-    private Result<SysMessageTemplate> sendMessageByType(String receiver, String type, Map<String, Object> data) {
+    private Result<SysMessageTemplate> sendAuditMessage(String sender, String receiver, String title, String templateCode,
+                                                        String departmentName, String createBy, String createTime, String reason) {
         Result<SysMessageTemplate> result = new Result<SysMessageTemplate>();
         try {
+            // 构建消息模板内容参数
+            Map<String, Object> data = new HashMap<>();
+            data.put("department", departmentName);
+            data.put("create_by", createBy);
+            data.put("create_time", createTime);
+            data.put("reason", reason);
             MessageDTO md = new MessageDTO();
-            md.setFromUser("系统");
-            md.setTitle("新的物资采购申请审批");
-            md.setTemplateCode(OrderApplicationConstant.MESSAGE_TEMPLATE_CODE);
+            md.setFromUser(sender);
+            md.setTitle(title);
+            md.setTemplateCode(templateCode);
             md.setToUser(receiver);
-            md.setType(type);
+            md.setType(MessageTypeEnum.XT.getType());
             md.setData(data);
             sysBaseApi.sendTemplateMessage(md);
-			return result.success("提交成功！");
+            return result.success("提交成功！");
         } catch (Exception e) {
-			log.error("发送消息出错，{}", e.getMessage());
-			return result.error500("提交失败，发送站内消息出错！");
-		}
+            log.error("发送消息出错，{}", e.getMessage());
+            return result.error500("提交失败，发送站内消息出错！");
+        }
     }
 
 }

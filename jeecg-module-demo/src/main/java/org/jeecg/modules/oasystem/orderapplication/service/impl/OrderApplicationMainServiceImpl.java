@@ -60,7 +60,7 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 
 	@Override
 	@Transactional(rollbackFor = Exception.class)
-	public void auditMain(String auditorType, OrderApplicationMain orderApplicationMain, List<OrderApplicationList> orderApplicationListList) {
+	public String auditMain(String auditorType, OrderApplicationMain orderApplicationMain, List<OrderApplicationList> orderApplicationListList) {
 		//1.先删除子表数据
 		orderApplicationListMapper.deleteByMainId(orderApplicationMain.getId());
 
@@ -113,6 +113,7 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 			}
 			orderApplicationMainMapper.updateById(orderApplicationMain);
 		}
+		return orderApplicationMain.getApplicationStatus();
 	}
 
 	@Override
