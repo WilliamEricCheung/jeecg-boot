@@ -45,6 +45,13 @@ public interface IOrderApplicationMainService extends IService<OrderApplicationM
 	 * @param orderApplicationMain
 	 */
 	public void updateApplicationStatus(OrderApplicationMain orderApplicationMain);
+
+	/**
+	 * 通过sys_org_code返回相应的部门名
+	 * @param sysOrgCode
+	 * @return departmentName
+	 */
+	public String getDepartmentNameBySysOrgCode(String sysOrgCode);
 	
 	/**
 	 * 删除一对多

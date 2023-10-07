@@ -67,9 +67,6 @@ public class OrderApplicationMainController {
     private IOrderApplicationMainService orderApplicationMainService;
     @Autowired
     private IOrderApplicationListService orderApplicationListService;
-
-    @Autowired
-    private ISysDepartService sysDepartService;
     @Autowired
     private ISysBaseAPI sysBaseApi;
     @Autowired
@@ -99,23 +96,6 @@ public class OrderApplicationMainController {
     }
 
     /**
-     * 根据部门编码获取部门信息
-     *
-     * @param orgCode
-     * @return
-     */
-    @GetMapping("/getDepartName")
-    public Result<String> getDepartName(@RequestParam(name = "orgCode") String orgCode) {
-        Result<String> result = new Result<>();
-        LambdaQueryWrapper<SysDepart> query = new LambdaQueryWrapper<>();
-        query.eq(SysDepart::getOrgCode, orgCode);
-        SysDepart sysDepart = sysDepartService.getOne(query);
-        result.setSuccess(true);
-        result.setResult(sysDepart.getDepartName());
-        return result;
-    }
-
-    /**
      * 添加
      *
      * @param orderApplicationMainPage
@@ -130,6 +110,10 @@ public class OrderApplicationMainController {
         BeanUtils.copyProperties(orderApplicationMainPage, orderApplicationMain);
         // 设置默认申请状态
         orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_NOT_SUBMITTED);
+        // 同步设置部门名
+        orderApplicationMain.setDepartmentName(orderApplicationMainService.getDepartmentNameBySysOrgCode(orderApplicationMain.getSysOrgCode()));
+        // 设置update_by
+        orderApplicationMain.setUpdateBy(orderApplicationMain.getCreateBy());
         orderApplicationMainService.saveMain(orderApplicationMain, orderApplicationMainPage.getOrderApplicationListList());
         return Result.OK("添加成功！");
     }

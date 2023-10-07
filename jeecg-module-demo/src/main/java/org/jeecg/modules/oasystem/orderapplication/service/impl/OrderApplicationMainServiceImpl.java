@@ -1,11 +1,14 @@
 package org.jeecg.modules.oasystem.orderapplication.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.jeecg.modules.oasystem.orderapplication.constant.OrderApplicationConstant;
 import org.jeecg.modules.oasystem.orderapplication.entity.OrderApplicationMain;
 import org.jeecg.modules.oasystem.orderapplication.entity.OrderApplicationList;
 import org.jeecg.modules.oasystem.orderapplication.mapper.OrderApplicationListMapper;
 import org.jeecg.modules.oasystem.orderapplication.mapper.OrderApplicationMainMapper;
 import org.jeecg.modules.oasystem.orderapplication.service.IOrderApplicationMainService;
+import org.jeecg.modules.system.entity.SysDepart;
+import org.jeecg.modules.system.service.ISysDepartService;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +30,8 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 	private OrderApplicationMainMapper orderApplicationMainMapper;
 	@Autowired
 	private OrderApplicationListMapper orderApplicationListMapper;
+	@Autowired
+	private ISysDepartService sysDepartService;
 	
 	@Override
 	@Transactional(rollbackFor = Exception.class)
@@ -36,6 +41,11 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 			for(OrderApplicationList entity:orderApplicationListList) {
 				//外键设置
 				entity.setApplicationMainId(orderApplicationMain.getId());
+				//设置departmentName
+				entity.setDepartmentName(orderApplicationMain.getDepartmentName());
+				//设置更新人和更新时间
+				entity.setUpdateTime(orderApplicationMain.getUpdateTime());
+				entity.setUpdatedBy(orderApplicationMain.getUpdateBy());
 				orderApplicationListMapper.insert(entity);
 			}
 		}
@@ -119,6 +129,14 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 	@Override
 	public void updateApplicationStatus(OrderApplicationMain orderApplicationMain) {
 		orderApplicationMainMapper.updateById(orderApplicationMain);
+	}
+
+	@Override
+	public String getDepartmentNameBySysOrgCode(String sysOrgCode) {
+		LambdaQueryWrapper<SysDepart> query = new LambdaQueryWrapper<>();
+		query.eq(SysDepart::getOrgCode, sysOrgCode);
+		SysDepart sysDepart = sysDepartService.getOne(query);
+		return sysDepart.getDepartName();
 	}
 
 	@Override
