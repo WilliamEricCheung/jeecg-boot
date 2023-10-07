@@ -154,5 +154,31 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 			orderApplicationMainMapper.deleteById(id);
 		}
 	}
+
+	@Override
+	public List<OrderApplicationList> selectByMainId(String mainId, String username) {
+		List<OrderApplicationList> list = orderApplicationListMapper.selectByMainId(mainId);
+		//1.先删除子表数据
+		orderApplicationListMapper.deleteByMainId(mainId);
+		OrderApplicationMain orderApplicationMain = getById(mainId);
+		//2.子表数据重新插入
+		if(list!=null && list.size()>0) {
+			for (OrderApplicationList entity : list) {
+				// 判断当前用户的角色
+				if (username.equals(orderApplicationMain.getManagerUsername())) {
+					// 部门主管
+					entity.setCurrentOpinion(entity.getManagerOpinion());
+				} else if (username.equals(orderApplicationMain.getLeaderUsername())) {
+					// 分管领导
+					entity.setCurrentOpinion(entity.getLeaderOpinion());
+				} else {
+					// 申请人或系统开发管理员
+					entity.setCurrentOpinion(OrderApplicationConstant.NOTDECIDED);
+				}
+				orderApplicationListMapper.insert(entity);
+			}
+		}
+		return list;
+	}
 	
 }
