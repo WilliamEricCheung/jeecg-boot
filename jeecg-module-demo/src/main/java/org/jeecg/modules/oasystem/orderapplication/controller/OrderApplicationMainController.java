@@ -219,6 +219,9 @@ public class OrderApplicationMainController {
         if (orderApplicationMain == null) {
             return Result.error("未找到对应数据");
         }
+        // 重置子表审核状态
+        orderApplicationListService.revokeAllByMainId(id);
+        // 更新主表申请状态
         orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_REVOKED);
         orderApplicationMainService.updateApplicationStatus(orderApplicationMain);
         return Result.OK("撤回成功!");
@@ -241,6 +244,9 @@ public class OrderApplicationMainController {
             if (orderApplicationMain == null) {
                 return Result.error("未找到对应数据");
             }
+            // 重置子表审核状态
+            orderApplicationListService.revokeAllByMainId(id);
+            // 更新主表申请状态
             orderApplicationMain.setApplicationStatus(OrderApplicationConstant.APPLICANT_REVOKED);
             orderApplicationMainService.updateApplicationStatus(orderApplicationMain);
         }

@@ -19,4 +19,11 @@ public interface IOrderApplicationListService extends IService<OrderApplicationL
 	 * @return List<OrderApplicationList>
 	 */
 	public List<OrderApplicationList> selectByMainId(String mainId);
+
+	/**
+	 * 通过主表id更新子表审核状态数据
+	 *
+	 * @param mainId 主表id
+	 */
+	public void revokeAllByMainId(String mainId);
 }

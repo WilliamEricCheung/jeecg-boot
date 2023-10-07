@@ -74,23 +74,26 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 			for(OrderApplicationList entity:orderApplicationListList) {
 				//外键设置
 				entity.setApplicationMainId(orderApplicationMain.getId());
-				orderApplicationListMapper.insert(entity);
 				//判断同意情况
 				if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
+					entity.setManagerOpinion(entity.getCurrentOpinion());
 					if (OrderApplicationConstant.DISAGREE.equals(entity.getManagerOpinion())) {
 						disagrees++;
 					}else {
 						agrees++;
 					}
 				}else {
+					entity.setLeaderOpinion(entity.getCurrentOpinion());
 					if (OrderApplicationConstant.DISAGREE.equals(entity.getLeaderOpinion())) {
 						disagrees++;
 					}else {
 						agrees++;
 					}
 				}
+				// 子表插入
+				orderApplicationListMapper.insert(entity);
 			}
-
+			// 更新主表审批同意情况
 			if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
 				if (disagrees == total) {
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_NONE);

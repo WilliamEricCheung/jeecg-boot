@@ -24,4 +24,21 @@ public class OrderApplicationListServiceImpl extends ServiceImpl<OrderApplicatio
 	public List<OrderApplicationList> selectByMainId(String mainId) {
 		return orderApplicationListMapper.selectByMainId(mainId);
 	}
+
+	@Override
+	public void revokeAllByMainId(String mainId) {
+		List<OrderApplicationList> list = selectByMainId(mainId);
+		//1.先删除子表数据
+		orderApplicationListMapper.deleteByMainId(mainId);
+		//2.子表数据重新插入
+		if(list!=null && list.size()>0) {
+			for (OrderApplicationList entity : list) {
+				entity.setCurrentOpinion("-1");
+				entity.setManagerOpinion("-1");
+				entity.setLeaderOpinion("-1");
+				// 子表插入
+				orderApplicationListMapper.insert(entity);
+			}
+		}
+	}
 }
