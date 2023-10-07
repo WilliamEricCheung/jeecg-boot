@@ -67,14 +67,4 @@ public interface IOrderApplicationMainService extends IService<OrderApplicationM
 	 */
 	public void delBatchMain (Collection<? extends Serializable> idList);
 
-
-	/**
-	 * 通过主表id和username更新currentOpinion并查询子表数据
-	 *
-	 * @param mainId 主表id
-	 * @param username 当前的系统用户
-	 * @return List<OrderApplicationList>
-	 */
-	public List<OrderApplicationList> selectByMainId(String mainId, String username);
-	
 }

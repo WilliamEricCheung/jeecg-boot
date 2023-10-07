@@ -33,7 +33,6 @@ public class OrderApplicationListServiceImpl extends ServiceImpl<OrderApplicatio
 		//2.子表数据重新插入
 		if(list!=null && list.size()>0) {
 			for (OrderApplicationList entity : list) {
-				entity.setCurrentOpinion("-1");
 				entity.setManagerOpinion("-1");
 				entity.setLeaderOpinion("-1");
 				// 子表插入

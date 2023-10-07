@@ -93,9 +93,6 @@ public class OrderApplicationList implements Serializable {
 	@Excel(name = "电商平台物资编码", width = 15)
     @ApiModelProperty(value = "电商平台物资编码")
     private java.lang.String materialCode;
-    /**当前意见，用于前端提交*/
-    @ApiModelProperty(value = "当前意见，用于前端提交")
-    private java.lang.String currentOpinion;
 	/**部门主管意见*/
 	@Excel(name = "部门主管意见", width = 15, dicCode = "opinion")
     @ApiModelProperty(value = "部门主管意见")

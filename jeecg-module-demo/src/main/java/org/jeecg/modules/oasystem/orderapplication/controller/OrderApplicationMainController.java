@@ -309,15 +309,13 @@ public class OrderApplicationMainController {
      * 通过id查询
      *
      * @param id
-     * @param username 前端传过来的系统当前用户
      * @return
      */
     @AutoLog(value = "电商采购月度申请表采购物资具体要求通过主表ID查询")
     @ApiOperation(value = "电商采购月度申请表采购物资具体要求主表ID查询", notes = "电商采购月度申请表采购物资具体要求-通主表ID查询")
     @GetMapping(value = "/queryOrderApplicationListByMainId")
-    public Result<List<OrderApplicationList>> queryOrderApplicationListListByMainId(@RequestParam(name = "id", required = true) String id,
-                                                                                    @RequestParam(name = "username", required = true) String username) {
-        List<OrderApplicationList> orderApplicationListList = orderApplicationMainService.selectByMainId(id, username);
+    public Result<List<OrderApplicationList>> queryOrderApplicationListListByMainId(@RequestParam(name = "id", required = true) String id) {
+        List<OrderApplicationList> orderApplicationListList = orderApplicationListService.selectByMainId(id);
         return Result.OK(orderApplicationListList);
     }
 
