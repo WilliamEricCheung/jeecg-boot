@@ -1,5 +1,6 @@
 package org.jeecg.modules.oasystem.orderapplication.service.impl;
 
+import org.jeecg.modules.oasystem.orderapplication.constant.OrderApplicationConstant;
 import org.jeecg.modules.oasystem.orderapplication.entity.OrderApplicationList;
 import org.jeecg.modules.oasystem.orderapplication.mapper.OrderApplicationListMapper;
 import org.jeecg.modules.oasystem.orderapplication.service.IOrderApplicationListService;
@@ -33,8 +34,8 @@ public class OrderApplicationListServiceImpl extends ServiceImpl<OrderApplicatio
 		//2.子表数据重新插入
 		if(list!=null && list.size()>0) {
 			for (OrderApplicationList entity : list) {
-				entity.setManagerOpinion("-1");
-				entity.setLeaderOpinion("-1");
+				entity.setManagerOpinion(OrderApplicationConstant.NOTDECIDED);
+				entity.setLeaderOpinion(OrderApplicationConstant.NOTDECIDED);
 				// 子表插入
 				orderApplicationListMapper.insert(entity);
 			}

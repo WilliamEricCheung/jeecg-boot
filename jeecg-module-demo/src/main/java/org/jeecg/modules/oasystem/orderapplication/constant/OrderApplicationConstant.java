@@ -18,7 +18,7 @@ public interface OrderApplicationConstant {
     public static final String AUDITOR_TYPE_LEADER = "auditor_type_leader";
 
     // 同意\不同意\未审批
-    public static final String DISAGREE = "0";
-    public static final String AGREE = "1";
-    public static final String NOTDECIDED = "-1";
+    public static final String DISAGREE = "不同意";
+    public static final String AGREE = "同意";
+    public static final String NOTDECIDED = "未审核";
 }

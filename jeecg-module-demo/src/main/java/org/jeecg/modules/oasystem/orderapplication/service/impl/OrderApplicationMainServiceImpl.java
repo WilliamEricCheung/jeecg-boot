@@ -90,13 +90,13 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 				if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
 					if (OrderApplicationConstant.DISAGREE.equals(entity.getManagerOpinion())) {
 						disagrees++;
-					}else {
+					}else if (OrderApplicationConstant.AGREE.equals(entity.getManagerOpinion())){
 						agrees++;
 					}
 				}else {
 					if (OrderApplicationConstant.DISAGREE.equals(entity.getLeaderOpinion())) {
 						disagrees++;
-					}else {
+					}else if (OrderApplicationConstant.AGREE.equals(entity.getLeaderOpinion())){
 						agrees++;
 					}
 				}
