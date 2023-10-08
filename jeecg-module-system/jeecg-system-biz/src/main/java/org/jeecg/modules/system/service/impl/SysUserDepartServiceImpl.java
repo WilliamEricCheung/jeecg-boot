@@ -12,6 +12,7 @@ import org.jeecg.common.constant.SymbolConstant;
 import org.jeecg.common.system.vo.LoginUser;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.config.mybatis.MybatisPlusSaasConfig;
+import org.jeecg.modules.system.config.SystemLevelConfig;
 import org.jeecg.modules.system.entity.SysDepart;
 import org.jeecg.modules.system.entity.SysUser;
 import org.jeecg.modules.system.entity.SysUserDepart;
@@ -150,6 +151,8 @@ public class SysUserDepartServiceImpl extends ServiceImpl<SysUserDepartMapper, S
 		Page<SysUser> page = new Page<SysUser>(pageNo, pageSize);
 		if(oConvertUtils.isEmpty(departId)){
 			LambdaQueryWrapper<SysUser> query = new LambdaQueryWrapper<>();
+			// 不要查询admin
+			query.ne(SysUser::getUsername, SystemLevelConfig.ADMIN_USERNAME);
             //update-begin---author:wangshuai ---date:20220104  for：[JTC-297]已冻结用户仍可设置为代理人------------
             query.eq(SysUser::getStatus,Integer.parseInt(CommonConstant.STATUS_1));
             //update-end---author:wangshuai ---date:20220104  for：[JTC-297]已冻结用户仍可设置为代理人------------
@@ -200,6 +203,7 @@ public class SysUserDepartServiceImpl extends ServiceImpl<SysUserDepartMapper, S
 				});
 			}
 			pageList.setRecords(new ArrayList<SysUser>(map.values()));
+			pageList.setTotal(map.size());
 		}
 		return pageList;
 	}
