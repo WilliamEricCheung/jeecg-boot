@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Console;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import java.util.Collection;
 
@@ -105,19 +106,21 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 			}
 			// 更新主表审批同意情况
 			if (auditorType.equals(OrderApplicationConstant.AUDITOR_TYPE_MANAGER)) {
-				if (disagrees == total) {
+				orderApplicationMain.setManagerTime(new Date());
+				if (disagrees == total || agrees == 0) {
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_NONE);
 				} else if (agrees == total) {
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_ALL);
-				} else {
+				} else if (agrees > 0){
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.MANAGER_CONFIRMED_PART);
 				}
 			} else {
-				if (disagrees == total) {
+				orderApplicationMain.setLeaderTime(new Date());
+				if (disagrees == total || agrees == 0) {
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.LEADER_CONFIRMED_NONE);
 				} else if (agrees == total) {
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.LEADER_CONFIRMED_ALL);
-				} else {
+				} else if (agrees > 0){
 					orderApplicationMain.setApplicationStatus(OrderApplicationConstant.LEADER_CONFIRMED_PART);
 				}
 			}
