@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8082
   tomcat:
     max-swallow-size: -1
   error:
@@ -7,7 +7,7 @@ server:
     include-stacktrace: ALWAYS
     include-message: ALWAYS
   servlet:
-    context-path: /jeecg-boot
+    context-path: /oa
   compression:
     enabled: true
     min-response-size: 1024
