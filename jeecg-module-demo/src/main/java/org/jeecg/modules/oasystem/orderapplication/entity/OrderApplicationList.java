@@ -45,7 +45,7 @@ public class OrderApplicationList implements Serializable {
     @ApiModelProperty(value = "申请日期")
     private java.util.Date createTime;
 	/**更新人*/
-	@Excel(name = "更新人", width = 15)
+//	@Excel(name = "更新人", width = 15)
     @ApiModelProperty(value = "更新人")
     private java.lang.String updatedBy;
 	/**更新日期*/
