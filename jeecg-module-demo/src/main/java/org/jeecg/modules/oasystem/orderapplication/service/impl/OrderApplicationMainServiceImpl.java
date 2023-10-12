@@ -46,6 +46,9 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 				entity.setApplicationMainId(orderApplicationMain.getId());
 				//设置departmentName
 				entity.setDepartmentName(orderApplicationMain.getDepartmentName());
+				//设置创建人和创建时间
+				entity.setCreateTime(orderApplicationMain.getCreateTime());
+				entity.setCreateBy(orderApplicationMain.getCreateBy());
 				//设置更新人和更新时间
 				entity.setUpdateTime(orderApplicationMain.getUpdateTime());
 				entity.setUpdatedBy(orderApplicationMain.getUpdateBy());
