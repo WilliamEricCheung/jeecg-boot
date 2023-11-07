@@ -292,6 +292,11 @@ public class SysUserDepartServiceImpl extends ServiceImpl<SysUserDepartMapper, S
 		return pageList;
 	}
 
+	@Override
+	public List<SysUser> getUsersByDepartTenantId(String departId, Integer tenantId) {
+		return baseMapper.getUsersByDepartTenantId(departId,tenantId);
+	}
+
 	/**
 	 * 升级SpringBoot2.6.6,不允许循环依赖
 	 * @param userIds
