@@ -52,6 +52,8 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 				//设置更新人和更新时间
 				entity.setUpdateTime(orderApplicationMain.getUpdateTime());
 				entity.setUpdatedBy(orderApplicationMain.getUpdateBy());
+				//设置总价
+				entity.setTotalPrice(entity.getPrice() * entity.getNumber());
 				orderApplicationListMapper.insert(entity);
 			}
 		}
@@ -68,6 +70,8 @@ public class OrderApplicationMainServiceImpl extends ServiceImpl<OrderApplicatio
 			for(OrderApplicationList entity:orderApplicationListList) {
 				//外键设置
 				entity.setApplicationMainId(orderApplicationMain.getId());
+				//设置总价
+				entity.setTotalPrice(entity.getPrice() * entity.getNumber());
 				orderApplicationListMapper.insert(entity);
 			}
 		}
