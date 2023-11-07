@@ -92,7 +92,7 @@ public class SysRoleController {
 	 * @param req
 	 * @return
 	 */
-	@RequiresPermissions("system:role:list")
+//	@RequiresPermissions("system:role:list")
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public Result<IPage<SysRole>> queryPageList(SysRole role,
 									  @RequestParam(name="pageNo", defaultValue="1") Integer pageNo,
@@ -302,7 +302,7 @@ public class SysRoleController {
 	 *
 	 * @return
 	 */
-	@RequiresPermissions("system:role:queryallNoByTenant")
+//	@RequiresPermissions("system:role:queryallNoByTenant")
 	@RequestMapping(value = "/queryallNoByTenant", method = RequestMethod.GET)
 	public Result<List<SysRole>> queryallNoByTenant() {
 		Result<List<SysRole>> result = new Result<>();
