@@ -11,6 +11,7 @@ import org.jeecg.common.api.vo.Result;
 import org.jeecg.common.config.TenantContext;
 import org.jeecg.common.constant.CacheConstant;
 import org.jeecg.common.constant.CommonConstant;
+import org.jeecg.common.system.api.ISysBaseAPI;
 import org.jeecg.common.system.query.QueryGenerator;
 import org.jeecg.common.system.util.JwtUtil;
 import org.jeecg.common.system.vo.LoginUser;
@@ -64,6 +65,8 @@ public class SysDepartController {
 	private ISysUserService sysUserService;
 	@Autowired
 	private ISysUserDepartService sysUserDepartService;
+	@Autowired
+	private ISysBaseAPI sysBaseApi;
 	/**
 	 * 查询数据 查出我的部门,并以树结构数据格式响应给前端
 	 *
@@ -76,7 +79,9 @@ public class SysDepartController {
 		try {
 			if(oConvertUtils.isNotEmpty(user.getUserIdentity()) && user.getUserIdentity().equals( CommonConstant.USER_IDENTITY_2 )){
 				//update-begin--Author:liusq  Date:20210624  for:部门查询ids为空后的前端显示问题 issues/I3UD06
-				String departIds = user.getDepartIds();
+//				String departIds = user.getDepartIds();// TODO 获取不到
+				String departIds = String.join(",",sysBaseApi.getDepartIdsByUsername(user.getUsername()));
+				log.info("LoginUser departIds: {}", departIds);
 				if(StringUtils.isNotBlank(departIds)){
 					List<SysDepartTreeModel> list = sysDepartService.queryMyDeptTreeList(departIds);
 					result.setResult(list);
